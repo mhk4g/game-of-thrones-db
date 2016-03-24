@@ -1,0 +1,963 @@
+Array
+(
+    [Eddard_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Beheaded by Ser Ilyn Payne at the order of Joffrey Baratheon in King's Landing
+            [Death episode] => "Baelor"
+            [Allegiance] => House Stark
+            [Portrayed by] => Array
+                (
+                    [0] => Sean Bean (Adult)
+                    [1] => Sebastian Croft (Child)
+                    [2] => Luke Roberts (Young)
+                )
+
+        )
+
+    [Catelyn_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Throat slit by Black Walder Rivers
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => Array
+                (
+                    [0] => House Stark - by marriage
+                    [1] => House Tully - by birth
+                )
+
+            [Portrayed by] => Michelle Fairley
+        )
+
+    [Robb_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Young Wolf
+                    [1] => The King Who Lost the North
+                )
+
+            [Status] => Deceased
+            [Death] => Shot several times by Frey crossbowmen, then stabbed through the heart by Roose Bolton
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => House Stark
+            [Portrayed by] => Richard Madden
+        )
+
+    [Sansa_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Little Dove
+                    [1] => Little Bird
+                    [2] => Alayne (formerly)
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Stark - by birth
+                    [1] => House Lannister - by forced marriage (formerly)
+                    [2] => House Bolton - by forced marriage (formerly)
+                )
+
+            [Portrayed by] => Sophie Turner
+        )
+
+    [Arya_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Arry
+                    [1] => No One
+                    [2] => Lanna
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Stark
+                    [1] => Faceless Men
+                )
+
+            [Portrayed by] => Maisie Williams
+        )
+
+    [Bran_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Bran
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Isaac Hempstead-Wright
+        )
+
+    [Rickon_Stark] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Art Parkinson
+        )
+
+    [Jon_Snow] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Lord Snow
+                    [1] => The Bastard of Winterfell
+                    [2] => King Crow
+                )
+
+            [Status] => Deceased
+            [Death] => Stabbed repeatedly by Night's Watch mutineers
+            [Death episode] => "Mother's Mercy"
+            [Allegiance] => Array
+                (
+                    [0] => The Night's Watch
+                    [1] => House Stark
+                )
+
+            [Portrayed by] => Kit Harington
+        )
+
+    [Brynden_Tully] => Array
+        (
+            [First seen] => "Walk of Punishment"
+            [Also known as] => The Blackfish
+            [Status] => Alive
+            [Allegiance] => House Tully
+            [Portrayed by] => Clive Russell
+        )
+
+    [Edmure_Tully] => Array
+        (
+            [First seen] => "Walk of Punishment"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tully
+                    [1] => House Stark
+                )
+
+            [Portrayed by] => Tobias Menzies
+        )
+
+    [Tywin_Lannister] => Array
+        (
+            [First seen] => "You Win or You Die"
+            [Status] => Deceased
+            [Death] => 301 AL - Shot by his own son, Tyrion, with a crossbow.
+            [Death episode] => "The Children"
+            [Allegiance] => House Lannister
+            [Portrayed by] => Charles Dance
+        )
+
+    [Cersei_Lannister] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Status] => Array
+                (
+                    [0] => Alive
+                    [1] =>  awaiting trial from the
+                    [2] => Faith Militant
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => House Baratheon of King's Landing (by marriage)
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Lena Headey (Adult)
+                    [1] => Nell Williams (Young, flashback in Season 5)
+                )
+
+        )
+
+    [Jaime_Lannister] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Kingslayer
+                    [1] => Oathbreaker
+                    [2] => Man without Honor
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Kingsguard
+                    [1] => House Lannister
+                )
+
+            [Portrayed by] => Nikolaj Coster-Waldau
+        )
+
+    [Tyrion_Lannister] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Imp
+                    [1] => Halfman
+                    [2] => The Little Lion
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister (formerly)
+                    [1] => House Targaryen
+                )
+
+            [Portrayed by] => Peter Dinklage
+        )
+
+    [Joffrey_Baratheon] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => King Joffrey of Houses Baratheon and Lannister, the First of His Name.
+                    [1] => The King on the Iron Throne
+                )
+
+            [Status] => Deceased
+            [Death] => Poisoned at his wedding feast by Olenna Tyrell with the assistance of Petyr Baelish
+            [Death episode] => "The Lion and the Rose"
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King's Landing
+                    [1] => House Lannister
+                )
+
+            [Portrayed by] => Jack Gleeson
+        )
+
+    [Myrcella_Baratheon] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Poisoned by Ellaria Sand and the Sand Snakes.
+            [Death episode] => "Mother's Mercy"
+            [Allegiance] => House Baratheon of King's Landing House Martell
+            [Portrayed by] => Array
+                (
+                    [0] => Aimee Richardson (Seasons 1-2)
+                    [1] =>
+                    [2] => Nell Tiger Free (Seasons 5-6)
+                )
+
+        )
+
+    [Tommen_Baratheon] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Tommen of the House Baratheon the First of His Name
+            [Status] => Alive
+            [Allegiance] => House Baratheon of King's Landing
+            [Portrayed by] => Array
+                (
+                    [0] => Callum Wharry (Seasons 1 and 2)
+                    [1] => Dean-Charles Chapman (Seasons 4-6)
+                )
+
+        )
+
+    [Kevan_Lannister] => Array
+        (
+            [First seen] => "The Pointy End"
+            [Status] => Alive
+            [Allegiance] => House Lannister
+            [Portrayed by] => Ian Gelder
+        )
+
+    [Lancel_Lannister] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => Brother Lancel
+                    [1] => Lancel Lannister
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister (formerly)
+                    [1] => Sparrows
+                    [2] => Faith Militant
+                )
+
+            [Portrayed by] => Eugene Simon
+        )
+
+    [Bronn] => Array
+        (
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Also known as] => Ser Bronn of the Blackwater
+            [Status] => Alive
+            [Allegiance] => House Lannister (sellsword)
+            [Portrayed by] => Jerome Flynn
+        )
+
+    [Qyburn] => Array
+        (
+            [First seen] => "Valar Dohaeris"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Cersei Lannister
+                    [1] => House Bolton (briefly)
+                    [2] => Order of Maesters (expelled)
+                    [3] => Small Council
+                )
+
+            [Portrayed by] => Anton Lesser
+        )
+
+    [Small_Council] => Array
+        (
+            [Status] => Active
+            [Allegiance] => Tommen Baratheon, King of the Andals and the First Men
+        )
+
+    [Pycelle] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => Order of Maesters
+                )
+
+            [Portrayed by] => Julian Glover
+        )
+
+    [Petyr_Baelish] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => Littlefinger
+            [Status] => Alive
+            [Allegiance] => House Baelish
+            [Portrayed by] => Aidan Gillen
+        )
+
+    [Varys] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => The Spider
+                    [1] => The Eunuch
+                    [2] => Lord Varys
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Conleth Hill
+        )
+
+    [House_Tyrell] => Array
+        (
+            [Allegiance] => House Baratheon of King's Landing
+        )
+
+    [Margaery_Tyrell] => Array
+        (
+            [First seen] => "What is Dead May Never Die"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell (by birth)
+                    [1] => House Baratheon of King's Landing (by marriage)
+                    [2] => House Baratheon (by marriage, annulled)
+                )
+
+            [Portrayed by] => Natalie Dormer
+        )
+
+    [Loras_Tyrell] => Array
+        (
+            [First seen] => "The Wolf and the Lion"
+            [Also known as] => The Knight of the Flowers
+            [Status] => Array
+                (
+                    [0] => Alive
+                    [1] =>  incarcerated by the
+                    [2] => Faith Militant and awaiting trial
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell
+                    [1] =>
+                    [2] => House Baratheon of Storm's End (formerly)
+                    [3] => Renly Baratheon's Kingsguard (formerly)
+                )
+
+            [Portrayed by] => Finn Jones
+        )
+
+    [Olenna_Tyrell] => Array
+        (
+            [First seen] => "Dark Wings, Dark Words"
+            [Also known as] => The Queen of Thorns
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell - by marriage
+                    [1] => House Redwyne - by birth
+                )
+
+            [Portrayed by] => Dame Diana Rigg
+        )
+
+    [Mace_Tyrell] => Array
+        (
+            [First seen] => "The Lion and the Rose"
+            [Also known as] => Lord Oaf
+            [Status] => Alive
+            [Allegiance] => House Tyrell
+            [Portrayed by] => Roger Ashton-Griffiths
+        )
+
+    [House_Bolton] => Array
+        (
+            [Allegiance] => House Baratheon of King's Landing
+        )
+
+    [Roose_Bolton] => Array
+        (
+            [First seen] => "Garden of Bones"
+            [Status] => Alive
+            [Allegiance] => House Bolton
+            [Portrayed by] => Michael McElhatton
+        )
+
+    [Ramsay_Bolton] => Array
+        (
+            [First seen] => "Dark Wings, Dark Words"
+            [Also known as] => Array
+                (
+                    [0] => Ramsay Snow (formerly)
+                    [1] => The Bastard of Bolton
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Bolton
+            [Portrayed by] => Iwan Rheon
+        )
+
+    [Theon_Greyjoy] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Reek
+                    [1] => "The Prince of Winterfell"
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Greyjoy
+                    [1] => House Stark
+                    [2] => House Bolton (hostage
+                    [3] =>  former)
+                )
+
+            [Portrayed by] => Alfie Allen
+        )
+
+    [Walda_Bolton] => Array
+        (
+            [First seen] => "The Lion and the Rose"
+            [Also known as] => Fat Walda Frey
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Bolton - by marriage
+                    [1] => House Frey - by birth
+                )
+
+            [Portrayed by] => Elizabeth Webster
+        )
+
+    [House_Frey] => Array
+        (
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King's Landing
+                    [1] => House Lannister
+                )
+
+        )
+
+    [Walder_Frey] => Array
+        (
+            [First seen] => "Baelor"
+            [Also known as] => Array
+                (
+                    [0] => The Late Lord Frey
+                    [1] => The Late Walder Frey
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => David Bradley
+        )
+
+    [Lothar_Frey] => Array
+        (
+            [First seen] => "The Climb"
+            [Also known as] => Lame Lothar
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => Tom Brooke
+        )
+
+    [Walder_Rivers] => Array
+        (
+            [First seen] => "The Climb"
+            [Also known as] => Array
+                (
+                    [0] => Black Walder
+                    [1] => Black Walder Rivers
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => Tim Plester
+        )
+
+    [Roslin_Frey] => Array
+        (
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tully - by marriage
+                    [1] => House Frey - by birth
+                )
+
+            [Portrayed by] => Alexandra Dowling
+        )
+
+    [Robert_Baratheon] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Robert of House Baratheon, the First of His Name
+                    [1] => The Usurper
+                    [2] => The Stag King
+                )
+
+            [Status] => Deceased
+            [Death] => Mortally wounded by a wild boar after drinking wine given to him by Lancel Lannister, on orders from Cersei Lannister
+            [Death episode] => "You Win or You Die"
+            [Allegiance] => House Baratheon
+            [Portrayed by] => Mark Addy
+        )
+
+    [Stannis_Baratheon] => Array
+        (
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => Stannis of House Baratheon, First of His Name
+                    [1] => The King in the Narrow Sea
+                    [2] => Warrior of Light
+                    [3] => The Lord's Chosen
+                    [4] => Son of Fire
+                )
+
+            [Status] => Deceased
+            [Death] => Beheaded after the Battle of Winterfell by Brienne of Tarth
+            [Death episode] => "Mother's Mercy"
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of Dragonstone
+                    [1] => House Baratheon of Storm's End
+                )
+
+            [Portrayed by] => Stephen Dillane
+        )
+
+    [Renly_Baratheon] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => The King in Highgarden
+            [Status] => Deceased
+            [Death] => Killed by a Shadow-creature birthed by Melisandre
+            [Death episode] => "The Ghost of Harrenhal"
+            [Allegiance] => House Baratheon of Storm's End
+            [Portrayed by] => Gethin Anthony
+        )
+
+    [Brienne_of_Tarth] => Array
+        (
+            [First seen] => "What is Dead May Never Die"
+            [Also known as] => Array
+                (
+                    [0] => Brienne the Beauty
+                    [1] => The Maid of Tarth
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tarth
+                    [1] => House Baratheon
+                    [2] => Renly Baratheon's Kingsguard
+                    [3] => House Tully
+                )
+
+            [Portrayed by] => Gwendoline Christie
+        )
+
+    [Selyse_Baratheon] => Array
+        (
+            [First seen] => "The North Remembers"
+            [Also known as] => Selyse Florent
+            [Status] => Deceased
+            [Death] => Hanged herself
+            [Death episode] => Brightwater Keep
+            [Allegiance] => Andal
+            [Portrayed by] =>
+        )
+
+    [Shireen_Baratheon] => Array
+        (
+            [First seen] => "Kissed by Fire"
+            [Status] => Deceased
+            [Death] => Burned alive as a sacrifice to the Lord of Light by Melisandre
+            [Death episode] => "The Dance of Dragons"
+            [Allegiance] => House Baratheon of Dragonstone
+            [Portrayed by] => Kerry Ingram
+        )
+
+    [Gendry] => Array
+        (
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Status] => Alive
+            [Portrayed by] => Joe Dempsie
+        )
+
+    [Davos_Seaworth] => Array
+        (
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => The Onion Knight
+                    [1] => Davos of Flea Bottom
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of Dragonstone
+                    [1] => House Seaworth
+                )
+
+            [Portrayed by] => Liam Cunningham
+        )
+
+    [Salladhor_Saan] => Array
+        (
+            [First seen] => "The Night Lands"
+            [Status] => Alive
+            [Allegiance] => House Baratheon of Dragonstone
+            [Portrayed by] => Lucian Msamati
+        )
+
+    [Melisandre] => Array
+        (
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => Melisandre of Asshai
+                    [1] => Lady Melisandre
+                    [2] => The Red Woman
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Baratheon of Dragonstone (defected)
+            [Portrayed by] => Carice van Houten
+        )
+
+    [Daenerys_Targaryen] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Daenerys Stormborn
+                    [1] => Dany
+                    [2] => The Unburnt
+                    [3] => Mhysa
+                    [4] => The Queen Across the Sea
+                    [5] => The Silver Queen
+                    [6] => The Dragon Queen
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Emilia Clarke
+        )
+
+    [Viserys_Targaryen] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Beggar King
+                    [1] => Viserys III Targaryen
+                    [2] => Viserys of House Targaryen the Third of His Name
+                    [3] => Khal Rhaggat (Cart King)Khal Rhae Mhar (Sorefoot King)
+                )
+
+            [Status] => Deceased
+            [Death] => Burned with molten gold by Khal Drogo
+            [Death episode] => "A Golden Crown"
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Harry Lloyd
+        )
+
+    [Aerys_II_Targaryen] => Array
+        (
+            [Also known as] => Array
+                (
+                    [0] => The Mad King
+                    [1] => Mad King Aerys
+                    [2] => King Scab
+                    [3] => Aerys of House Targaryen, the Second of His Name
+                )
+
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Slain by Ser Jaime Lannister
+                )
+
+            [Death episode] => King's Landing
+            [Allegiance] => Valyrian
+        )
+
+    [Rhaegar_Targaryen] => Array
+        (
+            [Also known as] => The Last Dragon
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Slain by Robert Baratheon at the Battle of the Trident
+                )
+
+            [Death episode] => King's Landing
+            [Allegiance] => Valyrian
+        )
+
+    [Aemon] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => Aemon Targaryen (formerly)
+                    [1] => Maester Aemon
+                )
+
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Died peacefully in his bed
+                    [1] =>  from old age
+                )
+
+            [Death episode] => "The Gift"
+            [Allegiance] => Array
+                (
+                    [0] => Night's Watch (by oath)
+                    [1] => Order of Maesters (by oath)
+                    [2] =>
+                    [3] => House Targaryen (by birth)
+                )
+
+            [Portrayed by] => Peter Vaughan
+        )
+
+    [Drogo] => Array
+        (
+            [First seen] => "Winter is Coming"
+            [Also known as] => The Great Khal
+            [Status] => Deceased
+            [Death] => Smothered by Daenerys Targaryen in a mercy killing after being left in a vegetative state by Mirri Maz Duur
+            [Death episode] => "Fire and Blood"
+            [Allegiance] => Himself
+            [Portrayed by] => Jason Momoa
+        )
+
+    [Barristan_Selmy] => Array
+        (
+            [First seen] => "Lord Snow"
+            [Also known as] => Barristan the Bold
+            [Status] => Deceased
+            [Death] => Slain while fighting the Sons of the Harpy
+            [Death episode] => "Sons of the Harpy"
+            [Allegiance] => Array
+                (
+                    [0] => Queensguard
+                    [1] => Kingsguard (former)
+                    [2] => House Selmy (former)
+                )
+
+            [Portrayed by] => Ian McElhinney
+        )
+
+    [Missandei] => Array
+        (
+            [First seen] => "Valar Dohaeris"
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Nathalie Emmanuel
+        )
+
+    [Grey_Worm] => Array
+        (
+            [First seen] => "Kissed by Fire"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Targaryen
+                    [1] => The Unsullied
+                )
+
+            [Portrayed by] => Jacob Anderson
+        )
+
+    [Daario_Naharis] => Array
+        (
+            [First seen] => "Second Sons"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Second Sons
+                    [1] => House Targaryen
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Ed Skrein (Season 3)
+                    [1] => Michiel Huisman (Season 4-present)
+                )
+
+        )
+
+    [Doran_Martell] => Array
+        (
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Alexander Siddig
+        )
+
+    [Trystane_Martell] => Array
+        (
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Toby Sebastian
+        )
+
+    [Elia_Martell] => Array
+        (
+            [Also known as] => Elia of Dorne
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Skull crushed by Ser Gregor Clegane
+                )
+
+            [Death episode] => Sunspear, Dorne
+            [Allegiance] => Dornishmen
+        )
+
+    [Oberyn_Martell] => Array
+        (
+            [First seen] => "Two Swords"
+            [Also known as] => The Red Viper of Dorne
+            [Status] => Deceased
+            [Death] => Skull crushed by Ser Gregor Clegane
+            [Death episode] => "The Mountain and the Viper"
+            [Allegiance] => Array
+                (
+                    [0] => House Martell
+                    [1] => The Citadel (formerly)
+                )
+
+            [Portrayed by] => Pedro Pascal
+        )
+
+    [Ellaria_Sand] => Array
+        (
+            [First seen] => "Two Swords"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Martell
+                    [1] => House Uller
+                )
+
+            [Portrayed by] => Indira Varma
+        )
+
+    [Sand_Snakes] => Array
+        (
+        )
+
+    [Obara_Sand] => Array
+        (
+            [First seen] => "Sons of the Harpy"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Keisha Castle-Hughes
+        )
+
+    [Nymeria_Sand] => Array
+        (
+            [First seen] => "Sons of the Harpy"
+            [Also known as] => Lady Nym
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Jessica Henwick
+        )
+
+    [Tyene_Sand] => Array
+        (
+            [First seen] => "Sons of the Harpy"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Rosabell Laurenti Sellers
+        )
+
+    [Areo_Hotah] => Array
+        (
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => DeObia Oparei
+        )
+
+)
