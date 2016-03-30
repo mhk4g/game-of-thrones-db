@@ -1,0 +1,54 @@
+Total entries: 3
+Array
+(
+    [Eddard_Stark] => Array
+        (
+            [Name] => Eddard Stark
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Beheaded by Ser Ilyn Payne at the order of Joffrey Baratheon in King's Landing
+            [Death episode] => "Baelor"
+            [Allegiance] => House Stark
+            [Portrayed by] => Array
+                (
+                    [0] => Sean Bean (Adult)
+                    [1] => Sebastian Croft (Child)
+                    [2] => Luke Roberts (Young)
+                )
+
+        )
+
+    [Catelyn_Stark] => Array
+        (
+            [Name] => Catelyn Stark
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Throat slit by Black Walder Rivers
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => Array
+                (
+                    [0] => House Stark - by marriage
+                    [1] => House Tully - by birth
+                )
+
+            [Portrayed by] => Michelle Fairley
+        )
+
+    [Robb_Stark] => Array
+        (
+            [Name] => Robb Stark
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Young Wolf
+                    [1] => The King Who Lost the North
+                )
+
+            [Status] => Deceased
+            [Death] => Shot several times by Frey crossbowmen, then stabbed through the heart by Roose Bolton
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => House Stark
+            [Portrayed by] => Richard Madden
+        )
+
+)

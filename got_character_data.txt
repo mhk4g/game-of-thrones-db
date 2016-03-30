@@ -3,6 +3,7 @@ Array
 (
     [Eddard_Stark] => Array
         (
+            [Name] => Eddard Stark
             [First seen] => "Winter is Coming"
             [Status] => Deceased
             [Death] => Beheaded by Ser Ilyn Payne at the order of Joffrey Baratheon in King's Landing
@@ -19,6 +20,7 @@ Array
 
     [Catelyn_Stark] => Array
         (
+            [Name] => Catelyn Stark
             [First seen] => "Winter is Coming"
             [Status] => Deceased
             [Death] => Throat slit by Black Walder Rivers
@@ -34,6 +36,7 @@ Array
 
     [Robb_Stark] => Array
         (
+            [Name] => Robb Stark
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -50,6 +53,7 @@ Array
 
     [Sansa_Stark] => Array
         (
+            [Name] => Sansa Stark
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -71,12 +75,12 @@ Array
 
     [Arya_Stark] => Array
         (
+            [Name] => Arya Stark
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
                     [0] => Arry
-                    [1] => No One
-                    [2] => Lanna
+                    [1] => Lanna
                 )
 
             [Status] => Alive
@@ -91,6 +95,7 @@ Array
 
     [Bran_Stark] => Array
         (
+            [Name] => Bran Stark
             [First seen] => "Winter is Coming"
             [Also known as] => Bran
             [Status] => Alive
@@ -100,6 +105,7 @@ Array
 
     [Rickon_Stark] => Array
         (
+            [Name] => Rickon Stark
             [First seen] => "Winter is Coming"
             [Status] => Alive
             [Allegiance] => House Stark
@@ -108,6 +114,7 @@ Array
 
     [Jon_Snow] => Array
         (
+            [Name] => Jon Snow
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -130,6 +137,7 @@ Array
 
     [Brynden_Tully] => Array
         (
+            [Name] => Brynden Tully
             [First seen] => "Walk of Punishment"
             [Also known as] => The Blackfish
             [Status] => Alive
@@ -139,6 +147,7 @@ Array
 
     [Edmure_Tully] => Array
         (
+            [Name] => Edmure Tully
             [First seen] => "Walk of Punishment"
             [Status] => Alive
             [Allegiance] => Array
@@ -152,6 +161,7 @@ Array
 
     [Tywin_Lannister] => Array
         (
+            [Name] => Tywin Lannister
             [First seen] => "You Win or You Die"
             [Status] => Deceased
             [Death] => 301 AL - Shot by his own son, Tyrion, with a crossbow.
@@ -162,6 +172,7 @@ Array
 
     [Cersei_Lannister] => Array
         (
+            [Name] => Cersei Lannister
             [First seen] => "Winter is Coming"
             [Status] => Array
                 (
@@ -186,6 +197,7 @@ Array
 
     [Jaime_Lannister] => Array
         (
+            [Name] => Jaime Lannister
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -206,6 +218,7 @@ Array
 
     [Tyrion_Lannister] => Array
         (
+            [Name] => Tyrion Lannister
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -226,6 +239,7 @@ Array
 
     [Joffrey_Baratheon] => Array
         (
+            [Name] => Joffrey Baratheon
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -247,6 +261,7 @@ Array
 
     [Myrcella_Baratheon] => Array
         (
+            [Name] => Myrcella Baratheon
             [First seen] => "Winter is Coming"
             [Status] => Deceased
             [Death] => Poisoned by Ellaria Sand and the Sand Snakes.
@@ -263,6 +278,7 @@ Array
 
     [Tommen_Baratheon] => Array
         (
+            [Name] => Tommen Baratheon
             [First seen] => "Winter is Coming"
             [Also known as] => Tommen of the House Baratheon the First of His Name
             [Status] => Alive
@@ -277,6 +293,7 @@ Array
 
     [Kevan_Lannister] => Array
         (
+            [Name] => Kevan Lannister
             [First seen] => "The Pointy End"
             [Status] => Alive
             [Allegiance] => House Lannister
@@ -285,6 +302,7 @@ Array
 
     [Lancel_Lannister] => Array
         (
+            [Name] => Lancel Lannister
             [First seen] => "Lord Snow"
             [Also known as] => Array
                 (
@@ -305,6 +323,7 @@ Array
 
     [Bronn] => Array
         (
+            [Name] => Bronn
             [First seen] => "Cripples, Bastards and Broken Things"
             [Also known as] => Ser Bronn of the Blackwater
             [Status] => Alive
@@ -314,6 +333,7 @@ Array
 
     [Qyburn] => Array
         (
+            [Name] => Qyburn
             [First seen] => "Valar Dohaeris"
             [Status] => Alive
             [Allegiance] => Array
@@ -329,6 +349,7 @@ Array
 
     [Pycelle] => Array
         (
+            [Name] => Pycelle
             [First seen] => "Lord Snow"
             [Status] => Alive
             [Allegiance] => Array
@@ -342,6 +363,7 @@ Array
 
     [Petyr_Baelish] => Array
         (
+            [Name] => Petyr Baelish
             [First seen] => "Lord Snow"
             [Also known as] => Littlefinger
             [Status] => Alive
@@ -351,6 +373,7 @@ Array
 
     [Varys] => Array
         (
+            [Name] => Varys
             [First seen] => "Lord Snow"
             [Also known as] => Array
                 (
@@ -366,11 +389,13 @@ Array
 
     [House_Tyrell] => Array
         (
+            [Name] => House Tyrell
             [Allegiance] => House Baratheon of King's Landing
         )
 
     [Margaery_Tyrell] => Array
         (
+            [Name] => Margaery Tyrell
             [First seen] => "What is Dead May Never Die"
             [Status] => Alive
             [Allegiance] => Array
@@ -385,6 +410,7 @@ Array
 
     [Loras_Tyrell] => Array
         (
+            [Name] => Loras Tyrell
             [First seen] => "The Wolf and the Lion"
             [Also known as] => The Knight of the Flowers
             [Status] => Array
@@ -407,6 +433,7 @@ Array
 
     [Olenna_Tyrell] => Array
         (
+            [Name] => Olenna Tyrell
             [First seen] => "Dark Wings, Dark Words"
             [Also known as] => The Queen of Thorns
             [Status] => Alive
@@ -421,6 +448,7 @@ Array
 
     [Mace_Tyrell] => Array
         (
+            [Name] => Mace Tyrell
             [First seen] => "The Lion and the Rose"
             [Also known as] => Lord Oaf
             [Status] => Alive
@@ -430,11 +458,13 @@ Array
 
     [House_Bolton] => Array
         (
+            [Name] => House Bolton
             [Allegiance] => House Baratheon of King's Landing
         )
 
     [Roose_Bolton] => Array
         (
+            [Name] => Roose Bolton
             [First seen] => "Garden of Bones"
             [Status] => Alive
             [Allegiance] => House Bolton
@@ -443,6 +473,7 @@ Array
 
     [Ramsay_Bolton] => Array
         (
+            [Name] => Ramsay Bolton
             [First seen] => "Dark Wings, Dark Words"
             [Also known as] => Array
                 (
@@ -457,6 +488,7 @@ Array
 
     [Theon_Greyjoy] => Array
         (
+            [Name] => Theon Greyjoy
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -478,6 +510,7 @@ Array
 
     [Walda_Bolton] => Array
         (
+            [Name] => Walda Bolton
             [First seen] => "The Lion and the Rose"
             [Also known as] => Fat Walda Frey
             [Status] => Alive
@@ -492,6 +525,7 @@ Array
 
     [House_Frey] => Array
         (
+            [Name] => House Frey
             [Allegiance] => Array
                 (
                     [0] => House Baratheon of King's Landing
@@ -502,6 +536,7 @@ Array
 
     [Walder_Frey] => Array
         (
+            [Name] => Walder Frey
             [First seen] => "Baelor"
             [Also known as] => Array
                 (
@@ -516,6 +551,7 @@ Array
 
     [Lothar_Frey] => Array
         (
+            [Name] => Lothar Frey
             [First seen] => "The Climb"
             [Also known as] => Lame Lothar
             [Status] => Alive
@@ -525,6 +561,7 @@ Array
 
     [Walder_Rivers] => Array
         (
+            [Name] => Walder Rivers
             [First seen] => "The Climb"
             [Also known as] => Array
                 (
@@ -539,6 +576,7 @@ Array
 
     [Roslin_Frey] => Array
         (
+            [Name] => Roslin Frey
             [Status] => Alive
             [Allegiance] => Array
                 (
@@ -551,6 +589,7 @@ Array
 
     [Robert_Baratheon] => Array
         (
+            [Name] => Robert Baratheon
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -568,6 +607,7 @@ Array
 
     [Stannis_Baratheon] => Array
         (
+            [Name] => Stannis Baratheon
             [First seen] => "The North Remembers"
             [Also known as] => Array
                 (
@@ -592,6 +632,7 @@ Array
 
     [Renly_Baratheon] => Array
         (
+            [Name] => Renly Baratheon
             [First seen] => "Lord Snow"
             [Also known as] => The King in Highgarden
             [Status] => Deceased
@@ -603,6 +644,7 @@ Array
 
     [Brienne_of_Tarth] => Array
         (
+            [Name] => Brienne of Tarth
             [First seen] => "What is Dead May Never Die"
             [Also known as] => Array
                 (
@@ -624,6 +666,7 @@ Array
 
     [Selyse_Baratheon] => Array
         (
+            [Name] => Selyse Baratheon
             [First seen] => "The North Remembers"
             [Also known as] => Selyse Florent
             [Status] => Deceased
@@ -635,6 +678,7 @@ Array
 
     [Shireen_Baratheon] => Array
         (
+            [Name] => Shireen Baratheon
             [First seen] => "Kissed by Fire"
             [Status] => Deceased
             [Death] => Burned alive as a sacrifice to the Lord of Light by Melisandre
@@ -645,6 +689,7 @@ Array
 
     [Gendry] => Array
         (
+            [Name] => Gendry
             [First seen] => "Cripples, Bastards and Broken Things"
             [Status] => Alive
             [Portrayed by] => Joe Dempsie
@@ -652,6 +697,7 @@ Array
 
     [Davos_Seaworth] => Array
         (
+            [Name] => Davos Seaworth
             [First seen] => "The North Remembers"
             [Also known as] => Array
                 (
@@ -671,6 +717,7 @@ Array
 
     [Salladhor_Saan] => Array
         (
+            [Name] => Salladhor Saan
             [First seen] => "The Night Lands"
             [Status] => Alive
             [Allegiance] => House Baratheon of Dragonstone
@@ -679,6 +726,7 @@ Array
 
     [Melisandre] => Array
         (
+            [Name] => Melisandre
             [First seen] => "The North Remembers"
             [Also known as] => Array
                 (
@@ -694,6 +742,7 @@ Array
 
     [Daenerys_Targaryen] => Array
         (
+            [Name] => Daenerys Targaryen
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -713,6 +762,7 @@ Array
 
     [Viserys_Targaryen] => Array
         (
+            [Name] => Viserys Targaryen
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -731,6 +781,7 @@ Array
 
     [Aerys_II_Targaryen] => Array
         (
+            [Name] => Aerys II Targaryen
             [Also known as] => Array
                 (
                     [0] => The Mad King
@@ -752,6 +803,7 @@ Array
 
     [Rhaegar_Targaryen] => Array
         (
+            [Name] => Rhaegar Targaryen
             [Also known as] => The Last Dragon
             [Status] => Deceased
             [Death] => Array
@@ -766,6 +818,7 @@ Array
 
     [Aemon] => Array
         (
+            [Name] => Aemon
             [First seen] => "Lord Snow"
             [Also known as] => Array
                 (
@@ -794,6 +847,7 @@ Array
 
     [Drogo] => Array
         (
+            [Name] => Drogo
             [First seen] => "Winter is Coming"
             [Also known as] => The Great Khal
             [Status] => Deceased
@@ -805,6 +859,7 @@ Array
 
     [Barristan_Selmy] => Array
         (
+            [Name] => Barristan Selmy
             [First seen] => "Lord Snow"
             [Also known as] => Barristan the Bold
             [Status] => Deceased
@@ -822,6 +877,7 @@ Array
 
     [Missandei] => Array
         (
+            [Name] => Missandei
             [First seen] => "Valar Dohaeris"
             [Status] => Alive
             [Allegiance] => House Targaryen
@@ -830,6 +886,7 @@ Array
 
     [Grey_Worm] => Array
         (
+            [Name] => Grey Worm
             [First seen] => "Kissed by Fire"
             [Status] => Alive
             [Allegiance] => Array
@@ -843,6 +900,7 @@ Array
 
     [Daario_Naharis] => Array
         (
+            [Name] => Daario Naharis
             [First seen] => "Second Sons"
             [Status] => Alive
             [Allegiance] => Array
@@ -861,6 +919,7 @@ Array
 
     [Doran_Martell] => Array
         (
+            [Name] => Doran Martell
             [First seen] => "The House of Black and White"
             [Status] => Alive
             [Allegiance] => House Martell
@@ -869,6 +928,7 @@ Array
 
     [Trystane_Martell] => Array
         (
+            [Name] => Trystane Martell
             [First seen] => "The House of Black and White"
             [Status] => Alive
             [Allegiance] => House Martell
@@ -877,6 +937,7 @@ Array
 
     [Elia_Martell] => Array
         (
+            [Name] => Elia Martell
             [Also known as] => Elia of Dorne
             [Status] => Deceased
             [Death] => Array
@@ -891,6 +952,7 @@ Array
 
     [Oberyn_Martell] => Array
         (
+            [Name] => Oberyn Martell
             [First seen] => "Two Swords"
             [Also known as] => The Red Viper of Dorne
             [Status] => Deceased
@@ -907,6 +969,7 @@ Array
 
     [Ellaria_Sand] => Array
         (
+            [Name] => Ellaria Sand
             [First seen] => "Two Swords"
             [Status] => Alive
             [Allegiance] => Array
@@ -920,6 +983,7 @@ Array
 
     [Obara_Sand] => Array
         (
+            [Name] => Obara Sand
             [First seen] => "Sons of the Harpy"
             [Status] => Alive
             [Allegiance] => House Martell
@@ -928,6 +992,7 @@ Array
 
     [Nymeria_Sand] => Array
         (
+            [Name] => Nymeria Sand
             [First seen] => "Sons of the Harpy"
             [Also known as] => Lady Nym
             [Status] => Alive
@@ -937,6 +1002,7 @@ Array
 
     [Tyene_Sand] => Array
         (
+            [Name] => Tyene Sand
             [First seen] => "Sons of the Harpy"
             [Status] => Alive
             [Allegiance] => House Martell
@@ -945,6 +1011,7 @@ Array
 
     [Areo_Hotah] => Array
         (
+            [Name] => Areo Hotah
             [First seen] => "The House of Black and White"
             [Status] => Alive
             [Allegiance] => House Martell
@@ -953,6 +1020,7 @@ Array
 
     [Gregor_Clegane] => Array
         (
+            [Name] => Gregor Clegane
             [First seen] => "Cripples, Bastards and Broken Things"
             [Also known as] => Array
                 (
@@ -980,6 +1048,7 @@ Array
 
     [Sandor_Clegane] => Array
         (
+            [Name] => Sandor Clegane
             [First seen] => "Winter is Coming"
             [Also known as] => Array
                 (
@@ -1005,6 +1074,7 @@ Array
 
     [Beric_Dondarrion] => Array
         (
+            [Name] => Beric Dondarrion
             [First seen] => "A Golden Crown"
             [Also known as] => The Lightning Lord
             [Status] => Alive
@@ -1024,6 +1094,7 @@ Array
 
     [Jaqen_H'ghar] => Array
         (
+            [Name] => Jaqen H'ghar
             [First seen] => "Fire and Blood"
             [Status] => Alive
             [Allegiance] => Faceless Men
@@ -1032,6 +1103,7 @@ Array
 
     [Thoros] => Array
         (
+            [Name] => Thoros
             [First seen] => "Dark Wings, Dark Words"
             [Also known as] => Thoros of Myr
             [Status] => Alive
@@ -1041,6 +1113,7 @@ Array
 
     [Syrio_Forel] => Array
         (
+            [Name] => Syrio Forel
             [First seen] => "Lord Snow"
             [Status] => Array
                 (
@@ -1059,6 +1132,7 @@ Array
 
     [Craster] => Array
         (
+            [Name] => Craster
             [First seen] => "The North Remembers"
             [Status] => Deceased
             [Death] => Slain by Karl Tanner
@@ -1068,6 +1142,7 @@ Array
 
     [Quaithe] => Array
         (
+            [Name] => Quaithe
             [First seen] => "The Ghost of Harrenhal"
             [Also known as] => Quaithe of the Shadow
             [Status] => Alive
@@ -1076,6 +1151,7 @@ Array
 
     [Xaro] => Array
         (
+            [Name] => Xaro
             [First seen] => "Garden of Bones"
             [Status] => Deceased
             [Death] => Locked inside a vault by Daenerys Targaryen and left to die with Doreah
@@ -1086,6 +1162,7 @@ Array
 
     [Jorah_Mormont] => Array
         (
+            [Name] => Jorah Mormont
             [First seen] => "Winter is Coming"
             [Also known as] => Jorah the Andal
             [Status] => Alive
@@ -1102,6 +1179,7 @@ Array
 
     [Jeor_Mormont] => Array
         (
+            [Name] => Jeor Mormont
             [First seen] => "Lord Snow"
             [Also known as] => Array
                 (
@@ -1123,6 +1201,7 @@ Array
 
     [Shae] => Array
         (
+            [Name] => Shae
             [First seen] => "Baelor"
             [Status] => Deceased
             [Death] => Strangled to death by Tyrion Lannister
@@ -1132,6 +1211,7 @@ Array
 
     [Lysa_Arryn] => Array
         (
+            [Name] => Lysa Arryn
             [First seen] => "The Wolf and the Lion"
             [Also known as] => Lysa Tully
             [Status] => Deceased
@@ -1149,6 +1229,7 @@ Array
 
     [Robin_Arryn] => Array
         (
+            [Name] => Robin Arryn
             [First seen] => "The Wolf and the Lion"
             [Also known as] => Sweetrobin
             [Status] => Alive
@@ -1158,6 +1239,7 @@ Array
 
     [Spice_King] => Array
         (
+            [Name] => Spice King
             [First seen] => "Garden of Bones"
             [Status] => Deceased
             [Death] => Killed by Pyat Pree
@@ -1168,6 +1250,7 @@ Array
 
     [Pyat_Pree] => Array
         (
+            [Name] => Pyat Pree
             [First seen] => "Garden of Bones"
             [Status] => Deceased
             [Death] => Burned alive by Daenerys' dragons
@@ -1183,6 +1266,7 @@ Array
 
     [Podrick_Payne] => Array
         (
+            [Name] => Podrick Payne
             [First seen] => "The Night Lands"
             [Also known as] => Pod
             [Status] => Alive
@@ -1197,6 +1281,7 @@ Array
 
     [Ilyn] => Array
         (
+            [Name] => Ilyn
             [First seen] => "The Kingsroad"
             [Status] => Alive
             [Allegiance] => Array
@@ -1210,6 +1295,7 @@ Array
 
     [Janos_Slynt] => Array
         (
+            [Name] => Janos Slynt
             [First seen] => "Cripples, Bastards and Broken Things"
             [Status] => Deceased
             [Death] => Beheaded for insubordination by Jon Snow
@@ -1226,6 +1312,7 @@ Array
 
     [Qhorin] => Array
         (
+            [Name] => Qhorin
             [First seen] => "The Ghost of Harrenhal"
             [Also known as] => Array
                 (
@@ -1242,6 +1329,7 @@ Array
 
     [Mance_Rayder] => Array
         (
+            [Name] => Mance Rayder
             [First seen] => "Valar Dohaeris"
             [Status] => Deceased
             [Death] => Set to be burned alive by Melisandre, but shot with an arrow by Jon Snow out of mercy, before he could catch fire.
@@ -1258,6 +1346,7 @@ Array
 
     [Alliser_Thorne] => Array
         (
+            [Name] => Alliser Thorne
             [First seen] => "Lord Snow"
             [Status] => Alive
             [Allegiance] => Array
@@ -1271,6 +1360,7 @@ Array
 
     [Samwell_Tarly] => Array
         (
+            [Name] => Samwell Tarly
             [First seen] => "Cripples, Bastards and Broken Things"
             [Also known as] => Array
                 (
@@ -1293,6 +1383,7 @@ Array
 
     [Gilly] => Array
         (
+            [Name] => Gilly
             [First seen] => "The North Remembers
             [Status] => Alive
             [Portrayed by] => Hannah Murray
@@ -1300,6 +1391,7 @@ Array
 
     [Locke] => Array
         (
+            [Name] => Locke
             [First seen] => "Dark Wings, Dark Words"
             [Status] => Deceased
             [Death] => Neck snapped by Bran Stark who had warged into Hodor
@@ -1315,6 +1407,7 @@ Array
 
     [Ygritte] => Array
         (
+            [Name] => Ygritte
             [First seen] => "The Old Gods and the New"
             [Status] => Deceased
             [Death] => Shot with an arrow by Olly
@@ -1325,6 +1418,7 @@ Array
 
     [Tormund] => Array
         (
+            [Name] => Tormund
             [First seen] => "Valar Dohaeris"
             [Also known as] => Tormund Giantsbane
             [Status] => Alive
@@ -1339,6 +1433,7 @@ Array
 
     [Meera_Reed] => Array
         (
+            [Name] => Meera Reed
             [First seen] => "Dark Wings, Dark Words"
             [Status] => Alive
             [Allegiance] => Array
@@ -1352,6 +1447,7 @@ Array
 
     [Jojen_Reed] => Array
         (
+            [Name] => Jojen Reed
             [First seen] => "Dark Wings, Dark Words"
             [Status] => Deceased
             [Death] => Stabbed multiple times by a wight, mercy-killed by Meera and blasted by a fireball
@@ -1367,6 +1463,7 @@ Array
 
     [Balon_Swann] => Array
         (
+            [Name] => Balon Swann
             [First seen] => "The Bear and the Maiden Fair"
             [Status] => Alive
             [Allegiance] => Array
@@ -1379,6 +1476,7 @@ Array
 
     [Balon_Greyjoy] => Array
         (
+            [Name] => Balon Greyjoy
             [First seen] => "The Night Lands"
             [Also known as] => Array
                 (
@@ -1393,6 +1491,7 @@ Array
 
     [Yara_Greyjoy] => Array
         (
+            [Name] => Yara Greyjoy
             [First seen] => "The Night Lands"
             [Status] => Alive
             [Allegiance] => House Greyjoy
@@ -1401,6 +1500,7 @@ Array
 
     [Osha] => Array
         (
+            [Name] => Osha
             [First seen] => "A Golden Crown"
             [Status] => Alive
             [Allegiance] => House Stark
@@ -1409,6 +1509,7 @@ Array
 
     [Luwin] => Array
         (
+            [Name] => Luwin
             [First seen] => "Winter is Coming"
             [Status] => Deceased
             [Death] => Stabbed in the abdomen with a spear by Dagmer and has his suffering ended by Osha
@@ -1425,6 +1526,7 @@ Array
 
     [Hodor] => Array
         (
+            [Name] => Hodor
             [First seen] => "Winter is Coming"
             [Status] => Alive
             [Allegiance] => House Stark
@@ -1433,6 +1535,7 @@ Array
 
     [Lord_of_Bones] => Array
         (
+            [Name] => Lord of Bones
             [First seen] => "The Prince of Winterfell"
             [Also known as] => Rattleshirt
             [Status] => Deceased
@@ -1449,6 +1552,7 @@ Array
 
     [Jon_Arryn] => Array
         (
+            [Name] => Jon Arryn
             [Status] => Deceased
             [Death] => Array
                 (
@@ -1463,6 +1567,7 @@ Array
 
     [Illyrio_Mopatis] => Array
         (
+            [Name] => Illyrio Mopatis
             [First seen] => "Winter is Coming"
             [Status] => Alive
             [Portrayed by] => Roger Allam
@@ -1470,6 +1575,7 @@ Array
 
     [Gared] => Array
         (
+            [Name] => Gared
             [Status] => Deceased
             [Death] => Decapitated by a White Walker
             [Death episode] => "Winter is Coming"
@@ -1479,6 +1585,7 @@ Array
 
     [Hot_Pie] => Array
         (
+            [Name] => Hot Pie
             [First seen] => "Fire and Blood"
             [Status] => Alive
             [Portrayed by] => Ben Hawkey
@@ -1486,6 +1593,7 @@ Array
 
     [Lommy_Greenhands] => Array
         (
+            [Name] => Lommy Greenhands
             [First seen] => "Fire and Blood"
             [Also known as] => Lommy Greenhands
             [Status] => Deceased
@@ -1496,6 +1604,7 @@ Array
 
     [Polliver] => Array
         (
+            [Name] => Polliver
             [First seen] => "What is Dead May Never Die"
             [Status] => Deceased
             [Death] => Stabbed in the throat by Arya Stark
@@ -1506,6 +1615,7 @@ Array
 
     [Lyanna_Stark] => Array
         (
+            [Name] => Lyanna Stark
             [Status] => Deceased
             [Death] => Died during Robert's Rebellion, 281 AL
             [Death episode] => Winterfell
@@ -1514,6 +1624,7 @@ Array
 
     [Mycah] => Array
         (
+            [Name] => Mycah
             [Status] => Deceased
             [Death] => Killed by The Hound
             [Death episode] => "The Kingsroad"
@@ -1522,6 +1633,7 @@ Array
 
     [High_Sparrow] => Array
         (
+            [Name] => High Sparrow
             [First seen] => "High Sparrow"
             [Status] => Alive
             [Allegiance] => Array
@@ -1536,6 +1648,7 @@ Array
 
     [Ros] => Array
         (
+            [Name] => Ros
             [First seen] => "Winter is Coming"
             [Status] => Deceased
             [Death] => Shot numerous times with a crossbow, one fatally to the heart by Joffrey Baratheon
@@ -1551,6 +1664,7 @@ Array
 
     [Mhaegen] => Array
         (
+            [Name] => Mhaegen
             [First seen] => "The Wolf and the Lion"
             [Status] => Uncertain
             [Allegiance] => Petyr Baelish
@@ -1559,6 +1673,7 @@ Array
 
     [Armeca] => Array
         (
+            [Name] => Armeca
             [First seen] => "You Win or You Die"
             [Status] => Alive
             [Allegiance] => Petyr Baelish
@@ -1567,6 +1682,7 @@ Array
 
     [Shagga] => Array
         (
+            [Name] => Shagga
             [First seen] => "The Pointy End"
             [Status] => Alive
             [Allegiance] => The Stone Crows
@@ -1575,6 +1691,7 @@ Array
 
     [Timett] => Array
         (
+            [Name] => Timett
             [First seen] => "The Pointy End"
             [Also known as] => Array
                 (
@@ -1594,6 +1711,7 @@ Array
 
     [Chella] => Array
         (
+            [Name] => Chella
             [First seen] => "The Pointy End"
             [Status] => Alive
             [Allegiance] => Array
@@ -1607,6 +1725,7 @@ Array
 
     [Talisa_Stark] => Array
         (
+            [Name] => Talisa Stark
             [First seen] => "Garden of Bones"
             [Status] => Deceased
             [Death] => Stabbed repeatedly by Lothar Frey, killing her unborn child in the process
@@ -1622,6 +1741,7 @@ Array
 
     [Myranda] => Array
         (
+            [Name] => Myranda
             [First seen] => "The Bear and the Maiden Fair"
             [Status] => Deceased
             [Death] => Thrown from a rampart by Theon Greyjoy for threatening Sansa Stark
@@ -1632,6 +1752,7 @@ Array
 
     [Violet] => Array
         (
+            [Name] => Violet
             [Status] => Dead
             [Allegiance] => House Bolton
             [Portrayed by] => Stephanie Blacker
@@ -1639,6 +1760,7 @@ Array
 
     [Tansy] => Array
         (
+            [Name] => Tansy
             [Status] => Deceased
             [Death] => Torn apart by the bastard's girls
             [Death episode] => "The Lion and the Rose"
