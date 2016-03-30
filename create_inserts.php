@@ -40,19 +40,22 @@ function convert_single_character_to_SQL($ch) {
     $name = $ch['Name'];
     $appears = $ch['First seen'];
     $alive = $ch['Status'];
-    $character_insert = "INSERT INTO Characters (name, actor_name, first_appearance, status) VALUES ('$name', '$actor', '$appears', '$alive')";
+    $character_insert = "INSERT INTO Characters (name, actor_name, first_appearance, status) VALUES ('$name', '$appears', '$alive')";
     
     # CharacterActor table
+    # Check dynamic type of key's value
     # For each ...
         # bind
         # $character_actor_insert =  "INSERT INTO CharacterActor (character_name, actor_name) VALUES ()";
     
     # CharacterAlias table
+    # Check dynamic type of key's value
     # For each ...
         # bind
          # $character_alias_insert =  "INSERT INTO CharacterAlias (character_name, alias_name) VALUES ()";
     
     # CharacterFaction table
+    # Check dynamic type of key's value
     # For each ...
         # bind
         # $character_faction_insert =  "INSERT INTO CharacterFaction (character_name, faction_name) VALUES ()";
