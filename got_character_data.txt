@@ -1,4 +1,4 @@
-Total entries: 123
+Total entries: 120
 Array
 (
     [Eddard_Stark] => Array
@@ -387,12 +387,6 @@ Array
             [Portrayed by] => Conleth Hill
         )
 
-    [House_Tyrell] => Array
-        (
-            [Name] => House Tyrell
-            [Allegiance] => House Baratheon of King's Landing
-        )
-
     [Margaery_Tyrell] => Array
         (
             [Name] => Margaery Tyrell
@@ -456,12 +450,6 @@ Array
             [Portrayed by] => Roger Ashton-Griffiths
         )
 
-    [House_Bolton] => Array
-        (
-            [Name] => House Bolton
-            [Allegiance] => House Baratheon of King's Landing
-        )
-
     [Roose_Bolton] => Array
         (
             [Name] => Roose Bolton
@@ -521,17 +509,6 @@ Array
                 )
 
             [Portrayed by] => Elizabeth Webster
-        )
-
-    [House_Frey] => Array
-        (
-            [Name] => House Frey
-            [Allegiance] => Array
-                (
-                    [0] => House Baratheon of King's Landing
-                    [1] => House Lannister
-                )
-
         )
 
     [Walder_Frey] => Array
