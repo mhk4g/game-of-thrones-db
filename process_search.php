@@ -1,9 +1,12 @@
 <?php 
 session_start();
 
+header('content-type: application/json; charset=utf-8');
+header("access-control-allow-origin: *");
+
 # TEST DATA
 // $_SESSION["user_name"] = "Matt";
-$userinput = $_POST["userinput"];
+$userinput = $_GET["userinput"];
 
 $permission_code = "";
 

@@ -29,13 +29,11 @@ function displayResults(httpRequest) {
       if (httpRequest.status == 200) {
 //          myJSONarray = JSON.parse(httpRequest.responseText);
           
-          alert("response received:");
+          //alert("response received!");
           document.getElementById("searchresults").innerHTML = httpRequest.responseText;
           document.getElementById("specialinput").value = "";
-      } else 
-        alert("status not 200");
-      }
-      alert("readyState not 4");
+        } 
+    }
   }
 
 function prepareUserInput() {
