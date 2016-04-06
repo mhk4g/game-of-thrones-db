@@ -3,7 +3,7 @@
 <script type="text/javascript" language="javascript">
 
 function sendRequest() {
-    
+    alert("Sending AJAX request...");
     var httpRequest;
     var post_string = prepareUserInput();
     
@@ -19,7 +19,7 @@ function sendRequest() {
     // END OBLIGATORY AJAX STUFF //
     
     httpRequest.onreadystatechange = function() { displayResults(httpRequest); };
-    httpRequest.open('POST', './process_search.php', true);
+    httpRequest.open('POST', 'process_search.php', true);
     httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     httpRequest.send(post_string);
   }
@@ -32,8 +32,10 @@ function displayResults(httpRequest) {
           alert("response received:");
           document.getElementById("searchresults").innerHTML = httpRequest.responseText;
           document.getElementById("specialinput").value = "";
-        }
+      } else 
+        alert("status not 200");
       }
+      alert("readyState not 4");
   }
 
 function prepareUserInput() {
