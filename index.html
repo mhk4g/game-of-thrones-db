@@ -1,10 +1,14 @@
-<html>
+<html background-color>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="javascript">
 
+
+alert(document.getElementById("html").style.backgroundImage.url);
+
+
 function sendRequest() {
     
-    // If quiz has been started...
+    alert("enter pressed");
     var httpRequest;
     var user_input = document.getElementById("specialinput").value;
     // BEGIN OBLIGATORY AJAX STUFF //
@@ -42,29 +46,25 @@ function displayResults(httpRequest) {
     <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
-    <form id="searchform">
     <div class="input-box">
+        <form>
   <input id="specialinput" name="userinput" placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required onkeypress="ssendRequest()"/>
-  <span class="unit">&#9819;</span><button id="submitsearch" type="submit" onclick="sendRequest()" hidden="true">
+  <span class="unit">&#9819;</span>
+  </form>
 </div>
-</form>
 <div id="resultcontainer">
     <div id="searchresults">
-        result<p>
-            result<p>
-                result<p>
-                    result<p>
-                        result<p>
-                            result<p>
-                                result<p>
-                                    result<p>
-                                        result<p>
-                                            result<p>
-                                                result<p>
-                                                    result<p>
-                                                        result<p>
-                                                            result<p>
-    
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
     </div>
 </div>
 </body>

@@ -49,7 +49,7 @@ $result_array = mysqli_fetch_all($result);
 // echo("<th style=\"width:40px\">Name</th>");
 // echo("<th style=\"width:40px\">First appearance</th>");
 // echo("<th style=\"width:40px\">Status</th></tr>");
-$HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"50%\" align=\"center\">";
+$HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"50%\" align=\"center\" id=\"searchresults\">";
 $HTTPResponse[] = "<caption><h2>Search results</h2></caption>";
 $HTTPResponse[] = "<tr align = \"center\">";
 $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
