@@ -1,12 +1,70 @@
 <html>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" language="javascript">
+
+function sendRequest() {
+    
+    // If quiz has been started...
+    var httpRequest;
+    var user_input = document.getElementById("specialinput").value;
+    // BEGIN OBLIGATORY AJAX STUFF //
+    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+        httpRequest = new XMLHttpRequest();
+        if (httpRequest.overrideMimeType) {
+            httpRequest.overrideMimeType('text/xml'); } } 
+    else if (window.ActiveXObject) { // IE
+        try { httpRequest = new ActiveXObject("Msxml2.XMLHTTP"); } 
+            catch (e) { try { httpRequest = new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) {} } }
+    if (!httpRequest) { alert('Giving up :( Cannot create an XMLHTTP instance'); return false; }
+    // END OBLIGATORY AJAX STUFF //
+    
+    httpRequest.onreadystatechange = function() { displayResults(httpRequest); };
+    httpRequest.open('POST', 'process_search.php', true);
+    httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    httpRequest.send(user_input);
+  }
+function displayResults(httpRequest) {
+  if (httpRequest.readyState == 4) {
+      if (httpRequest.status == 200) {
+//          myJSONarray = JSON.parse(httpRequest.responseText);
+          
+          // If quiz already completed today...
+          alert("response received:");
+          document.getElementById("searchresults").innerHTML = httpRequest.responseText;
+          document.getElementById("specialinput").value = "";
+        }
+      }
+  }
+
+</script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
+    <form id="searchform">
     <div class="input-box">
-  <input id="specialinput" placeholder="Enter your search here" autofocus="autofocus"/>
-  <span class="unit">&#9819;</span>
+  <input id="specialinput" name="userinput" placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required onkeypress="ssendRequest()"/>
+  <span class="unit">&#9819;</span><button id="submitsearch" type="submit" onclick="sendRequest()" hidden="true">
+</div>
+</form>
+<div id="resultcontainer">
+    <div id="searchresults">
+        result<p>
+            result<p>
+                result<p>
+                    result<p>
+                        result<p>
+                            result<p>
+                                result<p>
+                                    result<p>
+                                        result<p>
+                                            result<p>
+                                                result<p>
+                                                    result<p>
+                                                        result<p>
+                                                            result<p>
+    
     </div>
 </div>
 </body>
