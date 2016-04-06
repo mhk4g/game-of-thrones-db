@@ -28,7 +28,7 @@ $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V p
 // Serialize results as JSON
 
 // Print results
-print($userinput);
+//print($userinput);
 
 # Database connection
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
@@ -40,8 +40,6 @@ if ($db->connect_error) {
 
 $HTTPResponse = [];
 $result = $db->query("SELECT * FROM Characters WHERE name LIKE'%$userinput%'");
-echo "\n QUERY RESULTS \n______________\n";
-print_r($result);
 $result_array = mysqli_fetch_all($result);
 // echo("<table border = \"1\" cellpadding = \"8\" width=\"50%\" align=\"center\">");
 // echo("<caption><h2>Search results</h2></caption>");
@@ -49,8 +47,8 @@ $result_array = mysqli_fetch_all($result);
 // echo("<th style=\"width:40px\">Name</th>");
 // echo("<th style=\"width:40px\">First appearance</th>");
 // echo("<th style=\"width:40px\">Status</th></tr>");
-$HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"50%\" align=\"center\" id=\"searchresults\">";
-$HTTPResponse[] = "<caption><h2>Search results</h2></caption>";
+$HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+$HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Search results</h1></caption>";
 $HTTPResponse[] = "<tr align = \"center\">";
 $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
 $HTTPResponse[] = "<th style=\"width:40px\">First appearance</th>";
@@ -61,6 +59,8 @@ foreach ($result_array as $r) {
     //echo("<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>");
     $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
 }
+
+$HTTPResponse[] = "<br><br><br><br><br>";
 
 foreach ($HTTPResponse as $h) {
     echo($h);

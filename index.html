@@ -2,15 +2,12 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" language="javascript">
 
-
-alert(document.getElementById("html").style.backgroundImage.url);
-
-
 function sendRequest() {
     
     alert("enter pressed");
     var httpRequest;
-    var user_input = document.getElementById("specialinput").value;
+    var post_string = prepareUserInput();
+    
     // BEGIN OBLIGATORY AJAX STUFF //
     if (window.XMLHttpRequest) { // Mozilla, Safari, ...
         httpRequest = new XMLHttpRequest();
@@ -25,20 +22,31 @@ function sendRequest() {
     httpRequest.onreadystatechange = function() { displayResults(httpRequest); };
     httpRequest.open('POST', 'process_search.php', true);
     httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    httpRequest.send(user_input);
+    httpRequest.send(post_string);
   }
+  
 function displayResults(httpRequest) {
   if (httpRequest.readyState == 4) {
       if (httpRequest.status == 200) {
 //          myJSONarray = JSON.parse(httpRequest.responseText);
           
-          // If quiz already completed today...
           alert("response received:");
           document.getElementById("searchresults").innerHTML = httpRequest.responseText;
           document.getElementById("specialinput").value = "";
         }
       }
   }
+
+function prepareUserInput() {
+    temp_string = "userinput=" + document.getElementById("specialinput").value;
+    return temp_string;
+}
+
+$(document).keypress(function(e) {
+        if(e.which == 13) {
+                sendRequest();
+        }
+        });
 
 </script>
 <head>
@@ -47,24 +55,13 @@ function displayResults(httpRequest) {
 </head>
 <body bgcolor="black">
     <div class="input-box">
-        <form>
-  <input id="specialinput" name="userinput" placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required onkeypress="ssendRequest()"/>
+  <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required></input>
   <span class="unit">&#9819;</span>
-  </form>
+  <!-- <button id="hhhh" onclick="testAlert()">This is a button></button> -->
 </div>
 <div id="resultcontainer">
     <div id="searchresults">
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
+        <!-- This is where the results go -->
     </div>
 </div>
 </body>

@@ -25,7 +25,7 @@ html {
 .input-box {
     position: absolute;
     left: 30%;
-    top: 70%;
+    top: 72%;
     width: 40%;
     text-align: center;
 }
@@ -72,13 +72,22 @@ html {
 }
 
 #searchresults {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 12px; 
     left: 50%;
     width: 500px;
     margin-left: -250px;
     text-align: center;
-    color: rgba(255, 255, 255, 1); 
     position: absolute;
-    top: 475px;
+    top: 400px;
+}
+
+#searchresulttext {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px; 
+    color: rgba(255, 255, 255, 1); 
+}
+
+#tablecaption {
+    font-family: "Zapfino";
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1); 
 }
