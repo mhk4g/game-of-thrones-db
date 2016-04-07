@@ -19,7 +19,7 @@ function sendRequest() {
     // END OBLIGATORY AJAX STUFF //
     
     httpRequest.onreadystatechange = function() { displayResults(httpRequest); };
-    httpRequest.open('POST', '/~mhk4g/game-of-thrones-db/process_search.php', true);
+    httpRequest.open('POST', 'process_search.php', true);
     httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     httpRequest.send(post_string);
   }
@@ -27,9 +27,9 @@ function sendRequest() {
 function displayResults(httpRequest) {
   if (httpRequest.readyState == 4) {
       if (httpRequest.status == 200) {
-//          myJSONarray = JSON.parse(httpRequest.responseText);
+          //myJSONarray = JSON.parse(httpRequest.responseText);
           
-          //alert("response received!");
+          alert("response received!");
           document.getElementById("searchresults").innerHTML = httpRequest.responseText;
           document.getElementById("specialinput").value = "";
         } 
