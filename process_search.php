@@ -65,13 +65,9 @@ foreach ($result_array as $r) {
 
 $HTTPResponse[] = "<br><br><br><br><br>";
 
-// foreach ($HTTPResponse as $h) {
-//     echo($h);
-//     }
-
-$final_response = json_encode($HTTPResponse);
-echo($final_response);
-
+foreach ($HTTPResponse as $h) {
+    echo($h);
+    }
 // foreach ($results_array as $a):
 //     print_r($a);
 // endforeach;
