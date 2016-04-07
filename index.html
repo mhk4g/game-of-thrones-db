@@ -3,7 +3,6 @@
 <script type="text/javascript" language="javascript">
 
 function sendRequest() {
-    alert("Sending AJAX request...");
     var httpRequest;
     var post_string = prepareUserInput();
     
@@ -27,9 +26,6 @@ function sendRequest() {
 function displayResults(httpRequest) {
   if (httpRequest.readyState == 4) {
       if (httpRequest.status == 200) {
-          //myJSONarray = JSON.parse(httpRequest.responseText);
-          
-          alert("response received!");
           document.getElementById("searchresults").innerHTML = httpRequest.responseText;
           document.getElementById("specialinput").value = "";
         } 
