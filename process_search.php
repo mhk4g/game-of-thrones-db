@@ -6,7 +6,7 @@ header("access-control-allow-origin: *");
 
 # TEST DATA
 // $_SESSION["user_name"] = "Matt";
-$userinput = $_GET["userinput"];
+$userinput = $_POST["userinput"];
 
 $permission_code = "";
 
