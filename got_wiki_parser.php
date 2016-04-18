@@ -67,6 +67,8 @@ function getElementsByClassName(\DOMDocument $DOMDocument, $className) {
             $tempName = DOMinnerHTML($elem);
             $replaced = str_replace('<br>', ';', "$tempName");
             $replaced = str_replace('<p>', ';', "$replaced");
+            $replaced = str_replace('\'', ';', "$replaced");
+            $replaced = str_replace('\"', ';', "$replaced");
             $stripped = strip_tags($replaced);
             if (strpos($stripped, ';') !== FALSE):
                 $exploded = explode(';', $stripped);

@@ -83,6 +83,7 @@ function convert_single_character_to_SQL($ch) {
     endif;
     
     # Will need to adjust to merge each array into the master array
+    
     return $character_insert;
 }
 
