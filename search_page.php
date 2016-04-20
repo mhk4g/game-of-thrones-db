@@ -1,13 +1,3 @@
-<?php 
-session_start();
-
-if isset($_SESSION["error"]) {
-    $error_display = $_SESSION["error"];
-}
-
- ?>
-
-
 <html background-color>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" language="javascript">
@@ -55,18 +45,18 @@ $(document).keypress(function(e) {
 
 </script>
 <head>
-    <link type="text/css" rel="stylesheet" href="login_style.css"/>
-    <title>Game of Thrones DB: Login</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
-    <div class="input-box" width=200px>
-        <p class="login-label">Email</p><input class="login-field" id="email" name="email" type="text" placeholder="Enter your email address" autofocus="autofocus" autocomplete="off" required width="200px"/>
-        <br>
-        <p class="login-label">Password</p><input class="login-field" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="off" required />
-        <br><br>
-        <input type="submit" id="login" name="login" value="Login">
-        <br><br>
-        <input type="button" value="Create Account">
-        <br><br><p class="proceed">Proceed without logging in</p>
-    </div>
+    <div class="input-box">
+  <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required></input>
+  <span class="unit">&#9819;</span>
+  <div id="resultcontainer">
+      <div id="searchresults">
+          <!-- This is where the results go -->
+      </div>
+  </div>
+
+</div>
 </body>
