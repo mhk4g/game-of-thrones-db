@@ -51,7 +51,8 @@ if ($checkboxes["characters"] == true):
         $HTTPResponse[] = "<th style=\"width:40px\">A.K.A</th></tr>";
 
         foreach ($result_array as $r) {
-            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td></tr>";
+            $alive = "<td id=\"$r[2]\">$r[2]</td>";
+            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td>$alive<td>$r[3]</td></tr>";
         }
 
         $HTTPResponse[] = "</table><br><br><br>";
