@@ -56,7 +56,7 @@ $(document).keypress(function(e) {
   <input type="checkbox" name="Factions" checked /> Factions
   <input type="checkbox" name="Creatures" checked /> Creatures
   <input type="checkbox" name="Episodes" checked /> Episodes
-  </div>
+    </div>
   <div id="resultcontainer">
       <div id="searchresults">
           <!-- This is where the results go -->

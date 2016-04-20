@@ -76,9 +76,10 @@ body {
 }
 
 #resultcontainer {       
-    position: relative;
+    position: absolute;
     left: 20%;
     width: 60%;
+    top: 70%;
     align: center;
     align-self: center;
 }
