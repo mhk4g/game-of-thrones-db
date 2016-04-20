@@ -55,7 +55,7 @@ $(document).keypress(function(e) {
 <body bgcolor="black">
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
-  <span class="unit" style="color:black;">&#9819;</span>
+  <span class="unit" style="color:black;">&#9819;</span><p>
   <input type="checkbox" id="char_box" checked /> Characters
   <input type="checkbox" id="faction_box" checked /> Factions
   <input type="checkbox" id="creature_box" checked /> Creatures
