@@ -33,7 +33,7 @@ if ($db->connect_error) {
 $HTTPResponse = [];
 
 if ($checkboxes["characters"] == true):
-    $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%'");
+    $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%' UNION SELECT * FROM Characters WHERE aka LIKE'%$userinput%'");
     if (mysqli_num_rows($result) > 0): 
         $result_array = [];
         while ($data = $result->fetch_array())
