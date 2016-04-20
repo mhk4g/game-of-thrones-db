@@ -9,6 +9,13 @@ if(isset($_POST["userinput"])) {
     $userinput = $_POST["userinput"];
 }
 
+$checkboxes["characters"] = $_POST["char_box"];
+$checkboxes["factions"] = $_POST["faction_box"];
+$checkboxes["creatures"] = $_POST["creature_box"];
+$checkboxes["episodes"] = $_POST["episode_box"];
+
+print_r($checkboxes);
+
 $permission_code = "";
 
 # Store user type in session variable

@@ -34,10 +34,10 @@ function displayResults(httpRequest) {
 
 function prepareUserInput() {
     temp_string = "userinput=" + document.getElementById("specialinput").value;
-    if (char_box = document.getElementById("char_box").value) { temp_string += "&char_box=true"; }    
-    if (faction_box = document.getElementById("faction_box").value) { temp_string += "&faction_box=true"; }    
-    if (creature_box = document.getElementById("creature_box").value) { temp_string += "&creature_box=true"; }    
-    if (episode_box = document.getElementById("episode_box").value) { temp_string += "&episode_box=true"; }    
+    if (document.getElementById("char_box").checked == true) { alert("hi"); temp_string += "&char_box=true"; }    
+    if (document.getElementById("faction_box").checked = true) { temp_string += "&faction_box=true"; }    
+    if (document.getElementById("creature_box").checked == true) { temp_string += "&creature_box=true"; }    
+    if (document.getElementById("episode_box").checked == true) { temp_string += "&episode_box=true"; }    
     return temp_string;
 }
 
