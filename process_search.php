@@ -41,6 +41,7 @@ if ($checkboxes["characters"] == true):
     }
 
     $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+    $HTTPResponse[] = "<col width=20%><col width=20%><col width=20%><col width=40%>";
     $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
     $HTTPResponse[] = "<tr align = \"center\">";
     $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
@@ -65,7 +66,7 @@ if ($checkboxes["factions"] == true):
 
     $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
     $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
-    $HTTPResponse[] = "<tr align = \"center\">";
+    $HTTPResponse[] = "<tr align = \"center\">";    
     $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
     $HTTPResponse[] = "<th style=\"width:40px\">Based in</th>";
     $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
