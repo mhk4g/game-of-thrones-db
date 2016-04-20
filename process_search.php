@@ -34,48 +34,52 @@ $HTTPResponse = [];
 
 if ($checkboxes["characters"] == true):
     $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%'");
-    $result_array = [];
-    while ($data = $result->fetch_array())
-    {
-        $result_array[] = $data;
-    }
+    if (mysqli_num_rows($result) > 0): 
+        $result_array = [];
+        while ($data = $result->fetch_array())
+        {
+            $result_array[] = $data;
+        }
 
-    $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
-    $HTTPResponse[] = "<col width=20%><col width=20%><col width=20%><col width=40%>";
-    $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
-    $HTTPResponse[] = "<tr align = \"center\">";
-    $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
-    $HTTPResponse[] = "<th style=\"width:40px\">First appearance</th>";
-    $HTTPResponse[] = "<th style=\"width:40px\">Status</th>";
-    $HTTPResponse[] = "<th style=\"width:40px\">A.K.A</th></tr>";
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<col width=20%><col width=20%><col width=15%><col width=45%>";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";
+        $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">First appearance</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">Status</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">A.K.A</th></tr>";
 
-    foreach ($result_array as $r) {
-        $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td></tr>";
-    }
+        foreach ($result_array as $r) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td><td>$r[3]</td></tr>";
+        }
 
-    $HTTPResponse[] = "</table><br><br><br>";    
+        $HTTPResponse[] = "</table><br><br><br>";
+    endif;    
 endif;
 
 if ($checkboxes["factions"] == true):
     $result = $db->query("SELECT * FROM Faction WHERE faction_name LIKE'%$userinput%'");
-    $result_array = [];
-    while ($data = $result->fetch_array())
-    {
-        $result_array[] = $data;
-    }
+    if (mysqli_num_rows($result) > 0):
+        $result_array = [];
+        while ($data = $result->fetch_array())
+        {
+            $result_array[] = $data;
+        }
 
-    $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
-    $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
-    $HTTPResponse[] = "<tr align = \"center\">";    
-    $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
-    $HTTPResponse[] = "<th style=\"width:40px\">Based in</th>";
-    $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";    
+        $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">Based in</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
 
-    foreach ($result_array as $r) {
-        $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
-    }
+        foreach ($result_array as $r) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
+        }
 
-    $HTTPResponse[] = "</table><br><br><br>";    
+        $HTTPResponse[] = "</table><br><br><br>";    
+    endif;
 endif;
 
 foreach ($HTTPResponse as $h) {
