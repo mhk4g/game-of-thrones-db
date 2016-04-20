@@ -1,0 +1,2422 @@
+Total entries: 120
+Array
+(
+    [Eddard_Stark] => Array
+        (
+            [Name] => Eddard Stark
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Beheaded by Ser Ilyn Payne at the order of Joffrey Baratheon in King
+                    [1] => s Landing
+                )
+
+            [Death episode] => "Baelor"
+            [Allegiance] => House Stark
+            [Portrayed by] => Array
+                (
+                    [0] => Sean Bean (Adult)
+                    [1] => Sebastian Croft (Child)
+                    [2] => Luke Roberts (Young)
+                )
+
+        )
+
+    [Catelyn_Stark] => Array
+        (
+            [Name] => Catelyn Stark
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Throat slit by Black Walder Rivers
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => Array
+                (
+                    [0] => House Stark - by marriage
+                    [1] => House Tully - by birth
+                )
+
+            [Portrayed by] => Michelle Fairley
+        )
+
+    [Robb_Stark] => Array
+        (
+            [Name] => Robb Stark
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Young Wolf
+                    [1] => The King Who Lost the North
+                )
+
+            [Status] => Deceased
+            [Death] => Shot several times by Frey crossbowmen, then stabbed through the heart by Roose Bolton
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => House Stark
+            [Portrayed by] => Richard Madden
+        )
+
+    [Sansa_Stark] => Array
+        (
+            [Name] => Sansa Stark
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Little Dove
+                    [1] => Little Bird
+                    [2] => Alayne (formerly)
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Stark - by birth
+                    [1] => House Lannister - by forced marriage (formerly)
+                    [2] => House Bolton - by forced marriage (formerly)
+                )
+
+            [Portrayed by] => Sophie Turner
+        )
+
+    [Arya_Stark] => Array
+        (
+            [Name] => Arya Stark
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Arry
+                    [1] => Lanna
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Stark
+                    [1] => Faceless Men
+                )
+
+            [Portrayed by] => Maisie Williams
+        )
+
+    [Bran_Stark] => Array
+        (
+            [Name] => Bran Stark
+            [First seen] => "Winter is Coming"
+            [Also known as] => Bran
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Isaac Hempstead-Wright
+        )
+
+    [Rickon_Stark] => Array
+        (
+            [Name] => Rickon Stark
+            [First seen] => "Winter is Coming"
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Art Parkinson
+        )
+
+    [Jon_Snow] => Array
+        (
+            [Name] => Jon Snow
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Lord Snow
+                    [1] => The Bastard of Winterfell
+                    [2] => King Crow
+                )
+
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Stabbed repeatedly by Night
+                    [1] => s Watch mutineers
+                )
+
+            [Death episode] => Array
+                (
+                    [0] => "Mother
+                    [1] => s Mercy"
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                    [2] => House Stark
+                )
+
+            [Portrayed by] => Kit Harington
+        )
+
+    [Brynden_Tully] => Array
+        (
+            [Name] => Brynden Tully
+            [First seen] => "Walk of Punishment"
+            [Also known as] => The Blackfish
+            [Status] => Alive
+            [Allegiance] => House Tully
+            [Portrayed by] => Clive Russell
+        )
+
+    [Edmure_Tully] => Array
+        (
+            [Name] => Edmure Tully
+            [First seen] => "Walk of Punishment"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tully
+                    [1] => House Stark
+                )
+
+            [Portrayed by] => Tobias Menzies
+        )
+
+    [Tywin_Lannister] => Array
+        (
+            [Name] => Tywin Lannister
+            [First seen] => "You Win or You Die"
+            [Status] => Deceased
+            [Death] => 301 AL - Shot by his own son, Tyrion, with a crossbow.
+            [Death episode] => "The Children"
+            [Allegiance] => House Lannister
+            [Portrayed by] => Charles Dance
+        )
+
+    [Cersei_Lannister] => Array
+        (
+            [Name] => Cersei Lannister
+            [First seen] => "Winter is Coming"
+            [Status] => Array
+                (
+                    [0] => Alive
+                    [1] =>  awaiting trial from the
+                    [2] => Faith Militant
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => House Baratheon of King
+                    [2] => s Landing (by marriage)
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Lena Headey (Adult)
+                    [1] => Nell Williams (Young, flashback in Season 5)
+                )
+
+        )
+
+    [Jaime_Lannister] => Array
+        (
+            [Name] => Jaime Lannister
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Kingslayer
+                    [1] => Oathbreaker
+                    [2] => Man without Honor
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Kingsguard
+                    [1] => House Lannister
+                )
+
+            [Portrayed by] => Nikolaj Coster-Waldau
+        )
+
+    [Tyrion_Lannister] => Array
+        (
+            [Name] => Tyrion Lannister
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Imp
+                    [1] => Halfman
+                    [2] => The Little Lion
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister (formerly)
+                    [1] => House Targaryen
+                )
+
+            [Portrayed by] => Peter Dinklage
+        )
+
+    [Joffrey_Baratheon] => Array
+        (
+            [Name] => Joffrey Baratheon
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => King Joffrey of Houses Baratheon and Lannister, the First of His Name.
+                    [1] => The King on the Iron Throne
+                )
+
+            [Status] => Deceased
+            [Death] => Poisoned at his wedding feast by Olenna Tyrell with the assistance of Petyr Baelish
+            [Death episode] => "The Lion and the Rose"
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing 
+                    [2] => House Lannister
+                )
+
+            [Portrayed by] => Jack Gleeson
+        )
+
+    [Myrcella_Baratheon] => Array
+        (
+            [Name] => Myrcella Baratheon
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Poisoned by Ellaria Sand and the Sand Snakes.
+            [Death episode] => Array
+                (
+                    [0] => "Mother
+                    [1] => s Mercy"
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing House Martell
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Aimee Richardson (Seasons 1-2)
+                    [1] => 
+                    [2] => Nell Tiger Free (Seasons 5-6)
+                )
+
+        )
+
+    [Tommen_Baratheon] => Array
+        (
+            [Name] => Tommen Baratheon
+            [First seen] => "Winter is Coming"
+            [Also known as] => Tommen of the House Baratheon the First of His Name
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Callum Wharry (Seasons 1 and 2)
+                    [1] => Dean-Charles Chapman (Seasons 4-6)
+                )
+
+        )
+
+    [Kevan_Lannister] => Array
+        (
+            [Name] => Kevan Lannister
+            [First seen] => "The Pointy End"
+            [Status] => Alive
+            [Allegiance] => House Lannister
+            [Portrayed by] => Ian Gelder
+        )
+
+    [Lancel_Lannister] => Array
+        (
+            [Name] => Lancel Lannister
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => Brother Lancel
+                    [1] => Lancel Lannister
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister (formerly)
+                    [1] => Sparrows
+                    [2] => Faith Militant
+                )
+
+            [Portrayed by] => Eugene Simon
+        )
+
+    [Bronn] => Array
+        (
+            [Name] => Bronn
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Also known as] => Ser Bronn of the Blackwater
+            [Status] => Alive
+            [Allegiance] => House Lannister (sellsword)
+            [Portrayed by] => Jerome Flynn
+        )
+
+    [Qyburn] => Array
+        (
+            [Name] => Qyburn
+            [First seen] => "Valar Dohaeris"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Cersei Lannister
+                    [1] => House Bolton (briefly)
+                    [2] => Order of Maesters (expelled)
+                    [3] => Small Council
+                )
+
+            [Portrayed by] => Anton Lesser
+        )
+
+    [Pycelle] => Array
+        (
+            [Name] => Pycelle
+            [First seen] => "Lord Snow"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => Order of Maesters
+                )
+
+            [Portrayed by] => Julian Glover
+        )
+
+    [Petyr_Baelish] => Array
+        (
+            [Name] => Petyr Baelish
+            [First seen] => "Lord Snow"
+            [Also known as] => Littlefinger
+            [Status] => Alive
+            [Allegiance] => House Baelish
+            [Portrayed by] => Aidan Gillen
+        )
+
+    [Varys] => Array
+        (
+            [Name] => Varys
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => The Spider
+                    [1] => The Eunuch
+                    [2] => Lord Varys
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Conleth Hill
+        )
+
+    [Margaery_Tyrell] => Array
+        (
+            [Name] => Margaery Tyrell
+            [First seen] => "What is Dead May Never Die"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell (by birth)
+                    [1] => House Baratheon of King
+                    [2] => s Landing (by marriage)
+                    [3] => House Baratheon (by marriage, annulled)
+                )
+
+            [Portrayed by] => Natalie Dormer
+        )
+
+    [Loras_Tyrell] => Array
+        (
+            [Name] => Loras Tyrell
+            [First seen] => "The Wolf and the Lion"
+            [Also known as] => The Knight of the Flowers
+            [Status] => Array
+                (
+                    [0] => Alive
+                    [1] =>  incarcerated by the
+                    [2] => Faith Militant and awaiting trial
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell
+                    [1] => 
+                    [2] => House Baratheon of Storm
+                    [3] => s End (formerly)
+                    [4] => Renly Baratheon
+                    [5] => s Kingsguard (formerly)
+                )
+
+            [Portrayed by] => Finn Jones
+        )
+
+    [Olenna_Tyrell] => Array
+        (
+            [Name] => Olenna Tyrell
+            [First seen] => "Dark Wings, Dark Words"
+            [Also known as] => The Queen of Thorns
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tyrell - by marriage
+                    [1] => House Redwyne - by birth
+                )
+
+            [Portrayed by] => Dame Diana Rigg
+        )
+
+    [Mace_Tyrell] => Array
+        (
+            [Name] => Mace Tyrell
+            [First seen] => "The Lion and the Rose"
+            [Also known as] => Lord Oaf
+            [Status] => Alive
+            [Allegiance] => House Tyrell
+            [Portrayed by] => Roger Ashton-Griffiths
+        )
+
+    [Roose_Bolton] => Array
+        (
+            [Name] => Roose Bolton
+            [First seen] => "Garden of Bones"
+            [Status] => Alive
+            [Allegiance] => House Bolton
+            [Portrayed by] => Michael McElhatton
+        )
+
+    [Ramsay_Bolton] => Array
+        (
+            [Name] => Ramsay Bolton
+            [First seen] => "Dark Wings, Dark Words"
+            [Also known as] => Array
+                (
+                    [0] => Ramsay Snow (formerly)
+                    [1] => The Bastard of Bolton
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Bolton
+            [Portrayed by] => Iwan Rheon
+        )
+
+    [Theon_Greyjoy] => Array
+        (
+            [Name] => Theon Greyjoy
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Reek
+                    [1] => "The Prince of Winterfell"
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Greyjoy
+                    [1] => House Stark
+                    [2] => House Bolton (hostage
+                    [3] =>  former)
+                )
+
+            [Portrayed by] => Alfie Allen
+        )
+
+    [Walda_Bolton] => Array
+        (
+            [Name] => Walda Bolton
+            [First seen] => "The Lion and the Rose"
+            [Also known as] => Fat Walda Frey
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Bolton - by marriage
+                    [1] => House Frey - by birth
+                )
+
+            [Portrayed by] => Elizabeth Webster
+        )
+
+    [Walder_Frey] => Array
+        (
+            [Name] => Walder Frey
+            [First seen] => "Baelor"
+            [Also known as] => Array
+                (
+                    [0] => The Late Lord Frey
+                    [1] => The Late Walder Frey
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => David Bradley
+        )
+
+    [Lothar_Frey] => Array
+        (
+            [Name] => Lothar Frey
+            [First seen] => "The Climb"
+            [Also known as] => Lame Lothar
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => Tom Brooke
+        )
+
+    [Walder_Rivers] => Array
+        (
+            [Name] => Walder Rivers
+            [First seen] => "The Climb"
+            [Also known as] => Array
+                (
+                    [0] => Black Walder
+                    [1] => Black Walder Rivers
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Frey
+            [Portrayed by] => Tim Plester
+        )
+
+    [Roslin_Frey] => Array
+        (
+            [Name] => Roslin Frey
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tully - by marriage
+                    [1] => House Frey - by birth
+                )
+
+            [Portrayed by] => Alexandra Dowling
+        )
+
+    [Robert_Baratheon] => Array
+        (
+            [Name] => Robert Baratheon
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Robert of House Baratheon, the First of His Name
+                    [1] => The Usurper
+                    [2] => The Stag King
+                )
+
+            [Status] => Deceased
+            [Death] => Mortally wounded by a wild boar after drinking wine given to him by Lancel Lannister, on orders from Cersei Lannister
+            [Death episode] => "You Win or You Die"
+            [Allegiance] => House Baratheon
+            [Portrayed by] => Mark Addy
+        )
+
+    [Stannis_Baratheon] => Array
+        (
+            [Name] => Stannis Baratheon
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => Stannis of House Baratheon, First of His Name
+                    [1] => The King in the Narrow Sea
+                    [2] => Warrior of Light
+                    [3] => The Lord
+                    [4] => s Chosen
+                    [5] => Son of Fire
+                )
+
+            [Status] => Deceased
+            [Death] => Beheaded after the Battle of Winterfell by Brienne of Tarth
+            [Death episode] => Array
+                (
+                    [0] => "Mother
+                    [1] => s Mercy"
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of Dragonstone
+                    [1] => House Baratheon of Storm
+                    [2] => s End
+                )
+
+            [Portrayed by] => Stephen Dillane
+        )
+
+    [Renly_Baratheon] => Array
+        (
+            [Name] => Renly Baratheon
+            [First seen] => "Lord Snow"
+            [Also known as] => The King in Highgarden
+            [Status] => Deceased
+            [Death] => Killed by a Shadow-creature birthed by Melisandre
+            [Death episode] => "The Ghost of Harrenhal"
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of Storm
+                    [1] => s End
+                )
+
+            [Portrayed by] => Gethin Anthony
+        )
+
+    [Brienne_of_Tarth] => Array
+        (
+            [Name] => Brienne of Tarth
+            [First seen] => "What is Dead May Never Die"
+            [Also known as] => Array
+                (
+                    [0] => Brienne the Beauty
+                    [1] => The Maid of Tarth
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Tarth
+                    [1] => House Baratheon
+                    [2] => Renly Baratheon
+                    [3] => s Kingsguard
+                    [4] => House Tully
+                )
+
+            [Portrayed by] => Gwendoline Christie
+        )
+
+    [Selyse_Baratheon] => Array
+        (
+            [Name] => Selyse Baratheon
+            [First seen] => "The North Remembers"
+            [Also known as] => Selyse Florent
+            [Status] => Deceased
+            [Death] => Hanged herself
+            [Death episode] => Brightwater Keep
+            [Allegiance] => Andal
+            [Portrayed by] => 
+        )
+
+    [Shireen_Baratheon] => Array
+        (
+            [Name] => Shireen Baratheon
+            [First seen] => "Kissed by Fire"
+            [Status] => Deceased
+            [Death] => Burned alive as a sacrifice to the Lord of Light by Melisandre
+            [Death episode] => "The Dance of Dragons"
+            [Allegiance] => House Baratheon of Dragonstone
+            [Portrayed by] => Kerry Ingram
+        )
+
+    [Gendry] => Array
+        (
+            [Name] => Gendry
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Status] => Alive
+            [Portrayed by] => Joe Dempsie
+        )
+
+    [Davos_Seaworth] => Array
+        (
+            [Name] => Davos Seaworth
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => The Onion Knight
+                    [1] => Davos of Flea Bottom
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of Dragonstone
+                    [1] => House Seaworth
+                )
+
+            [Portrayed by] => Liam Cunningham
+        )
+
+    [Salladhor_Saan] => Array
+        (
+            [Name] => Salladhor Saan
+            [First seen] => "The Night Lands"
+            [Status] => Alive
+            [Allegiance] => House Baratheon of Dragonstone
+            [Portrayed by] => Lucian Msamati
+        )
+
+    [Melisandre] => Array
+        (
+            [Name] => Melisandre
+            [First seen] => "The North Remembers"
+            [Also known as] => Array
+                (
+                    [0] => Melisandre of Asshai
+                    [1] => Lady Melisandre
+                    [2] => The Red Woman
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Baratheon of Dragonstone (defected)
+            [Portrayed by] => Carice van Houten
+        )
+
+    [Daenerys_Targaryen] => Array
+        (
+            [Name] => Daenerys Targaryen
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => Daenerys Stormborn
+                    [1] => Dany
+                    [2] => The Unburnt
+                    [3] => Mhysa
+                    [4] => The Queen Across the Sea
+                    [5] => The Silver Queen
+                    [6] => The Dragon Queen
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Emilia Clarke
+        )
+
+    [Viserys_Targaryen] => Array
+        (
+            [Name] => Viserys Targaryen
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Beggar King
+                    [1] => Viserys III Targaryen
+                    [2] => Viserys of House Targaryen the Third of His Name
+                    [3] => Khal Rhaggat (Cart King)Khal Rhae Mhar (Sorefoot King)
+                )
+
+            [Status] => Deceased
+            [Death] => Burned with molten gold by Khal Drogo
+            [Death episode] => "A Golden Crown"
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Harry Lloyd
+        )
+
+    [Aerys_II_Targaryen] => Array
+        (
+            [Name] => Aerys II Targaryen
+            [Also known as] => Array
+                (
+                    [0] => The Mad King
+                    [1] => Mad King Aerys
+                    [2] => King Scab
+                    [3] => Aerys of House Targaryen, the Second of His Name
+                )
+
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Slain by Ser Jaime Lannister
+                )
+
+            [Death episode] => Array
+                (
+                    [0] => King
+                    [1] => s Landing
+                )
+
+            [Allegiance] => Valyrian
+        )
+
+    [Rhaegar_Targaryen] => Array
+        (
+            [Name] => Rhaegar Targaryen
+            [Also known as] => The Last Dragon
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Slain by Robert Baratheon at the Battle of the Trident
+                )
+
+            [Death episode] => Array
+                (
+                    [0] => King
+                    [1] => s Landing
+                )
+
+            [Allegiance] => Valyrian
+        )
+
+    [Aemon] => Array
+        (
+            [Name] => Aemon
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => Aemon Targaryen (formerly)
+                    [1] => Maester Aemon
+                )
+
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Died peacefully in his bed
+                    [1] =>  from old age
+                )
+
+            [Death episode] => "The Gift"
+            [Allegiance] => Array
+                (
+                    [0] => Night
+                    [1] => s Watch (by oath)
+                    [2] => Order of Maesters (by oath)
+                    [3] => 
+                    [4] => House Targaryen (by birth)
+                )
+
+            [Portrayed by] => Peter Vaughan
+        )
+
+    [Drogo] => Array
+        (
+            [Name] => Drogo
+            [First seen] => "Winter is Coming"
+            [Also known as] => The Great Khal
+            [Status] => Deceased
+            [Death] => Smothered by Daenerys Targaryen in a mercy killing after being left in a vegetative state by Mirri Maz Duur
+            [Death episode] => "Fire and Blood"
+            [Allegiance] => Himself
+            [Portrayed by] => Jason Momoa
+        )
+
+    [Barristan_Selmy] => Array
+        (
+            [Name] => Barristan Selmy
+            [First seen] => "Lord Snow"
+            [Also known as] => Barristan the Bold
+            [Status] => Deceased
+            [Death] => Slain while fighting the Sons of the Harpy
+            [Death episode] => "Sons of the Harpy"
+            [Allegiance] => Array
+                (
+                    [0] => Queensguard
+                    [1] => Kingsguard (former)
+                    [2] => House Selmy (former)
+                )
+
+            [Portrayed by] => Ian McElhinney
+        )
+
+    [Missandei] => Array
+        (
+            [Name] => Missandei
+            [First seen] => "Valar Dohaeris"
+            [Status] => Alive
+            [Allegiance] => House Targaryen
+            [Portrayed by] => Nathalie Emmanuel
+        )
+
+    [Grey_Worm] => Array
+        (
+            [Name] => Grey Worm
+            [First seen] => "Kissed by Fire"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Targaryen
+                    [1] => The Unsullied
+                )
+
+            [Portrayed by] => Jacob Anderson
+        )
+
+    [Daario_Naharis] => Array
+        (
+            [Name] => Daario Naharis
+            [First seen] => "Second Sons"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Second Sons
+                    [1] => House Targaryen
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Ed Skrein (Season 3)
+                    [1] => Michiel Huisman (Season 4-present)
+                )
+
+        )
+
+    [Doran_Martell] => Array
+        (
+            [Name] => Doran Martell
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Alexander Siddig
+        )
+
+    [Trystane_Martell] => Array
+        (
+            [Name] => Trystane Martell
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Toby Sebastian
+        )
+
+    [Elia_Martell] => Array
+        (
+            [Name] => Elia Martell
+            [Also known as] => Elia of Dorne
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => 281 AL
+                    [1] => Skull crushed by Ser Gregor Clegane
+                )
+
+            [Death episode] => Sunspear, Dorne
+            [Allegiance] => Dornishmen
+        )
+
+    [Oberyn_Martell] => Array
+        (
+            [Name] => Oberyn Martell
+            [First seen] => "Two Swords"
+            [Also known as] => The Red Viper of Dorne
+            [Status] => Deceased
+            [Death] => Skull crushed by Ser Gregor Clegane
+            [Death episode] => "The Mountain and the Viper"
+            [Allegiance] => Array
+                (
+                    [0] => House Martell
+                    [1] => The Citadel (formerly)
+                )
+
+            [Portrayed by] => Pedro Pascal
+        )
+
+    [Ellaria_Sand] => Array
+        (
+            [Name] => Ellaria Sand
+            [First seen] => "Two Swords"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Martell
+                    [1] => House Uller
+                )
+
+            [Portrayed by] => Indira Varma
+        )
+
+    [Obara_Sand] => Array
+        (
+            [Name] => Obara Sand
+            [First seen] => "Sons of the Harpy"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Keisha Castle-Hughes
+        )
+
+    [Nymeria_Sand] => Array
+        (
+            [Name] => Nymeria Sand
+            [First seen] => "Sons of the Harpy"
+            [Also known as] => Lady Nym
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Jessica Henwick
+        )
+
+    [Tyene_Sand] => Array
+        (
+            [Name] => Tyene Sand
+            [First seen] => "Sons of the Harpy"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => Rosabell Laurenti Sellers
+        )
+
+    [Areo_Hotah] => Array
+        (
+            [Name] => Areo Hotah
+            [First seen] => "The House of Black and White"
+            [Status] => Alive
+            [Allegiance] => House Martell
+            [Portrayed by] => DeObia Oparei
+        )
+
+    [Gregor_Clegane] => Array
+        (
+            [Name] => Gregor Clegane
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Also known as] => Array
+                (
+                    [0] => The Mountain That Rides
+                    [1] => The Mountain
+                    [2] => Tywin Lannister
+                    [3] => s Mad Dog
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => House Clegane
+                    [2] => Kingsguard
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => Conan Stevens (Season 1)
+                    [1] => Ian Whyte (Season 2)
+                    [2] => Hafþór Júlíus Björnsson (Seasons 4 and 5)
+                )
+
+        )
+
+    [Sandor_Clegane] => Array
+        (
+            [Name] => Sandor Clegane
+            [First seen] => "Winter is Coming"
+            [Also known as] => Array
+                (
+                    [0] => The Hound
+                    [1] => Dog
+                )
+
+            [Status] => Array
+                (
+                    [0] => Uncertain
+                    [1] =>  critically wounded by Brienne of Tarth and left to die by Arya Stark
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing (former)
+                    [2] => The Kingsguard (former)
+                    [3] => House Clegane (former)
+                )
+
+            [Portrayed by] => Rory McCann
+        )
+
+    [Beric_Dondarrion] => Array
+        (
+            [Name] => Beric Dondarrion
+            [First seen] => "A Golden Crown"
+            [Also known as] => The Lightning Lord
+            [Status] => Deceased 
+            [Allegiance] => Array
+                (
+                    [0] => House Dondarrion
+                    [1] => The Brotherhood Without Banners
+                )
+
+            [Portrayed by] => Array
+                (
+                    [0] => David Michael Scott (Season 1)
+                    [1] => Richard Dormer (Season 3)
+                )
+
+        )
+
+    [Jaqen_H'ghar] => Array
+        (
+            [Name] => Jaqen H'ghar
+            [First seen] => "Fire and Blood"
+            [Status] => Alive
+            [Allegiance] => Faceless Men
+            [Portrayed by] => Tom Wlaschiha
+        )
+
+    [Thoros] => Array
+        (
+            [Name] => Thoros
+            [First seen] => "Dark Wings, Dark Words"
+            [Also known as] => Thoros of Myr
+            [Status] => Alive
+            [Allegiance] => The Brotherhood Without Banners
+            [Portrayed by] => Paul Kaye
+        )
+
+    [Syrio_Forel] => Array
+        (
+            [Name] => Syrio Forel
+            [First seen] => "Lord Snow"
+            [Status] => Array
+                (
+                    [0] => Uncertain
+                    [1] =>  last seen fighting Ser Meryn Trant, likely deceased
+                )
+
+            [Allegiance] => Array
+                (
+                    [0] => House Stark
+                    [1] => The Sealord of Braavos
+                )
+
+            [Portrayed by] => Miltos Yerolemou
+        )
+
+    [Craster] => Array
+        (
+            [Name] => Craster
+            [First seen] => "The North Remembers"
+            [Status] => Deceased
+            [Death] => Slain by Karl Tanner
+            [Death episode] => "And Now His Watch is Ended"
+            [Portrayed by] => Robert Pugh
+        )
+
+    [Quaithe] => Array
+        (
+            [Name] => Quaithe
+            [First seen] => "The Ghost of Harrenhal"
+            [Also known as] => Quaithe of the Shadow
+            [Status] => Alive
+            [Portrayed by] => Laura Pradelska
+        )
+
+    [Xaro] => Array
+        (
+            [Name] => Xaro
+            [First seen] => "Garden of Bones"
+            [Status] => Deceased
+            [Death] => Locked inside a vault by Daenerys Targaryen and left to die with Doreah
+            [Death episode] => Summer Islands, now resident in Qarth
+            [Allegiance] => Qartheen
+            [Portrayed by] => 
+        )
+
+    [Jorah_Mormont] => Array
+        (
+            [Name] => Jorah Mormont
+            [First seen] => "Winter is Coming"
+            [Also known as] => Jorah the Andal
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Targaryen (by oath)
+                    [1] => Varys (formerly)
+                    [2] => Golden Company (formerly)
+                    [3] => House Mormont (by birth)
+                )
+
+            [Portrayed by] => Iain Glen
+        )
+
+    [Jeor_Mormont] => Array
+        (
+            [Name] => Jeor Mormont
+            [First seen] => "Lord Snow"
+            [Also known as] => Array
+                (
+                    [0] => The Old Bear
+                    [1] => The Lord Crow
+                )
+
+            [Status] => Deceased
+            [Death] => Stabbed to death by Rast
+            [Death episode] => "And Now His Watch is Ended"
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                    [2] => House Mormont
+                )
+
+            [Portrayed by] => James Cosmo
+        )
+
+    [Shae] => Array
+        (
+            [Name] => Shae
+            [First seen] => "Baelor"
+            [Status] => Deceased
+            [Death] => Strangled to death by Tyrion Lannister
+            [Death episode] => "The Children"
+            [Portrayed by] => Sibel Kekilli
+        )
+
+    [Lysa_Arryn] => Array
+        (
+            [Name] => Lysa Arryn
+            [First seen] => "The Wolf and the Lion"
+            [Also known as] => Lysa Tully
+            [Status] => Deceased
+            [Death] => Fell to her death after pushed out the Moon Door by Petyr Baelish
+            [Death episode] => "Mockingbird"
+            [Allegiance] => Array
+                (
+                    [0] => House Baelish - by marriage
+                    [1] => House Arryn - by marriage
+                    [2] => House Tully - by birth
+                )
+
+            [Portrayed by] => Kate Dickie
+        )
+
+    [Robin_Arryn] => Array
+        (
+            [Name] => Robin Arryn
+            [First seen] => "The Wolf and the Lion"
+            [Also known as] => Sweetrobin
+            [Status] => Alive
+            [Allegiance] => House Arryn
+            [Portrayed by] => Lino Facioli
+        )
+
+    [Spice_King] => Array
+        (
+            [Name] => Spice King
+            [First seen] => "Garden of Bones"
+            [Status] => Deceased
+            [Death] => Killed by Pyat Pree
+            [Death episode] => "A Man Without Honor"
+            [Allegiance] => The Thirteen
+            [Portrayed by] => Nicholas Blane
+        )
+
+    [Pyat_Pree] => Array
+        (
+            [Name] => Pyat Pree
+            [First seen] => "Garden of Bones"
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Burned alive by Daenerys
+                    [1] =>  dragons
+                )
+
+            [Death episode] => "Valar Morghulis"
+            [Allegiance] => Array
+                (
+                    [0] => Warlocks of Qarth
+                    [1] => The Thirteen
+                )
+
+            [Portrayed by] => Ian Hanmore
+        )
+
+    [Podrick_Payne] => Array
+        (
+            [Name] => Podrick Payne
+            [First seen] => "The Night Lands"
+            [Also known as] => Pod
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Lannister
+                    [1] => House Payne
+                )
+
+            [Portrayed by] => Daniel Portman
+        )
+
+    [Ilyn] => Array
+        (
+            [Name] => Ilyn
+            [First seen] => "The Kingsroad"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing
+                    [2] => House Payne
+                )
+
+            [Portrayed by] => Wilko Johnson
+        )
+
+    [Janos_Slynt] => Array
+        (
+            [Name] => Janos Slynt
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Status] => Deceased
+            [Death] => Beheaded for insubordination by Jon Snow
+            [Death episode] => "High Sparrow"
+            [Allegiance] => Array
+                (
+                    [0] => House Baratheon of King
+                    [1] => s Landing
+                    [2] => House Slynt
+                    [3] => Night
+                    [4] => s Watch
+                )
+
+            [Portrayed by] => Dominic Carter
+        )
+
+    [Qhorin] => Array
+        (
+            [Name] => Qhorin
+            [First seen] => "The Ghost of Harrenhal"
+            [Also known as] => Array
+                (
+                    [0] => Qhorin Halfhand
+                    [1] => The Halfhand
+                )
+
+            [Status] => Deceased
+            [Death] => Killed by Jon Snow
+            [Death episode] => "Valar Morghulis"
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                )
+
+            [Portrayed by] => Simon Armstrong
+        )
+
+    [Mance_Rayder] => Array
+        (
+            [Name] => Mance Rayder
+            [First seen] => "Valar Dohaeris"
+            [Status] => Deceased
+            [Death] => Set to be burned alive by Melisandre, but shot with an arrow by Jon Snow out of mercy, before he could catch fire.
+            [Death episode] => "The Wars to Come"
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch (formerly)
+                    [2] => 
+                    [3] => The Free Folk
+                )
+
+            [Portrayed by] => Ciarán Hinds
+        )
+
+    [Alliser_Thorne] => Array
+        (
+            [Name] => Alliser Thorne
+            [First seen] => "Lord Snow"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                    [2] => House Thorne (by birth)
+                )
+
+            [Portrayed by] => Owen Teale
+        )
+
+    [Samwell_Tarly] => Array
+        (
+            [Name] => Samwell Tarly
+            [First seen] => "Cripples, Bastards and Broken Things"
+            [Also known as] => Array
+                (
+                    [0] => Sam
+                    [1] => Ser Piggy
+                    [2] => Prince Pork-chop
+                    [3] => Lady Piggy
+                    [4] =>  Sam the Slayer
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                    [2] => House Tarly (by birth)
+                )
+
+            [Portrayed by] => John Bradley-West
+        )
+
+    [Gilly] => Array
+        (
+            [Name] => Gilly
+            [First seen] => "The North Remembers
+            [Status] => Alive
+            [Portrayed by] => Hannah Murray
+        )
+
+    [Locke] => Array
+        (
+            [Name] => Locke
+            [First seen] => "Dark Wings, Dark Words"
+            [Status] => Deceased
+            [Death] => Neck snapped by Bran Stark who had warged into Hodor
+            [Death episode] => "First of His Name"
+            [Allegiance] => Array
+                (
+                    [0] => House Bolton
+                    [1] => The Night
+                    [2] => s Watch (infiltrator)
+                )
+
+            [Portrayed by] => Noah Taylor
+        )
+
+    [Ygritte] => Array
+        (
+            [Name] => Ygritte
+            [First seen] => "The Old Gods and the New"
+            [Status] => Deceased
+            [Death] => Shot with an arrow by Olly
+            [Death episode] => "The Watchers on the Wall"
+            [Allegiance] => Free Folk
+            [Portrayed by] => Rose Leslie
+        )
+
+    [Tormund] => Array
+        (
+            [Name] => Tormund
+            [First seen] => "Valar Dohaeris"
+            [Also known as] => Tormund Giantsbane
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Free Folk
+                    [1] => Mance Rayder
+                )
+
+            [Portrayed by] => Kristofer Hivju
+        )
+
+    [Meera_Reed] => Array
+        (
+            [Name] => Meera Reed
+            [First seen] => "Dark Wings, Dark Words"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => House Reed
+                    [1] => House Stark
+                )
+
+            [Portrayed by] => Ellie Kendrick
+        )
+
+    [Jojen_Reed] => Array
+        (
+            [Name] => Jojen Reed
+            [First seen] => "Dark Wings, Dark Words"
+            [Status] => Deceased
+            [Death] => Stabbed multiple times by a wight, mercy-killed by Meera and blasted by a fireball
+            [Death episode] => "The Children"
+            [Allegiance] => Array
+                (
+                    [0] => House Reed
+                    [1] => House Stark
+                )
+
+            [Portrayed by] => Thomas Brodie-Sangster
+        )
+
+    [Balon_Swann] => Array
+        (
+            [Name] => Balon Swann
+            [First seen] => "The Bear and the Maiden Fair"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => Kingsguard
+                    [1] => House Swann
+                )
+
+        )
+
+    [Balon_Greyjoy] => Array
+        (
+            [Name] => Balon Greyjoy
+            [First seen] => "The Night Lands"
+            [Also known as] => Array
+                (
+                    [0] => Balon Greyjoy, the Ninth of His Name Since the Grey King
+                    [1] => Invader of the North
+                )
+
+            [Status] => Alive
+            [Allegiance] => House Greyjoy
+            [Portrayed by] => Patrick Malahide
+        )
+
+    [Yara_Greyjoy] => Array
+        (
+            [Name] => Yara Greyjoy
+            [First seen] => "The Night Lands"
+            [Status] => Alive
+            [Allegiance] => House Greyjoy
+            [Portrayed by] => Gemma Whelan
+        )
+
+    [Osha] => Array
+        (
+            [Name] => Osha
+            [First seen] => "A Golden Crown"
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Natalia Tena
+        )
+
+    [Luwin] => Array
+        (
+            [Name] => Luwin
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Stabbed in the abdomen with a spear by Dagmer and has his suffering ended by Osha
+            [Death episode] => "Valar Morghulis"
+            [Allegiance] => Array
+                (
+                    [0] => Order of Maesters
+                    [1] => 
+                    [2] => Winterfell
+                )
+
+            [Portrayed by] => Donald Sumpter
+        )
+
+    [Hodor] => Array
+        (
+            [Name] => Hodor
+            [First seen] => "Winter is Coming"
+            [Status] => Alive
+            [Allegiance] => House Stark
+            [Portrayed by] => Kristian Nairn
+        )
+
+    [Lord_of_Bones] => Array
+        (
+            [Name] => Lord of Bones
+            [First seen] => "The Prince of Winterfell"
+            [Also known as] => Rattleshirt
+            [Status] => Deceased
+            [Death] => Beaten to death by Tormund
+            [Death episode] => "Hardhome"
+            [Allegiance] => Free Folk
+            [Portrayed by] => Array
+                (
+                    [0] => Edward Dogliani (Seasons 2-3)
+                    [1] => Ross O
+                    [2] => Hennessy (Season 5)
+                )
+
+        )
+
+    [Jon_Arryn] => Array
+        (
+            [Name] => Jon Arryn
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Poisoned with the Tears of Lys by his wife, Lysa, on the orders of
+                    [1] => Petyr Baelish
+                )
+
+            [Death episode] => "Winter is Coming"
+            [Allegiance] => House Arryn
+            [Portrayed by] => John Standing
+        )
+
+    [Illyrio_Mopatis] => Array
+        (
+            [Name] => Illyrio Mopatis
+            [First seen] => "Winter is Coming"
+            [Status] => Alive
+            [Portrayed by] => Roger Allam
+        )
+
+    [Gared] => Array
+        (
+            [Name] => Gared
+            [Status] => Deceased
+            [Death] => Decapitated by a White Walker
+            [Death episode] => "Winter is Coming"
+            [Allegiance] => Array
+                (
+                    [0] => The Night
+                    [1] => s Watch
+                )
+
+            [Portrayed by] => Dermot Keaney
+        )
+
+    [Hot_Pie] => Array
+        (
+            [Name] => Hot Pie
+            [First seen] => "Fire and Blood"
+            [Status] => Alive
+            [Portrayed by] => Ben Hawkey
+        )
+
+    [Lommy_Greenhands] => Array
+        (
+            [Name] => Lommy Greenhands
+            [First seen] => "Fire and Blood"
+            [Also known as] => Lommy Greenhands
+            [Status] => Deceased
+            [Death] => Killed by Polliver
+            [Death episode] => "What is Dead May Never Die"
+            [Portrayed by] => Eros Vlahos
+        )
+
+    [Polliver] => Array
+        (
+            [Name] => Polliver
+            [First seen] => "What is Dead May Never Die"
+            [Status] => Deceased
+            [Death] => Stabbed in the throat by Arya Stark
+            [Death episode] => "Two Swords"
+            [Allegiance] => House Lannister
+            [Portrayed by] => Andy Kellegher
+        )
+
+    [Lyanna_Stark] => Array
+        (
+            [Name] => Lyanna Stark
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Died during Robert
+                    [1] => s Rebellion, 281 AL
+                )
+
+            [Death episode] => Winterfell
+            [Allegiance] => Northmen
+        )
+
+    [Mycah] => Array
+        (
+            [Name] => Mycah
+            [Status] => Deceased
+            [Death] => Killed by The Hound
+            [Death episode] => "The Kingsroad"
+            [Portrayed by] => Rhodri Hosking
+        )
+
+    [High_Sparrow] => Array
+        (
+            [Name] => High Sparrow
+            [First seen] => "High Sparrow"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Faith of the Seven
+                    [1] => Sparrows
+                    [2] => Faith Militant
+                )
+
+            [Portrayed by] => Jonathan Pryce
+        )
+
+    [Ros] => Array
+        (
+            [Name] => Ros
+            [First seen] => "Winter is Coming"
+            [Status] => Deceased
+            [Death] => Shot numerous times with a crossbow, one fatally to the heart by Joffrey Baratheon
+            [Death episode] => "The Climb"
+            [Allegiance] => Array
+                (
+                    [0] => Petyr Baelish
+                    [1] => Varys
+                )
+
+            [Portrayed by] => Esmé Bianco
+        )
+
+    [Mhaegen] => Array
+        (
+            [Name] => Mhaegen
+            [First seen] => "The Wolf and the Lion"
+            [Status] => Uncertain
+            [Allegiance] => Petyr Baelish
+            [Portrayed by] => Antonia Christophers
+        )
+
+    [Armeca] => Array
+        (
+            [Name] => Armeca
+            [First seen] => "You Win or You Die"
+            [Status] => Alive
+            [Allegiance] => Petyr Baelish
+            [Portrayed by] => Sahara Knite
+        )
+
+    [Shagga] => Array
+        (
+            [Name] => Shagga
+            [First seen] => "The Pointy End"
+            [Status] => Alive
+            [Allegiance] => The Stone Crows
+            [Portrayed by] => Mark Lewis Jones
+        )
+
+    [Timett] => Array
+        (
+            [Name] => Timett
+            [First seen] => "The Pointy End"
+            [Also known as] => Array
+                (
+                    [0] => Timett One-Eye
+                    [1] => Timett, son of Timett
+                )
+
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Burned Men
+                    [1] => Tyrion Lannister (temporary alliance)
+                )
+
+            [Portrayed by] => Tobias Winter
+        )
+
+    [Chella] => Array
+        (
+            [Name] => Chella
+            [First seen] => "The Pointy End"
+            [Status] => Alive
+            [Allegiance] => Array
+                (
+                    [0] => The Black Ears
+                    [1] => Tyrion Lannister (temporary alliance)
+                )
+
+            [Portrayed by] => Unidentified
+        )
+
+    [Talisa_Stark] => Array
+        (
+            [Name] => Talisa Stark
+            [First seen] => "Garden of Bones"
+            [Status] => Deceased
+            [Death] => Stabbed repeatedly by Lothar Frey, killing her unborn child in the process
+            [Death episode] => "The Rains of Castamere"
+            [Allegiance] => Array
+                (
+                    [0] => House Stark
+                    [1] => Maegyr family
+                )
+
+            [Portrayed by] => Oona Chaplin
+        )
+
+    [Myranda] => Array
+        (
+            [Name] => Myranda
+            [First seen] => "The Bear and the Maiden Fair"
+            [Status] => Deceased
+            [Death] => Thrown from a rampart by Theon Greyjoy for threatening Sansa Stark
+            [Death episode] => Array
+                (
+                    [0] => "Mother
+                    [1] => s Mercy"
+                )
+
+            [Allegiance] => House Bolton
+            [Portrayed by] => Charlotte Hope
+        )
+
+    [Violet] => Array
+        (
+            [Name] => Violet
+            [Status] => Dead
+            [Allegiance] => House Bolton
+            [Portrayed by] => Stephanie Blacker
+        )
+
+    [Tansy] => Array
+        (
+            [Name] => Tansy
+            [Status] => Deceased
+            [Death] => Array
+                (
+                    [0] => Torn apart by the bastard
+                    [1] => s girls
+                )
+
+            [Death episode] => "The Lion and the Rose"
+            [Allegiance] => House Bolton
+            [Portrayed by] => Jazzy de Lisser
+        )
+
+)
+Array
+(
+    [0] => TRUNCATE TABLE CharacterActor
+    [1] => TRUNCATE TABLE Characters
+    [2] => TRUNCATE TABLE CharacterAlias
+    [3] => TRUNCATE TABLE CharacterFaction
+    [4] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tansy', 'N/A', 'Deceased')
+    [5] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tansy', 'Jazzy de Lisser')
+    [6] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tansy', 'House Bolton')
+    [7] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Violet', 'N/A', 'Dead')
+    [8] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Violet', 'Stephanie Blacker')
+    [9] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Violet', 'House Bolton')
+    [10] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Myranda', '"The Bear and the Maiden Fair"', 'Deceased')
+    [11] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Myranda', 'Charlotte Hope')
+    [12] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Myranda', 'House Bolton')
+    [13] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Talisa Stark', '"Garden of Bones"', 'Deceased')
+    [14] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Talisa Stark', 'Oona Chaplin')
+    [15] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Talisa Stark', 'House Stark')
+    [16] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Talisa Stark', 'Maegyr family')
+    [17] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Chella', '"The Pointy End"', 'Alive')
+    [18] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Chella', 'Unidentified')
+    [19] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Chella', 'The Black Ears')
+    [20] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Chella', 'Tyrion Lannister (temporary alliance)')
+    [21] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Timett', '"The Pointy End"', 'Alive')
+    [22] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Timett', 'Tobias Winter')
+    [23] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Timett', 'Timett One-Eye')
+    [24] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Timett', 'Timett, son of Timett')
+    [25] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Timett', 'The Burned Men')
+    [26] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Timett', 'Tyrion Lannister (temporary alliance)')
+    [27] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Shagga', '"The Pointy End"', 'Alive')
+    [28] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Shagga', 'Mark Lewis Jones')
+    [29] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Shagga', 'The Stone Crows')
+    [30] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Armeca', '"You Win or You Die"', 'Alive')
+    [31] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Armeca', 'Sahara Knite')
+    [32] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Armeca', 'Petyr Baelish')
+    [33] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Mhaegen', '"The Wolf and the Lion"', 'Uncertain')
+    [34] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Mhaegen', 'Antonia Christophers')
+    [35] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mhaegen', 'Petyr Baelish')
+    [36] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Ros', '"Winter is Coming"', 'Deceased')
+    [37] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Ros', 'Esmé Bianco')
+    [38] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ros', 'Petyr Baelish')
+    [39] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ros', 'Varys')
+    [40] => INSERT INTO Characters (name, first_appearance, status) VALUES ('High Sparrow', '"High Sparrow"', 'Alive')
+    [41] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('High Sparrow', 'Jonathan Pryce')
+    [42] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('High Sparrow', 'The Faith of the Seven')
+    [43] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('High Sparrow', 'Sparrows')
+    [44] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('High Sparrow', 'Faith Militant')
+    [45] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Mycah', 'N/A', 'Deceased')
+    [46] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Mycah', 'Rhodri Hosking')
+    [47] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lyanna Stark', 'N/A', 'Deceased')
+    [48] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lyanna Stark', 'Northmen')
+    [49] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Polliver', '"What is Dead May Never Die"', 'Deceased')
+    [50] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Polliver', 'Andy Kellegher')
+    [51] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Polliver', 'House Lannister')
+    [52] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lommy Greenhands', '"Fire and Blood"', 'Deceased')
+    [53] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lommy Greenhands', 'Eros Vlahos')
+    [54] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lommy Greenhands', 'Lommy Greenhands')
+    [55] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Hot Pie', '"Fire and Blood"', 'Alive')
+    [56] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Hot Pie', 'Ben Hawkey')
+    [57] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Gared', 'N/A', 'Deceased')
+    [58] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gared', 'Dermot Keaney')
+    [59] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Gared', 'The Night')
+    [60] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Gared', 's Watch')
+    [61] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Illyrio Mopatis', '"Winter is Coming"', 'Alive')
+    [62] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Illyrio Mopatis', 'Roger Allam')
+    [63] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jon Arryn', 'N/A', 'Deceased')
+    [64] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jon Arryn', 'John Standing')
+    [65] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jon Arryn', 'House Arryn')
+    [66] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lord of Bones', '"The Prince of Winterfell"', 'Deceased')
+    [67] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lord of Bones', 'Edward Dogliani (Seasons 2-3)')
+    [68] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lord of Bones', 'Ross O')
+    [69] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lord of Bones', 'Hennessy (Season 5)')
+    [70] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lord of Bones', 'Rattleshirt')
+    [71] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lord of Bones', 'Free Folk')
+    [72] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Hodor', '"Winter is Coming"', 'Alive')
+    [73] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Hodor', 'Kristian Nairn')
+    [74] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Hodor', 'House Stark')
+    [75] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Luwin', '"Winter is Coming"', 'Deceased')
+    [76] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Luwin', 'Donald Sumpter')
+    [77] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Luwin', 'Order of Maesters')
+    [78] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Luwin', '')
+    [79] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Luwin', 'Winterfell')
+    [80] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Osha', '"A Golden Crown"', 'Alive')
+    [81] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Osha', 'Natalia Tena')
+    [82] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Osha', 'House Stark')
+    [83] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Yara Greyjoy', '"The Night Lands"', 'Alive')
+    [84] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Yara Greyjoy', 'Gemma Whelan')
+    [85] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Yara Greyjoy', 'House Greyjoy')
+    [86] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Balon Greyjoy', '"The Night Lands"', 'Alive')
+    [87] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Balon Greyjoy', 'Patrick Malahide')
+    [88] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Balon Greyjoy', 'Balon Greyjoy, the Ninth of His Name Since the Grey King')
+    [89] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Balon Greyjoy', 'Invader of the North')
+    [90] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Balon Greyjoy', 'House Greyjoy')
+    [91] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Balon Swann', '"The Bear and the Maiden Fair"', 'Alive')
+    [92] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Balon Swann', 'Kingsguard')
+    [93] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Balon Swann', 'House Swann')
+    [94] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jojen Reed', '"Dark Wings, Dark Words"', 'Deceased')
+    [95] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jojen Reed', 'Thomas Brodie-Sangster')
+    [96] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jojen Reed', 'House Reed')
+    [97] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jojen Reed', 'House Stark')
+    [98] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Meera Reed', '"Dark Wings, Dark Words"', 'Alive')
+    [99] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Meera Reed', 'Ellie Kendrick')
+    [100] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Meera Reed', 'House Reed')
+    [101] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Meera Reed', 'House Stark')
+    [102] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tormund', '"Valar Dohaeris"', 'Alive')
+    [103] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tormund', 'Kristofer Hivju')
+    [104] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Tormund', 'Tormund Giantsbane')
+    [105] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tormund', 'The Free Folk')
+    [106] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tormund', 'Mance Rayder')
+    [107] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Ygritte', '"The Old Gods and the New"', 'Deceased')
+    [108] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Ygritte', 'Rose Leslie')
+    [109] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ygritte', 'Free Folk')
+    [110] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Locke', '"Dark Wings, Dark Words"', 'Deceased')
+    [111] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Locke', 'Noah Taylor')
+    [112] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Locke', 'House Bolton')
+    [113] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Locke', 'The Night')
+    [114] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Locke', 's Watch (infiltrator)')
+    [115] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Gilly', '"The North Remembers', 'Alive')
+    [116] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gilly', 'Hannah Murray')
+    [117] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Samwell Tarly', '"Cripples, Bastards and Broken Things"', 'Alive')
+    [118] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Samwell Tarly', 'John Bradley-West')
+    [119] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Samwell Tarly', 'Sam')
+    [120] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Samwell Tarly', 'Ser Piggy')
+    [121] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Samwell Tarly', 'Prince Pork-chop')
+    [122] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Samwell Tarly', 'Lady Piggy')
+    [123] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Samwell Tarly', ' Sam the Slayer')
+    [124] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Samwell Tarly', 'The Night')
+    [125] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Samwell Tarly', 's Watch')
+    [126] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Samwell Tarly', 'House Tarly (by birth)')
+    [127] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Alliser Thorne', '"Lord Snow"', 'Alive')
+    [128] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Alliser Thorne', 'Owen Teale')
+    [129] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Alliser Thorne', 'The Night')
+    [130] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Alliser Thorne', 's Watch')
+    [131] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Alliser Thorne', 'House Thorne (by birth)')
+    [132] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Mance Rayder', '"Valar Dohaeris"', 'Deceased')
+    [133] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Mance Rayder', 'Ciarán Hinds')
+    [134] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mance Rayder', 'The Night')
+    [135] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mance Rayder', 's Watch (formerly)')
+    [136] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mance Rayder', '')
+    [137] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mance Rayder', 'The Free Folk')
+    [138] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Qhorin', '"The Ghost of Harrenhal"', 'Deceased')
+    [139] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Qhorin', 'Simon Armstrong')
+    [140] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Qhorin', 'Qhorin Halfhand')
+    [141] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Qhorin', 'The Halfhand')
+    [142] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qhorin', 'The Night')
+    [143] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qhorin', 's Watch')
+    [144] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Janos Slynt', '"Cripples, Bastards and Broken Things"', 'Deceased')
+    [145] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Janos Slynt', 'Dominic Carter')
+    [146] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Janos Slynt', 'House Baratheon of King')
+    [147] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Janos Slynt', 's Landing')
+    [148] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Janos Slynt', 'House Slynt')
+    [149] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Janos Slynt', 'Night')
+    [150] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Janos Slynt', 's Watch')
+    [151] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Ilyn', '"The Kingsroad"', 'Alive')
+    [152] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Ilyn', 'Wilko Johnson')
+    [153] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ilyn', 'House Baratheon of King')
+    [154] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ilyn', 's Landing')
+    [155] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ilyn', 'House Payne')
+    [156] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Podrick Payne', '"The Night Lands"', 'Alive')
+    [157] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Podrick Payne', 'Daniel Portman')
+    [158] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Podrick Payne', 'Pod')
+    [159] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Podrick Payne', 'House Lannister')
+    [160] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Podrick Payne', 'House Payne')
+    [161] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Pyat Pree', '"Garden of Bones"', 'Deceased')
+    [162] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Pyat Pree', 'Ian Hanmore')
+    [163] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Pyat Pree', 'Warlocks of Qarth')
+    [164] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Pyat Pree', 'The Thirteen')
+    [165] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Spice King', '"Garden of Bones"', 'Deceased')
+    [166] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Spice King', 'Nicholas Blane')
+    [167] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Spice King', 'The Thirteen')
+    [168] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Robin Arryn', '"The Wolf and the Lion"', 'Alive')
+    [169] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Robin Arryn', 'Lino Facioli')
+    [170] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robin Arryn', 'Sweetrobin')
+    [171] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Robin Arryn', 'House Arryn')
+    [172] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lysa Arryn', '"The Wolf and the Lion"', 'Deceased')
+    [173] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lysa Arryn', 'Kate Dickie')
+    [174] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lysa Arryn', 'Lysa Tully')
+    [175] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lysa Arryn', 'House Baelish - by marriage')
+    [176] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lysa Arryn', 'House Arryn - by marriage')
+    [177] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lysa Arryn', 'House Tully - by birth')
+    [178] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Shae', '"Baelor"', 'Deceased')
+    [179] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Shae', 'Sibel Kekilli')
+    [180] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jeor Mormont', '"Lord Snow"', 'Deceased')
+    [181] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jeor Mormont', 'James Cosmo')
+    [182] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jeor Mormont', 'The Old Bear')
+    [183] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jeor Mormont', 'The Lord Crow')
+    [184] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jeor Mormont', 'The Night')
+    [185] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jeor Mormont', 's Watch')
+    [186] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jeor Mormont', 'House Mormont')
+    [187] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jorah Mormont', '"Winter is Coming"', 'Alive')
+    [188] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jorah Mormont', 'Iain Glen')
+    [189] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jorah Mormont', 'Jorah the Andal')
+    [190] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jorah Mormont', 'House Targaryen (by oath)')
+    [191] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jorah Mormont', 'Varys (formerly)')
+    [192] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jorah Mormont', 'Golden Company (formerly)')
+    [193] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jorah Mormont', 'House Mormont (by birth)')
+    [194] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Xaro', '"Garden of Bones"', 'Deceased')
+    [195] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Xaro', 'Qartheen')
+    [196] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Quaithe', '"The Ghost of Harrenhal"', 'Alive')
+    [197] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Quaithe', 'Laura Pradelska')
+    [198] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Quaithe', 'Quaithe of the Shadow')
+    [199] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Craster', '"The North Remembers"', 'Deceased')
+    [200] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Craster', 'Robert Pugh')
+    [201] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Syrio Forel', '"Lord Snow"', 'Unknown')
+    [202] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Syrio Forel', 'Miltos Yerolemou')
+    [203] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Syrio Forel', 'House Stark')
+    [204] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Syrio Forel', 'The Sealord of Braavos')
+    [205] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Thoros', '"Dark Wings, Dark Words"', 'Alive')
+    [206] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Thoros', 'Paul Kaye')
+    [207] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Thoros', 'Thoros of Myr')
+    [208] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Thoros', 'The Brotherhood Without Banners')
+    [209] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jaqen H'ghar', '"Fire and Blood"', 'Alive')
+    [210] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jaqen H'ghar', 'Tom Wlaschiha')
+    [211] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jaqen H'ghar', 'Faceless Men')
+    [212] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Beric Dondarrion', '"A Golden Crown"', 'Deceased ')
+    [213] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Beric Dondarrion', 'David Michael Scott (Season 1)')
+    [214] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Beric Dondarrion', 'Richard Dormer (Season 3)')
+    [215] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Beric Dondarrion', 'The Lightning Lord')
+    [216] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Beric Dondarrion', 'House Dondarrion')
+    [217] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Beric Dondarrion', 'The Brotherhood Without Banners')
+    [218] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Sandor Clegane', '"Winter is Coming"', 'Unknown')
+    [219] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Sandor Clegane', 'Rory McCann')
+    [220] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Sandor Clegane', 'The Hound')
+    [221] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Sandor Clegane', 'Dog')
+    [222] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sandor Clegane', 'House Baratheon of King')
+    [223] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sandor Clegane', 's Landing (former)')
+    [224] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sandor Clegane', 'The Kingsguard (former)')
+    [225] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sandor Clegane', 'House Clegane (former)')
+    [226] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Gregor Clegane', '"Cripples, Bastards and Broken Things"', 'Alive')
+    [227] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gregor Clegane', 'Conan Stevens (Season 1)')
+    [228] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gregor Clegane', 'Ian Whyte (Season 2)')
+    [229] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gregor Clegane', 'Hafþór Júlíus Björnsson (Seasons 4 and 5)')
+    [230] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Gregor Clegane', 'The Mountain That Rides')
+    [231] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Gregor Clegane', 'The Mountain')
+    [232] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Gregor Clegane', 'Tywin Lannister')
+    [233] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Gregor Clegane', 's Mad Dog')
+    [234] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Gregor Clegane', 'House Lannister')
+    [235] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Gregor Clegane', 'House Clegane')
+    [236] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Gregor Clegane', 'Kingsguard')
+    [237] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Areo Hotah', '"The House of Black and White"', 'Alive')
+    [238] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Areo Hotah', 'DeObia Oparei')
+    [239] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Areo Hotah', 'House Martell')
+    [240] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tyene Sand', '"Sons of the Harpy"', 'Alive')
+    [241] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tyene Sand', 'Rosabell Laurenti Sellers')
+    [242] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tyene Sand', 'House Martell')
+    [243] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Nymeria Sand', '"Sons of the Harpy"', 'Alive')
+    [244] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Nymeria Sand', 'Jessica Henwick')
+    [245] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Nymeria Sand', 'Lady Nym')
+    [246] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Nymeria Sand', 'House Martell')
+    [247] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Obara Sand', '"Sons of the Harpy"', 'Alive')
+    [248] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Obara Sand', 'Keisha Castle-Hughes')
+    [249] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Obara Sand', 'House Martell')
+    [250] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Ellaria Sand', '"Two Swords"', 'Alive')
+    [251] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Ellaria Sand', 'Indira Varma')
+    [252] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ellaria Sand', 'House Martell')
+    [253] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ellaria Sand', 'House Uller')
+    [254] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Oberyn Martell', '"Two Swords"', 'Deceased')
+    [255] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Oberyn Martell', 'Pedro Pascal')
+    [256] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Oberyn Martell', 'The Red Viper of Dorne')
+    [257] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Oberyn Martell', 'House Martell')
+    [258] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Oberyn Martell', 'The Citadel (formerly)')
+    [259] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Elia Martell', 'N/A', 'Deceased')
+    [260] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Elia Martell', 'Elia of Dorne')
+    [261] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Elia Martell', 'Dornishmen')
+    [262] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Trystane Martell', '"The House of Black and White"', 'Alive')
+    [263] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Trystane Martell', 'Toby Sebastian')
+    [264] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Trystane Martell', 'House Martell')
+    [265] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Doran Martell', '"The House of Black and White"', 'Alive')
+    [266] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Doran Martell', 'Alexander Siddig')
+    [267] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Doran Martell', 'House Martell')
+    [268] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Daario Naharis', '"Second Sons"', 'Alive')
+    [269] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Daario Naharis', 'Ed Skrein (Season 3)')
+    [270] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Daario Naharis', 'Michiel Huisman (Season 4-present)')
+    [271] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Daario Naharis', 'Second Sons')
+    [272] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Daario Naharis', 'House Targaryen')
+    [273] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Grey Worm', '"Kissed by Fire"', 'Alive')
+    [274] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Grey Worm', 'Jacob Anderson')
+    [275] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Grey Worm', 'House Targaryen')
+    [276] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Grey Worm', 'The Unsullied')
+    [277] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Missandei', '"Valar Dohaeris"', 'Alive')
+    [278] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Missandei', 'Nathalie Emmanuel')
+    [279] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Missandei', 'House Targaryen')
+    [280] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Barristan Selmy', '"Lord Snow"', 'Deceased')
+    [281] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Barristan Selmy', 'Ian McElhinney')
+    [282] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Barristan Selmy', 'Barristan the Bold')
+    [283] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Barristan Selmy', 'Queensguard')
+    [284] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Barristan Selmy', 'Kingsguard (former)')
+    [285] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Barristan Selmy', 'House Selmy (former)')
+    [286] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Drogo', '"Winter is Coming"', 'Deceased')
+    [287] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Drogo', 'Jason Momoa')
+    [288] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Drogo', 'The Great Khal')
+    [289] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Drogo', 'Himself')
+    [290] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Aemon', '"Lord Snow"', 'Deceased')
+    [291] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Aemon', 'Peter Vaughan')
+    [292] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aemon', 'Aemon Targaryen (formerly)')
+    [293] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aemon', 'Maester Aemon')
+    [294] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aemon', 'Night')
+    [295] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aemon', 's Watch (by oath)')
+    [296] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aemon', 'Order of Maesters (by oath)')
+    [297] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aemon', '')
+    [298] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aemon', 'House Targaryen (by birth)')
+    [299] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Rhaegar Targaryen', 'N/A', 'Deceased')
+    [300] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Rhaegar Targaryen', 'The Last Dragon')
+    [301] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Rhaegar Targaryen', 'Valyrian')
+    [302] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Aerys II Targaryen', 'N/A', 'Deceased')
+    [303] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aerys II Targaryen', 'The Mad King')
+    [304] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aerys II Targaryen', 'Mad King Aerys')
+    [305] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aerys II Targaryen', 'King Scab')
+    [306] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Aerys II Targaryen', 'Aerys of House Targaryen, the Second of His Name')
+    [307] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Aerys II Targaryen', 'Valyrian')
+    [308] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Viserys Targaryen', '"Winter is Coming"', 'Deceased')
+    [309] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Viserys Targaryen', 'Harry Lloyd')
+    [310] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Viserys Targaryen', 'The Beggar King')
+    [311] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Viserys Targaryen', 'Viserys III Targaryen')
+    [312] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Viserys Targaryen', 'Viserys of House Targaryen the Third of His Name')
+    [313] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Viserys Targaryen', 'Khal Rhaggat (Cart King)Khal Rhae Mhar (Sorefoot King)')
+    [314] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Viserys Targaryen', 'House Targaryen')
+    [315] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Daenerys Targaryen', '"Winter is Coming"', 'Alive')
+    [316] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Daenerys Targaryen', 'Emilia Clarke')
+    [317] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'Daenerys Stormborn')
+    [318] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'Dany')
+    [319] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'The Unburnt')
+    [320] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'Mhysa')
+    [321] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'The Queen Across the Sea')
+    [322] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'The Silver Queen')
+    [323] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Daenerys Targaryen', 'The Dragon Queen')
+    [324] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Daenerys Targaryen', 'House Targaryen')
+    [325] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Melisandre', '"The North Remembers"', 'Alive')
+    [326] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Melisandre', 'Carice van Houten')
+    [327] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Melisandre', 'Melisandre of Asshai')
+    [328] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Melisandre', 'Lady Melisandre')
+    [329] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Melisandre', 'The Red Woman')
+    [330] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Melisandre', 'House Baratheon of Dragonstone (defected)')
+    [331] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Salladhor Saan', '"The Night Lands"', 'Alive')
+    [332] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Salladhor Saan', 'Lucian Msamati')
+    [333] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Salladhor Saan', 'House Baratheon of Dragonstone')
+    [334] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Davos Seaworth', '"The North Remembers"', 'Alive')
+    [335] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Davos Seaworth', 'Liam Cunningham')
+    [336] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Davos Seaworth', 'The Onion Knight')
+    [337] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Davos Seaworth', 'Davos of Flea Bottom')
+    [338] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Davos Seaworth', 'House Baratheon of Dragonstone')
+    [339] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Davos Seaworth', 'House Seaworth')
+    [340] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Gendry', '"Cripples, Bastards and Broken Things"', 'Alive')
+    [341] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Gendry', 'Joe Dempsie')
+    [342] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Shireen Baratheon', '"Kissed by Fire"', 'Deceased')
+    [343] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Shireen Baratheon', 'Kerry Ingram')
+    [344] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Shireen Baratheon', 'House Baratheon of Dragonstone')
+    [345] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Selyse Baratheon', '"The North Remembers"', 'Deceased')
+    [346] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Selyse Baratheon', 'Selyse Florent')
+    [347] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Selyse Baratheon', 'Andal')
+    [348] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Brienne of Tarth', '"What is Dead May Never Die"', 'Alive')
+    [349] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Brienne of Tarth', 'Gwendoline Christie')
+    [350] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Brienne of Tarth', 'Brienne the Beauty')
+    [351] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Brienne of Tarth', 'The Maid of Tarth')
+    [352] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brienne of Tarth', 'House Tarth')
+    [353] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brienne of Tarth', 'House Baratheon')
+    [354] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brienne of Tarth', 'Renly Baratheon')
+    [355] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brienne of Tarth', 's Kingsguard')
+    [356] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brienne of Tarth', 'House Tully')
+    [357] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Renly Baratheon', '"Lord Snow"', 'Deceased')
+    [358] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Renly Baratheon', 'Gethin Anthony')
+    [359] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Renly Baratheon', 'The King in Highgarden')
+    [360] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Renly Baratheon', 'House Baratheon of Storm')
+    [361] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Renly Baratheon', 's End')
+    [362] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Stannis Baratheon', '"The North Remembers"', 'Deceased')
+    [363] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Stannis Baratheon', 'Stephen Dillane')
+    [364] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 'Stannis of House Baratheon, First of His Name')
+    [365] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 'The King in the Narrow Sea')
+    [366] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 'Warrior of Light')
+    [367] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 'The Lord')
+    [368] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 's Chosen')
+    [369] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Stannis Baratheon', 'Son of Fire')
+    [370] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Stannis Baratheon', 'House Baratheon of Dragonstone')
+    [371] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Stannis Baratheon', 'House Baratheon of Storm')
+    [372] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Stannis Baratheon', 's End')
+    [373] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Robert Baratheon', '"Winter is Coming"', 'Deceased')
+    [374] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Robert Baratheon', 'Mark Addy')
+    [375] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robert Baratheon', 'Robert of House Baratheon, the First of His Name')
+    [376] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robert Baratheon', 'The Usurper')
+    [377] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robert Baratheon', 'The Stag King')
+    [378] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Robert Baratheon', 'House Baratheon')
+    [379] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Roslin Frey', 'N/A', 'Alive')
+    [380] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Roslin Frey', 'Alexandra Dowling')
+    [381] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Roslin Frey', 'House Tully - by marriage')
+    [382] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Roslin Frey', 'House Frey - by birth')
+    [383] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Walder Rivers', '"The Climb"', 'Alive')
+    [384] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Walder Rivers', 'Tim Plester')
+    [385] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Walder Rivers', 'Black Walder')
+    [386] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Walder Rivers', 'Black Walder Rivers')
+    [387] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Walder Rivers', 'House Frey')
+    [388] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lothar Frey', '"The Climb"', 'Alive')
+    [389] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lothar Frey', 'Tom Brooke')
+    [390] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lothar Frey', 'Lame Lothar')
+    [391] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lothar Frey', 'House Frey')
+    [392] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Walder Frey', '"Baelor"', 'Alive')
+    [393] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Walder Frey', 'David Bradley')
+    [394] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Walder Frey', 'The Late Lord Frey')
+    [395] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Walder Frey', 'The Late Walder Frey')
+    [396] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Walder Frey', 'House Frey')
+    [397] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Walda Bolton', '"The Lion and the Rose"', 'Alive')
+    [398] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Walda Bolton', 'Elizabeth Webster')
+    [399] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Walda Bolton', 'Fat Walda Frey')
+    [400] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Walda Bolton', 'House Bolton - by marriage')
+    [401] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Walda Bolton', 'House Frey - by birth')
+    [402] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Theon Greyjoy', '"Winter is Coming"', 'Alive')
+    [403] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Theon Greyjoy', 'Alfie Allen')
+    [404] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Theon Greyjoy', 'Reek')
+    [405] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Theon Greyjoy', '"The Prince of Winterfell"')
+    [406] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Theon Greyjoy', 'House Greyjoy')
+    [407] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Theon Greyjoy', 'House Stark')
+    [408] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Theon Greyjoy', 'House Bolton (hostage')
+    [409] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Theon Greyjoy', ' former)')
+    [410] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Ramsay Bolton', '"Dark Wings, Dark Words"', 'Alive')
+    [411] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Ramsay Bolton', 'Iwan Rheon')
+    [412] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Ramsay Bolton', 'Ramsay Snow (formerly)')
+    [413] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Ramsay Bolton', 'The Bastard of Bolton')
+    [414] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Ramsay Bolton', 'House Bolton')
+    [415] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Roose Bolton', '"Garden of Bones"', 'Alive')
+    [416] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Roose Bolton', 'Michael McElhatton')
+    [417] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Roose Bolton', 'House Bolton')
+    [418] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Mace Tyrell', '"The Lion and the Rose"', 'Alive')
+    [419] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Mace Tyrell', 'Roger Ashton-Griffiths')
+    [420] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Mace Tyrell', 'Lord Oaf')
+    [421] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Mace Tyrell', 'House Tyrell')
+    [422] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Olenna Tyrell', '"Dark Wings, Dark Words"', 'Alive')
+    [423] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Olenna Tyrell', 'Dame Diana Rigg')
+    [424] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Olenna Tyrell', 'The Queen of Thorns')
+    [425] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Olenna Tyrell', 'House Tyrell - by marriage')
+    [426] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Olenna Tyrell', 'House Redwyne - by birth')
+    [427] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Loras Tyrell', '"The Wolf and the Lion"', 'Unknown')
+    [428] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Loras Tyrell', 'Finn Jones')
+    [429] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Loras Tyrell', 'The Knight of the Flowers')
+    [430] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', 'House Tyrell')
+    [431] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', '')
+    [432] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', 'House Baratheon of Storm')
+    [433] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', 's End (formerly)')
+    [434] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', 'Renly Baratheon')
+    [435] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Loras Tyrell', 's Kingsguard (formerly)')
+    [436] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Margaery Tyrell', '"What is Dead May Never Die"', 'Alive')
+    [437] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Margaery Tyrell', 'Natalie Dormer')
+    [438] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Margaery Tyrell', 'House Tyrell (by birth)')
+    [439] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Margaery Tyrell', 'House Baratheon of King')
+    [440] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Margaery Tyrell', 's Landing (by marriage)')
+    [441] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Margaery Tyrell', 'House Baratheon (by marriage, annulled)')
+    [442] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Varys', '"Lord Snow"', 'Alive')
+    [443] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Varys', 'Conleth Hill')
+    [444] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Varys', 'The Spider')
+    [445] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Varys', 'The Eunuch')
+    [446] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Varys', 'Lord Varys')
+    [447] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Varys', 'House Targaryen')
+    [448] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Petyr Baelish', '"Lord Snow"', 'Alive')
+    [449] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Petyr Baelish', 'Aidan Gillen')
+    [450] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Petyr Baelish', 'Littlefinger')
+    [451] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Petyr Baelish', 'House Baelish')
+    [452] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Pycelle', '"Lord Snow"', 'Alive')
+    [453] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Pycelle', 'Julian Glover')
+    [454] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Pycelle', 'House Lannister')
+    [455] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Pycelle', 'Order of Maesters')
+    [456] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Qyburn', '"Valar Dohaeris"', 'Alive')
+    [457] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Qyburn', 'Anton Lesser')
+    [458] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qyburn', 'Cersei Lannister')
+    [459] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qyburn', 'House Bolton (briefly)')
+    [460] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qyburn', 'Order of Maesters (expelled)')
+    [461] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Qyburn', 'Small Council')
+    [462] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Bronn', '"Cripples, Bastards and Broken Things"', 'Alive')
+    [463] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Bronn', 'Jerome Flynn')
+    [464] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Bronn', 'Ser Bronn of the Blackwater')
+    [465] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Bronn', 'House Lannister (sellsword)')
+    [466] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Lancel Lannister', '"Lord Snow"', 'Alive')
+    [467] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Lancel Lannister', 'Eugene Simon')
+    [468] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lancel Lannister', 'Brother Lancel')
+    [469] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Lancel Lannister', 'Lancel Lannister')
+    [470] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lancel Lannister', 'House Lannister (formerly)')
+    [471] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lancel Lannister', 'Sparrows')
+    [472] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Lancel Lannister', 'Faith Militant')
+    [473] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Kevan Lannister', '"The Pointy End"', 'Alive')
+    [474] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Kevan Lannister', 'Ian Gelder')
+    [475] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Kevan Lannister', 'House Lannister')
+    [476] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tommen Baratheon', '"Winter is Coming"', 'Alive')
+    [477] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tommen Baratheon', 'Callum Wharry (Seasons 1 and 2)')
+    [478] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tommen Baratheon', 'Dean-Charles Chapman (Seasons 4-6)')
+    [479] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Tommen Baratheon', 'Tommen of the House Baratheon the First of His Name')
+    [480] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tommen Baratheon', 'House Baratheon of King')
+    [481] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tommen Baratheon', 's Landing')
+    [482] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Myrcella Baratheon', '"Winter is Coming"', 'Deceased')
+    [483] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Myrcella Baratheon', 'Aimee Richardson (Seasons 1-2)')
+    [484] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Myrcella Baratheon', '')
+    [485] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Myrcella Baratheon', 'Nell Tiger Free (Seasons 5-6)')
+    [486] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Myrcella Baratheon', 'House Baratheon of King')
+    [487] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Myrcella Baratheon', 's Landing House Martell')
+    [488] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Joffrey Baratheon', '"Winter is Coming"', 'Deceased')
+    [489] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Joffrey Baratheon', 'Jack Gleeson')
+    [490] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Joffrey Baratheon', 'King Joffrey of Houses Baratheon and Lannister, the First of His Name.')
+    [491] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Joffrey Baratheon', 'The King on the Iron Throne')
+    [492] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Joffrey Baratheon', 'House Baratheon of King')
+    [493] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Joffrey Baratheon', 's Landing ')
+    [494] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Joffrey Baratheon', 'House Lannister')
+    [495] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tyrion Lannister', '"Winter is Coming"', 'Alive')
+    [496] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tyrion Lannister', 'Peter Dinklage')
+    [497] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Tyrion Lannister', 'The Imp')
+    [498] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Tyrion Lannister', 'Halfman')
+    [499] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Tyrion Lannister', 'The Little Lion')
+    [500] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tyrion Lannister', 'House Lannister (formerly)')
+    [501] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tyrion Lannister', 'House Targaryen')
+    [502] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jaime Lannister', '"Winter is Coming"', 'Alive')
+    [503] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jaime Lannister', 'Nikolaj Coster-Waldau')
+    [504] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jaime Lannister', 'The Kingslayer')
+    [505] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jaime Lannister', 'Oathbreaker')
+    [506] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jaime Lannister', 'Man without Honor')
+    [507] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jaime Lannister', 'Kingsguard')
+    [508] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jaime Lannister', 'House Lannister')
+    [509] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Cersei Lannister', '"Winter is Coming"', 'Unknown')
+    [510] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Cersei Lannister', 'Lena Headey (Adult)')
+    [511] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Cersei Lannister', 'Nell Williams (Young, flashback in Season 5)')
+    [512] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Cersei Lannister', 'House Lannister')
+    [513] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Cersei Lannister', 'House Baratheon of King')
+    [514] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Cersei Lannister', 's Landing (by marriage)')
+    [515] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Tywin Lannister', '"You Win or You Die"', 'Deceased')
+    [516] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Tywin Lannister', 'Charles Dance')
+    [517] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Tywin Lannister', 'House Lannister')
+    [518] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Edmure Tully', '"Walk of Punishment"', 'Alive')
+    [519] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Edmure Tully', 'Tobias Menzies')
+    [520] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Edmure Tully', 'House Tully')
+    [521] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Edmure Tully', 'House Stark')
+    [522] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Brynden Tully', '"Walk of Punishment"', 'Alive')
+    [523] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Brynden Tully', 'Clive Russell')
+    [524] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Brynden Tully', 'The Blackfish')
+    [525] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Brynden Tully', 'House Tully')
+    [526] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Jon Snow', '"Winter is Coming"', 'Deceased')
+    [527] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Jon Snow', 'Kit Harington')
+    [528] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jon Snow', 'Lord Snow')
+    [529] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jon Snow', 'The Bastard of Winterfell')
+    [530] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Jon Snow', 'King Crow')
+    [531] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jon Snow', 'The Night')
+    [532] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jon Snow', 's Watch')
+    [533] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Jon Snow', 'House Stark')
+    [534] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Rickon Stark', '"Winter is Coming"', 'Alive')
+    [535] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Rickon Stark', 'Art Parkinson')
+    [536] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Rickon Stark', 'House Stark')
+    [537] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Bran Stark', '"Winter is Coming"', 'Alive')
+    [538] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Bran Stark', 'Isaac Hempstead-Wright')
+    [539] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Bran Stark', 'Bran')
+    [540] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Bran Stark', 'House Stark')
+    [541] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Arya Stark', '"Winter is Coming"', 'Alive')
+    [542] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Arya Stark', 'Maisie Williams')
+    [543] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Arya Stark', 'Arry')
+    [544] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Arya Stark', 'Lanna')
+    [545] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Arya Stark', 'House Stark')
+    [546] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Arya Stark', 'Faceless Men')
+    [547] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Sansa Stark', '"Winter is Coming"', 'Alive')
+    [548] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Sansa Stark', 'Sophie Turner')
+    [549] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Sansa Stark', 'Little Dove')
+    [550] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Sansa Stark', 'Little Bird')
+    [551] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Sansa Stark', 'Alayne (formerly)')
+    [552] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sansa Stark', 'House Stark - by birth')
+    [553] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sansa Stark', 'House Lannister - by forced marriage (formerly)')
+    [554] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Sansa Stark', 'House Bolton - by forced marriage (formerly)')
+    [555] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Robb Stark', '"Winter is Coming"', 'Deceased')
+    [556] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Robb Stark', 'Richard Madden')
+    [557] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robb Stark', 'The Young Wolf')
+    [558] => INSERT INTO CharacterAlias (character_name, alias_name) VALUES ('Robb Stark', 'The King Who Lost the North')
+    [559] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Robb Stark', 'House Stark')
+    [560] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Catelyn Stark', '"Winter is Coming"', 'Deceased')
+    [561] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Catelyn Stark', 'Michelle Fairley')
+    [562] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Catelyn Stark', 'House Stark - by marriage')
+    [563] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Catelyn Stark', 'House Tully - by birth')
+    [564] => INSERT INTO Characters (name, first_appearance, status) VALUES ('Eddard Stark', '"Winter is Coming"', 'Deceased')
+    [565] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Eddard Stark', 'Sean Bean (Adult)')
+    [566] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Eddard Stark', 'Sebastian Croft (Child)')
+    [567] => INSERT INTO CharacterActor (character_name, actor_name) VALUES ('Eddard Stark', 'Luke Roberts (Young)')
+    [568] => INSERT INTO CharacterFaction (character_name, faction_name) VALUES ('Eddard Stark', 'House Stark')
+)
+Error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ghar', '"Fire and Blood"', 'Alive')' at line 1Error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ghar', 'Tom Wlaschiha')' at line 1Error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ghar', 'Faceless Men')' at line 1Yeah, something went wrong.

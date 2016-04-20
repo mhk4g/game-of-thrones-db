@@ -13,8 +13,8 @@
 
 // get all the info for a single character and return it as an array of key value pairs
 function get_character_info($character) {
-    $NODE_NAMES = ["First seen", "Also known as", "Status", "Allegiance", "Portrayed by", "Death"];
-    $BASE_URL = "http://gameofthrones.wikia.com/wiki/";
+    $NODE_NAMES = ['First seen', 'Also known as', 'Status', 'Allegiance', 'Portrayed by', 'Death'];
+    $BASE_URL = 'http://gameofthrones.wikia.com/wiki/';
     $char_dictionary = [];
     $timeout = 5;
     $url = $BASE_URL . $character;
@@ -33,8 +33,8 @@ function get_character_info($character) {
     $labels = getElementsByClassName($dom, 'pi-data-label');
     $values = getElementsByClassName($dom, 'pi-data-value');
 
-    // Directly add the character name to the outputif($labels[$i] == "Name"):
-    $char_dictionary["Name"] = str_replace('_', ' ', $character);
+    // Directly add the character name to the outputif($labels[$i] == 'Name'):
+    $char_dictionary['Name'] = str_replace('_', ' ', $character);
 
     // this wiki sucks and some of their stuff is formatted wrong valueIndex is used to fix it. See below.
     $valueIndex = 0;
@@ -46,8 +46,8 @@ function get_character_info($character) {
         $valueIndex++;
 
         // death episode has value but no label for some reason, so we add one
-        if($labels[$i] == "Death"):
-            $char_dictionary["Death episode"] = $values[$valueIndex];
+        if($labels[$i] == 'Death'):
+            $char_dictionary['Death episode'] = $values[$valueIndex];
             $valueIndex++;
         endif;
     }
@@ -58,7 +58,7 @@ function get_character_info($character) {
 
 // this function does the bulk of the html parsing work
 function getElementsByClassName(\DOMDocument $DOMDocument, $className) {
-    $elements = $DOMDocument->getElementsByTagName("*");
+    $elements = $DOMDocument->getElementsByTagName('*');
     $matched = array();
 
     for($i=0;$i<$elements->length;$i++) {
