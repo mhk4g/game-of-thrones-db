@@ -50,8 +50,13 @@ $(document).keypress(function(e) {
 </head>
 <body bgcolor="black">
     <div class="input-box">
-  <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required></input>
-  <span class="unit">&#9819;</span>
+  <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
+  <span class="unit" style="color:black;">&#9819;</span>
+  <input type="checkbox" name="Characters" checked /> Characters
+  <input type="checkbox" name="Factions" checked /> Factions
+  <input type="checkbox" name="Creatures" checked /> Creatures
+  <input type="checkbox" name="Episodes" checked /> Episodes
+  </div>
   <div id="resultcontainer">
       <div id="searchresults">
           <!-- This is where the results go -->

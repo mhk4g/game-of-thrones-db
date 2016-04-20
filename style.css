@@ -9,6 +9,8 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
     width: 95%%;
     height: 95%;
     background-image: url(got21.jpg);
