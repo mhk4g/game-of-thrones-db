@@ -34,6 +34,10 @@ function displayResults(httpRequest) {
 
 function prepareUserInput() {
     temp_string = "userinput=" + document.getElementById("specialinput").value;
+    if (char_box = document.getElementById("char_box").value) { temp_string += "&char_box=true"; }    
+    if (faction_box = document.getElementById("faction_box").value) { temp_string += "&faction_box=true"; }    
+    if (creature_box = document.getElementById("creature_box").value) { temp_string += "&creature_box=true"; }    
+    if (episode_box = document.getElementById("episode_box").value) { temp_string += "&episode_box=true"; }    
     return temp_string;
 }
 
@@ -52,10 +56,10 @@ $(document).keypress(function(e) {
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span>
-  <input type="checkbox" name="Characters" checked /> Characters
-  <input type="checkbox" name="Factions" checked /> Factions
-  <input type="checkbox" name="Creatures" checked /> Creatures
-  <input type="checkbox" name="Episodes" checked /> Episodes
+  <input type="checkbox" id="char_box" checked /> Characters
+  <input type="checkbox" id="faction_box" checked /> Factions
+  <input type="checkbox" id="creature_box" checked /> Creatures
+  <input type="checkbox" id="episode_box" checked /> Episodes
     </div>
   <div id="resultcontainer">
       <div id="searchresults">
