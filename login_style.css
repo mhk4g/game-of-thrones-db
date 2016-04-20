@@ -10,6 +10,12 @@ body {
     background-size:cover;
 }
 
+#error {
+    color: red;
+    font-size: 14;
+    font-style: normal;
+}
+
 .input-box {
     position: absolute;
     left: 40%;
