@@ -50,7 +50,7 @@ $(document).keypress(function(e) {
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
     <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
