@@ -50,12 +50,15 @@ $(document).keypress(function(e) {
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
     <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
-    <nav class="fixed-nav-bar">
-      HELLO HELLO HELLO
-    </nav>
+    <nav class="fixed-nav-bar"></nav>
+    <nav class="fixed-nav-bar-shadow-top"></nav>
+    <nav class="fixed-nav-bar-shadow-bottom"></nav>
+    <nav class="nav-label" id="login-label">mhkaup@gmail.com</nav>
+    <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>
