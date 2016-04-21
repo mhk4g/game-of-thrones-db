@@ -23,9 +23,6 @@ if (isset($_SESSION["error"])) {
         <p id="error"><?php echo($error_display) ?></p>
         <br><br><p class="proceed">Proceed without registering</p>
         </form>
+        <br><br>
+        <form action="redirect.php" method="post"><pre><p align="center"><input type="submit" name="search" value="Browse as a guest">   <input type="submit" name="login" value="Return to login"></form></body>
     </div>
-</form>
-</body>
-
-<!-- <form action="redirect.php" method="post"><pre><p align="center"><input type="submit" name="login" value="Login">   <input type="submit" name="reset" value="Reset password">
-</pre></form></body> -->

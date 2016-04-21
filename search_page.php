@@ -53,6 +53,9 @@ $(document).keypress(function(e) {
     <title>Game of Thrones DB</title>
 </head>
 <body bgcolor="black">
+    <nav class="fixed-nav-bar">
+      HELLO HELLO HELLO
+    </nav>
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>
