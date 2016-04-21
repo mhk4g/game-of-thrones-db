@@ -70,7 +70,7 @@ body {
     height: 95%;
     background-image: url(got21.jpg);
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     font-weight: lighter;
 }
@@ -95,48 +95,59 @@ body {
 }
 
 #Deceased {
-    color: red;
+    color: grey;
 }
 
 #Unknown {
     color: grey;
 }
 
-tr:hover {
-    background-color: #888888;
-    opacity: 1.0;
+caption {
+    text-align: left;
 }
 
 th {
-    background-color: rgba(32, 32, 32, 0.75);
+    background-color: rgba(35, 35, 35, 1.0);
     font-size: 16px;
     opacity: 1.0;
     font-family: "Lato", sans-serif;
     font-weight: 100;
     color: white;
     border-width: 0px;
-    text-align: left;
+    padding: 10px;
 }
     
 table {
     background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    border-style: solid;
-    border-width: 0px;
+    color: #DDDDDD;
+    opacity: 0.95;
+    border-width: 2px;
+    border-style: none;
+    border-color: black;
+    border-collapse: collapse;
 }
 
+
 td {
-    /*opacity: 0.75;*/
     background-color: rgba(0, 0, 0, 0.75);
     border-style: none;
-    font-size: 13px;
+    border-width: 0px;
+    font-size: 14px;
     font-weight: 100;
     text-align: left;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 
+tr:nth-child(even)  { background: #333;}
+
+tr:nth-child(odd) { background: #777;}
+
+tr:hover {
+    background-color: #FFFFFF;
+    color: white;
+}
 
 .input-box {
     position: absolute;
@@ -202,4 +213,8 @@ td {
     font-family: "Zapfino";
     font-size: 12px;
     color: rgba(255, 255, 255, 1); 
+}
+
+#spoiler {
+    color: red;
 }
