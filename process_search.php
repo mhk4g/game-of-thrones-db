@@ -52,7 +52,8 @@ if ($checkboxes["characters"] == true):
 
         foreach ($result_array as $r) {
             $alive = "<td id=\"$r[2]\">$r[2]</td>";
-            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td>$alive<td>$r[3]</td></tr>";
+            $bio = str_replace("[SPOILER]", "<span class=\"spoiler\">[SPOILER]</span>", $r[3]);
+            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td>$alive<td>$bio</td></tr>";
         }
 
         $HTTPResponse[] = "</table><br><br><br>";
