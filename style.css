@@ -47,19 +47,23 @@ body {
 }
 
 tr:hover {
-      background-color: #333333;
+    background-color: #333333;
+}
+
+th {
+    background-color: #222222;
 }
     
 table {
     background-color: #111111;
     opacity: 0.75;
+    color: white;
 }
-
 
 .input-box {
     position: absolute;
     left: 30%;
-    top: 72%;
+    top: 68%;
     width: 40%;
     text-align: center;
 }
@@ -80,7 +84,7 @@ table {
     position: absolute; 
     display: block; 
     left: 5px; 
-    top: 10px; 
+    top: 7px; 
     z-index: 9; 
     font-size: 18px;
 }
@@ -101,7 +105,7 @@ table {
     position: absolute;
     left: 0%;
     width: 100%;
-    top: 85%;
+    top: 81%;
     align: center;
     align-self: center;
 }
