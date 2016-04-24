@@ -1,6 +1,5 @@
 <?php
 session_start();
-session_unset();
 
 # Reload login page if user or pass were left blank
 if(empty($_POST["username"]) || empty($_POST["password"])):

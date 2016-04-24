@@ -1,6 +1,5 @@
 <?php 
 session_start();
-session_unset();
 
 # If either field omitted, display error
 if(empty($_POST["email"]) || empty($_POST["password"])):
