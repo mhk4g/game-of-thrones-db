@@ -14,7 +14,13 @@ if (isset($_SESSION["email_address"])) {
     $login_label = "Guest  ";
 }
 
+if (isset($_SESSION["access_level"])) {
+    $access_level = $_SESSION["access_level"];
+} else {
+    $access_level = 4;
+}
 ?>
+
 <html background-color>
 </script>
 <head>

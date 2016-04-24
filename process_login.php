@@ -41,7 +41,7 @@ if(isset($_POST["login"])) {
     
     # Username exists. Login!
     $temp = $result->fetch_assoc();
-    $_SESSION["email"] = $username;
+    $_SESSION["email_address"] = $username;
     $_SESSION["access_level"] = $temp["access_level"];
     header("Location: search_page.php");
   

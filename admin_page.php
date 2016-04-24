@@ -14,6 +14,11 @@ if (isset($_SESSION["email_address"])) {
     $login_label = "Guest  ";
 }
 
+if (isset($_SESSION["access_level"])) {
+    $login_label = $_SESSION["access_level"];
+} else {
+    $access_level = 4;
+}
 ?>
 
 <html background-color>
@@ -27,7 +32,7 @@ if (isset($_SESSION["email_address"])) {
     <nav class="fixed-nav-bar"></nav>
     <nav class="fixed-nav-bar-shadow-top"></nav>
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
-    <nav class="nav-label" id="login-label">Guest</nav>
+    <nav class="nav-label" id="login-label"><?php $login_label ?></nav>
     <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
@@ -35,6 +40,9 @@ if (isset($_SESSION["email_address"])) {
     <nav class="link-label" id="login-link"><a href="login_page.php">Login</a></span></nav>
     <div id="resultcontainer">
         <div id="searchresults">
+            
+            <?php if($access_level >= 3): ?>
+            
             <form action="process_insert.php" method="post">
                 <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
                     <col width=20%><col width=20%><col width=20%><col width=40%>
@@ -49,7 +57,10 @@ if (isset($_SESSION["email_address"])) {
                         </tr>
                     </table><br><input type="submit" id="insert" name="insert" value="Create character"><br><br>
                 </form>
-                
+
+            <?php endif; 
+            if($access_level >= 2): ?>
+
                 <form action="process_edit.php" method="post">
                     <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
                         <col width=18%><col width=18%><col width=19%><col width=15%><col width=30%>
@@ -66,6 +77,9 @@ if (isset($_SESSION["email_address"])) {
                         </table><br><input type="submit" id="edit" name="edit" value="Update character"><br><br>  
                     </form>
 
+                    <?php endif; 
+                    if($access_level >= 1): ?>
+
                     <form action="process_delete.php" method="post">
                         <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
                             <col width=30%><col width=30%><col width=30%>
@@ -78,6 +92,8 @@ if (isset($_SESSION["email_address"])) {
                                 </tr>
                             </table><br><input type="submit" id="delete" name="delete" value="Delete character"><br><br>  
                         </form>
+
+                    <?php endif; ?>
 
                 </div>
             </div>

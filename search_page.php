@@ -14,6 +14,11 @@ if (isset($_SESSION["email_address"])) {
     $login_label = "Guest  ";
 }
 
+if (isset($_SESSION["access_level"])) {
+    $access_level = $_SESSION["access_level"];
+} else {
+    $access_level = 4;
+}
 ?>
 
 <html background-color>
@@ -75,7 +80,7 @@ $(document).keypress(function(e) {
     <nav class="fixed-nav-bar"></nav>
     <nav class="fixed-nav-bar-shadow-top"></nav>
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
-    <nav class="nav-label" id="login-label">mhkaup@gmail.com</nav>
+    <nav class="nav-label" id="login-label"><?php $login_label ?></nav>
     <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>

@@ -15,7 +15,7 @@ if (isset($_SESSION["email_address"])) {
 }
 
 if (isset($_SESSION["access_level"])) {
-    $access_level = $_SESSION["access_level"];
+    $login_label = $_SESSION["access_level"];
 } else {
     $access_level = 4;
 }
@@ -24,7 +24,7 @@ if (isset($_SESSION["access_level"])) {
 <html background-color>
 </script>
 <head>
-    <link type="text/css" rel="stylesheet" href="login_style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
     <title>Game of Thrones DB: Login</title>
 </head>
@@ -38,13 +38,10 @@ if (isset($_SESSION["access_level"])) {
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
     <nav class="link-label" id="login-link"><a href="login_page.php">Login</a></span></nav>
-    <div class="input-box" width=200px>
-        <form action="process_login.php" method="post">
-        <p class="login-label">Email</p><input class="login-field" id="email" name="email" type="text" placeholder="Enter your email address" autofocus="autofocus" autocomplete="off" required width="200px"/><br>
-        <p class="login-label">Password</p><input class="login-field" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="off" required /><br><br>
-        <input type="submit" id="login" name="login" value="Login"><br><br>
-        <p id="error"><?php echo($error_display) ?></p>
-        </form>
-    </div>
-</form>
-</body>
+    <div id="resultcontainer">
+        <div id="searchresults">
+            </div>
+            <h1>About</h1>
+            <p> This page is our final project for CS4750. Winter is coming.
+        </div>
+    </body>
