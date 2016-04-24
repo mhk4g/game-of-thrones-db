@@ -32,7 +32,7 @@ if (isset($_SESSION["access_level"])) {
     <nav class="fixed-nav-bar"></nav>
     <nav class="fixed-nav-bar-shadow-top"></nav>
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
-    <nav class="nav-label" id="login-label"><?php $login_label ?></nav>
+    <nav class="nav-label" id="login-label"><?php echo($login_label); ?></nav>
     <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
