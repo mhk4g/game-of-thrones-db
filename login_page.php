@@ -3,7 +3,7 @@ session_start();
 $error_display = "";
 
 if (isset($_SESSION["error"])) {
-    $error_display = $_SESSION["error"];
+    $error_display = "Invalid user name or password.";
 }
  ?>
 
@@ -11,6 +11,7 @@ if (isset($_SESSION["error"])) {
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="login_style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
     <title>Game of Thrones DB: Login</title>
 </head>
 <body bgcolor="black">
