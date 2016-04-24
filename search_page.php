@@ -59,10 +59,10 @@ $(document).keypress(function(e) {
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
     <nav class="nav-label" id="login-label">mhkaup@gmail.com</nav>
     <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
-    <nav class="link-label" id="search-link">Search</span></nav>
-    <nav class="link-label" id="edit-link">Edit</span></nav>
-    <nav class="link-label" id="about-link">About</span></nav>
-    <nav class="link-label" id="logout-link">Logout</span></nav>
+    <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
+    <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
+    <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
+    <nav class="link-label" id="login-link"><a href="login_page.php">Login</a></span></nav>
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>

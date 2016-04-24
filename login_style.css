@@ -1,6 +1,84 @@
 html { 
 }
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9995;
+  width: 100%;
+  height: 36px;
+  background: black; /* For browsers that do not support gradients */
+}
+
+.nav-label {
+    position: fixed;
+    z-index: 9999;
+    background: black; /* For browsers that do not support gradients */
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+#login-label {
+    top: 7;
+    right: 10px;
+    font-weight: 300;
+    font-size: 22px;    
+}
+
+#site-label {
+    top: 2;
+    left: 10px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.link-label {
+    position: fixed;
+    z-index: 9999;
+    background: black; /* For browsers that do not support gradients */
+    color: white;
+    font-family: "Lato", sans-serif;
+    top: 12;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#search-link {
+    left: 30%;
+}
+
+#edit-link {
+    left: 42%;
+}
+
+#about-link {
+    left: 54%;
+}
+
+#login-link {
+    left: 66%;
+}
+
+#tab {
+    background-color: black;
+    x;
+}
+
 body {
     width: 95%%;
     height: 95%;
