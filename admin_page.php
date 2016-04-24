@@ -67,15 +67,15 @@ $acces_level = 5;
 
                     <form action="process_delete.php" method="post">
                         <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
-                            <col width=18%><col width=18%><col width=19%><col width=15%><col width=30%>
+                            <col width=30%><col width=30%><col width=30%>
                             <caption id="tablecaption"><h1>Delete character</h1></caption>
                             <tr align = "center">
-                                <th>Old character name</th><th>New character name</th><th>First appearance</th><th>Status</th><th>Also known as...</th></tr>
-                                <tr>
+                                <th>Character name</th><th>Confirm character name</th><th>Confirm deletion</th><tr>
                                     <td><input type="text" name="name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
                                     <td><input type="text" name="confirm_name" placeholder="Ex: 'Aryo Stark'" autocomplete="off" required style="width:100%"/></td>
+                                    <td><input type="text" name="confirm_delete" placeholder="Type 'DELETE' to confirm deletion" autocomplete="off" required style="width:100%"/></td>
                                 </tr>
-                            </table><br><input type="submit" id="edit" name="edit" value="Delete character"><br><br>  
+                            </table><br><input type="submit" id="delete" name="delete" value="Delete character"><br><br>  
                         </form>
 
                 </div>
