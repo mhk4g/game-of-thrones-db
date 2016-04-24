@@ -40,7 +40,7 @@ if (isset($_SESSION["access_level"])) {
     <div id="resultcontainer">
         <div id="searchresults">
             
-            <?php if($access_level >= 3): ?>
+            <?php if($access_level <= 3): ?>
             
             <form action="process_insert.php" method="post">
                 <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
@@ -58,7 +58,7 @@ if (isset($_SESSION["access_level"])) {
                 </form>
 
             <?php endif; 
-            if($access_level >= 2): ?>
+            if($access_level <= 2): ?>
 
                 <form action="process_edit.php" method="post">
                     <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
@@ -77,7 +77,7 @@ if (isset($_SESSION["access_level"])) {
                     </form>
 
                     <?php endif; 
-                    if($access_level >= 1): ?>
+                    if($access_level <= 1): ?>
 
                     <form action="process_delete.php" method="post">
                         <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
