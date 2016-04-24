@@ -16,7 +16,7 @@ $dbname = "cs4750mhk4g";
 $username = $_POST["username"];
 $password = $_POST["password"];
 $confirm = $_POST["password2"];
-$hashedpw = hash("sha256", $password);
+$hashedpw = hash("md5", $password);
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
