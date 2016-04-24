@@ -1,3 +1,21 @@
+<?php 
+session_start();
+
+if (isset($_SESSION["error"])) {
+    $error_display = "Invalid user name or password.";
+    session_unset();
+} else {
+    $error_display = "";
+}
+
+if (isset($_SESSION["email_address"])) {
+    $login_label = $_SESSION["email_address"];
+} else {
+    $login_label = "Guest  ";
+}
+
+?>
+
 <html background-color>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" language="javascript">

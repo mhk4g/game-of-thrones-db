@@ -2,7 +2,6 @@
 session_start();
 session_unset();
 
-
 # If either field omitted, display error
 if(empty($_POST["email"]) || empty($_POST["password"])):
   $_SESSION["error"] = "Please enter an email address and password.";

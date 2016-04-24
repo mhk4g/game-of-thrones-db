@@ -8,7 +8,11 @@ if (isset($_SESSION["error"])) {
     $error_display = "";
 }
 
-$login_label = "Guest";
+if (isset($_SESSION["email_address"])) {
+    $login_label = $_SESSION["email_address"];
+} else {
+    $login_label = "Guest  ";
+}
 
 ?>
 
