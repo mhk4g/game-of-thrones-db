@@ -41,7 +41,7 @@ if(isset($_POST["login"])) {
   
   else:
     
-    $_SESSION["error"] = "Invalid email address or password.";
+    $_SESSION["error"] = "Invalid email address or password: $temp \n $user \n $hashedp";
     header("Location: login_page.php");
     
   endif;
