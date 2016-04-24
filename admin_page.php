@@ -1,25 +1,83 @@
-<?php 
+e   <?php 
 session_start();
-$error_display = "";
+
+if (isset($_SESSION["error"])) {
+    $error_display = "Invalid user name or password.";
+} else {
+    $error_display = "";
+}
+
+$login_label = "Guest";
+
+$acces_level = 5;
+
+# GET ACCESS LEVEL
 
 ?>
 
 <html background-color>
 </script>
 <head>
-    <link type="text/css" rel="stylesheet" href="login_style.css"/>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
-    <title>Game of Thrones DB: Admin</title>
+    <title>Game of Thrones DB: Login</title>
 </head>
 <body bgcolor="black">
-    <div class="input-box" width=200px>
-        <form action="process_login.php" method="post">
-        <p class="login-label">Email</p><input class="login-field" id="email" name="email" type="text" placeholder="Enter your email address" autofocus="autofocus" autocomplete="off" required width="200px"/><br>
-        <p class="login-label">Password</p><input class="login-field" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="off" required /><br><br>
-        <input type="submit" id="login" name="login" value="Login"><br><br>
-        <p id="error"><?php echo($error_display) ?></p>
-        <br><br><p class="proceed">Browse as guest . ' . ' . Create new account</p>
-        </form>
-    </div>
-</form>
-</body>
+    <nav class="fixed-nav-bar"></nav>
+    <nav class="fixed-nav-bar-shadow-top"></nav>
+    <nav class="fixed-nav-bar-shadow-bottom"></nav>
+    <nav class="nav-label" id="login-label">Guest</nav>
+    <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
+    <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
+    <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
+    <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
+    <nav class="link-label" id="login-link"><a href="login_page.php">Login</a></span></nav>
+    <div id="resultcontainer">
+        <div id="searchresults">
+            <form action="process_insert.php" method="post">
+                <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
+                    <col width=20%><col width=20%><col width=20%><col width=40%>
+                    <caption id="tablecaption"><h1>Add new character</h1></caption>
+                    <tr align = "center">
+                        <th>Name</th><th>First appearance</th><th>Status</th><th>Also known as...</th></tr>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
+                            <td><input type="text" name="first_appearance" placeholder="Ex: 'Winter is Coming'" autocomplete="off" required style="width:100%"/></td>
+                            <td><input type="text" name="status" placeholder="Alive, Deceased, Unknown" autocomplete="off" required style="width:100%"/></td>
+                            <td><input type="text" name="aka" placeholder="Ex: 'Guy who gets [SPOILER]ed'" autocomplete="off" required style="width:100%"/></td>
+                        </tr>
+                    </table><br><input type="submit" id="insert" name="insert" value="Create character"><br><br>
+                </form>
+                
+                <form action="process_edit.php" method="post">
+                    <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
+                        <col width=18%><col width=18%><col width=19%><col width=15%><col width=30%>
+                        <caption id="tablecaption"><h1>Edit existing character</h1></caption>
+                        <tr align = "center">
+                            <th>Old character name</th><th>New character name</th><th>First appearance</th><th>Status</th><th>Also known as...</th></tr>
+                            <tr>
+                                <td><input type="text" name="old_name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
+                                <td><input type="text" name="new_name" placeholder="Ex: 'Aryo Stark'" autocomplete="off" required style="width:100%"/></td>
+                                <td><input type="text" name="first_appearance" placeholder="Ex: 'Winter is Coming'" autocomplete="off" required style="width:100%"/></td>
+                                <td><input type="text" name="status" placeholder="Alive, Deceased, Unknown" autocomplete="off" required style="width:100%"/></td>
+                                <td><input type="text" name="aka" placeholder="Ex: 'Guy who gets [SPOILER]ed'" autocomplete="off" required style="width:100%"/></td>
+                            </tr>
+                        </table><br><input type="submit" id="edit" name="edit" value="Update character"><br><br>  
+                    </form>
+
+                    <form action="process_delete.php" method="post">
+                        <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
+                            <col width=18%><col width=18%><col width=19%><col width=15%><col width=30%>
+                            <caption id="tablecaption"><h1>Delete character</h1></caption>
+                            <tr align = "center">
+                                <th>Old character name</th><th>New character name</th><th>First appearance</th><th>Status</th><th>Also known as...</th></tr>
+                                <tr>
+                                    <td><input type="text" name="name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
+                                    <td><input type="text" name="confirm_name" placeholder="Ex: 'Aryo Stark'" autocomplete="off" required style="width:100%"/></td>
+                                </tr>
+                            </table><br><input type="submit" id="edit" name="edit" value="Delete character"><br><br>  
+                        </form>
+
+                </div>
+            </div>
+        </body>

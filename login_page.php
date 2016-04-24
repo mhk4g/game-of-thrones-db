@@ -4,6 +4,8 @@ session_start();
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
     session_unset();
+} else {
+    $error_display = "";
 }
 
 $login_label = "Guest";

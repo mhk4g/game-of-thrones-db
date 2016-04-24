@@ -21,6 +21,7 @@ a:hover {
     color: red;
 }
 
+
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -224,6 +225,7 @@ tr:hover {
     text-align: center;
     position: relative;
 }
+
 
 #searchresulttext {
     font-family: "Lato";

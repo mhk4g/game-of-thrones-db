@@ -1,9 +1,10 @@
 <?php 
 session_start();
 
-$error_display = "";
 if (isset($_SESSION["error"])) {
     $error_display = $_SESSION["error"];
+} else {
+    $error_display = "";
 }
  ?>
 
