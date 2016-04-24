@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["error"])) {
-    $error_display = "Invalid user name or password.";
+    $error_display = $_SESSION["error"];
 } else {
     $error_display = "";
 }
