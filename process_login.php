@@ -16,11 +16,6 @@ if(isset($_POST["password"])) {
     $password = (string)$_POST["password"];
 }
 
-# Store user type in session variable
-if(isset($_SESSION["user_type"])) {
-    $permission_code = (string)$_SESSION["user_type"];
-}
-
 # Database credentials
 $dbuser = "cs4750mhk4g";
 $dbpass = "aryastark";
@@ -40,7 +35,7 @@ if(isset($_POST["login"])) {
     
     # Username exists. Login!
     $temp = $result->fetch_assoc();
-    $_SESSION["email_address"] = $username;
+    $_SESSION["email_address"] = $user;
     $_SESSION["access_level"] = $temp["access_level"];
     header("Location: search_page.php");
   

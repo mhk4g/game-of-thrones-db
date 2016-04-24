@@ -36,6 +36,4 @@ if (isset($_SESSION["access_level"])) {
         <p id="error"><?php echo($error_display) ?></p>
         <br><br><p class="proceed">Proceed without registering</p>
         </form>
-        <br><br>
-        <form action="redirect.php" method="post"><pre><p align="center"><input type="submit" name="search" value="Browse as a guest">   <input type="submit" name="login" value="Return to login"></form></body>
     </div>
