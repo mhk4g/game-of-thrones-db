@@ -70,8 +70,12 @@ a:hover {
     left: 54%;
 }
 
-#login-link {
+#register-link {
     left: 66%;
+}
+
+#login-link {
+    left: 78%;
 }
 
 #tab {

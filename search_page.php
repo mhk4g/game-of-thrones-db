@@ -3,15 +3,16 @@ session_start();
 
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
-    session_unset();
 } else {
     $error_display = "";
 }
 
 if (isset($_SESSION["email_address"])) {
     $login_label = $_SESSION["email_address"];
+    $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"logout.php\">Logout</a></span></nav>";
 } else {
     $login_label = "Guest  ";
+    $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"login_page.php\">Login</a></span></nav>";
 }
 
 if (isset($_SESSION["access_level"])) {
@@ -20,6 +21,7 @@ if (isset($_SESSION["access_level"])) {
     $access_level = 4;
 }
 ?>
+
 
 <html background-color>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -85,7 +87,8 @@ $(document).keypress(function(e) {
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
-    <nav class="link-label" id="login-link"><a href="login_page.php">Login</a></span></nav>
+    <nav class="link-label" id="about-link"><a href="register_page.php">Register</a></span></nav>
+    <?php echo($login_or_out); ?>
     <div class="input-box">
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>
