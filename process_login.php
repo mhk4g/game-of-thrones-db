@@ -30,6 +30,8 @@ if ($db->connect_error) {
     die("Could not connect to database: " . $db->connect_error);
   }
 
+
+
 # If login button was clicked...
 if(isset($_POST["login"])) {
   $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");
@@ -37,17 +39,13 @@ if(isset($_POST["login"])) {
   mysqli_stmt_bind_result($user_result, $access_level_result);
   $loginstatement->execute();
   
-  if ($result = mysqli_stmt_fetch($loginstatement)):
-  
-  $_SESSION["email_address"] = $user_result; 
-  $_SESSION["access_level"] = $access_level_result;
-  header("Location: search_page.php");
-  
+  if ($user_result):
+      $_SESSION["email_address"] = $user_result; 
+      $_SESSION["access_level"] = $user_result;
+      header("Location: search_page.php");  
   else:
-    
     $_SESSION["error"] = "Invalid email address or password.";
     header("Location: login_page.php");
-    
   endif;
   }
 ?>
