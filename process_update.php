@@ -31,11 +31,21 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["update"])) {
-  $result1 = $db->query("UPDATE Characters SET character_name='$newname', first_appearance='$firstappearance', status='$status', aka='$aka' WHERE character_name='$oldname'");
-  $result2 = $db->query("UPDATE CharacterFaction SET character_name='$newname' WHERE character_name='$oldname'");
-  $result3 = $db->query("UPDATE CharacterActor SET character_name='$newname' WHERE character_name='$oldname'");
-  $result4 = $db->query("UPDATE CharacterAlias SET character_name='$newname' WHERE character_name='$oldname'");
-  $result5 = $db->query("UPDATE CharacterDeath SET character_name='$newname' WHERE character_name='$oldname'");
+  $st1 = $db->prepare("UPDATE Characters SET character_name= ?, first_appearance= ?, status= ?, aka= ? WHERE character_name= ?"); 
+  $st2 = $db->prepare("UPDATE CharacterFaction SET character_name=? WHERE character_name=?");
+  $st3 = $db->prepare("UPDATE CharacterActor SET character_name=? WHERE character_name=?");
+  $st4 = $db->prepare("UPDATE CharacterAlias SET character_name=? WHERE character_name=?");
+  $st5 = $db->prepare("UPDATE CharacterDeath SET character_name=? WHERE character_name=?");
+  $st1->bind_param("sssss", $newname, $firstappearance, $status, $aka, $oldname);
+  $st2->bind_param("ss", $newname, $oldname);
+  $st3->bind_param("ss", $newname, $oldname);
+  $st4->bind_param("ss", $newname, $oldname);
+  $st5->bind_param("ss", $newname, $oldname);
+  $st1->execute();
+  $st2->execute();
+  $st3->execute();
+  $st4->execute();
+  $st5->execute();
   
   header("Location: admin_page.php");
   $_SESSION["admin_results"] = "Update succeeded!";
