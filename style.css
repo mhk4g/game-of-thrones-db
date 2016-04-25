@@ -21,6 +21,9 @@ a:hover {
     color: red;
 }
 
+#alias {
+    cursor:help;
+}
 
 .fixed-nav-bar {
   position: fixed;
