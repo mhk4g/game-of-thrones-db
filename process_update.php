@@ -38,7 +38,7 @@ if(isset($_POST["update"])) {
   $result5 = $db->query("UPDATE CharacterDeath SET character_name='$newname' WHERE character_name='$oldname'");
   
   header("Location: admin_page.php");
-  $_SESSION["admin_results"] = [$result1, $result2, $result3, $result4, $result5];
+  $_SESSION["admin_results"] = "Update succeeded!";
   } else {
       $_SESSION["error"] = "Something went wrong with your update. Check character name.";
   }
