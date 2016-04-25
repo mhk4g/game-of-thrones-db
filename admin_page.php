@@ -98,7 +98,7 @@ if (isset($_SESSION["access_level"])) {
                         </form>
 
                     <?php endif; 
-                    if($access_level >= 4): echo "<h2>You do not have any admin permissions.</h2>"?>
+                    if($access_level >= 4): echo "<h2>You do not have any admin permissions.</h2>"; endif;?>
 
                 </div>
             </div>
