@@ -25,6 +25,7 @@ $dbuser = "cs4750mhk4g";
 $dbpass = "aryastark";
 $dbname = "cs4750mhk4g";
 $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V pairs
+$any_results = false;
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
@@ -34,6 +35,7 @@ if ($db->connect_error) {
 $HTTPResponse = [];
 
 if ($checkboxes["characters"] == true):
+    $any_results = true;
     $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%' UNION SELECT * FROM Characters WHERE aka LIKE'%$userinput%'");
     if (mysqli_num_rows($result) > 0): 
         $result_array = [];
@@ -88,6 +90,7 @@ if ($checkboxes["characters"] == true):
 endif;
 
 if ($checkboxes["factions"] == true):
+    $any_results = true;
     $result = $db->query("SELECT * FROM Faction WHERE faction_name LIKE'%$userinput%'");
     if (mysqli_num_rows($result) > 0):
         $result_array = [];
@@ -114,5 +117,9 @@ endif;
 foreach ($HTTPResponse as $h) {
     echo($h);
     }
+    
+if (!$any_results) {
+    echo "<h2>No results</h2>";
+}
 
 ?>

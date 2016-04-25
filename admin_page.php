@@ -1,6 +1,7 @@
 <?php 
 session_start();
 
+
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
 } else {
@@ -96,7 +97,8 @@ if (isset($_SESSION["access_level"])) {
                             </table><br><input type="submit" id="delete" name="delete" value="Delete character"><br><br>  
                         </form>
 
-                    <?php endif; ?>
+                    <?php endif; 
+                    if($access_level >= 4): echo "<h2>You do not have any admin permissions.</h2>"?>
 
                 </div>
             </div>
