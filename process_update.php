@@ -51,5 +51,6 @@ if(isset($_POST["update"])) {
   $_SESSION["admin_results"] = "Update succeeded!";
   } else {
       $_SESSION["error"] = "Something went wrong with your update. Check character name.";
+      header("Location: admin_page.php");
   }
 ?>

@@ -38,5 +38,6 @@ if(isset($_POST["insert"])) {
   $_SESSION["admin_results"] = "New character inserted!";
   } else {
       $_SESSION["error"] = "Something went wrong with your insert. Please try again.";
+      header("Location: admin_page.php");
   }
 ?>
