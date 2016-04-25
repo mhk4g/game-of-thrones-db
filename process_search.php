@@ -13,19 +13,19 @@ if(isset($_POST["faction_box"])) { $checkboxes["factions"] = $_POST["faction_box
 if(isset($_POST["creature_box"])) { $checkboxes["creatures"] = $_POST["creature_box"]; }
 if(isset($_POST["episode_box"])) { $checkboxes["episodes"] = $_POST["episode_box"]; }
 
-$permission_code = 4;
+$permission_code = 5;
 
 # Store user type in session variable
-if(isset($_SESSION["user_type"])) {
-    $permission_code = (string)$_SESSION["user_type"];
+if(isset($_SESSION["access_level"])) {
+    $permission_code = (string)$_SESSION["access_level"];
 }
 
 # Database credentials
-$dbuser = "cs4750mhk4g";
+$dbuser = "cs4750mhk4g" . convert_access_level_to_login_suffix($permission_code);
 $dbpass = "aryastark";
 $dbname = "cs4750mhk4g";
 $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V pairs
-$any_results = false;
+$num_results = 0;
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
@@ -35,7 +35,6 @@ if ($db->connect_error) {
 $HTTPResponse = [];
 
 if ($checkboxes["characters"] == true):
-    $any_results = true;
     $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%' UNION SELECT * FROM Characters WHERE aka LIKE'%$userinput%'");
     if (mysqli_num_rows($result) > 0): 
         $result_array = [];
@@ -55,6 +54,7 @@ if ($checkboxes["characters"] == true):
         $HTTPResponse[] = "<th style=\"width:40px\">Also known as...</th></tr>";
 
         foreach ($result_array as $r) {
+            $num_results++;
             $temp_name = $r[0];
             $aliases = "";
             $result2 = $db->query("SELECT * FROM CharacterAlias WHERE character_name LIKE '%$temp_name%'");
@@ -90,7 +90,6 @@ if ($checkboxes["characters"] == true):
 endif;
 
 if ($checkboxes["factions"] == true):
-    $any_results = true;
     $result = $db->query("SELECT * FROM Faction WHERE faction_name LIKE'%$userinput%'");
     if (mysqli_num_rows($result) > 0):
         $result_array = [];
@@ -107,6 +106,7 @@ if ($checkboxes["factions"] == true):
         $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
 
         foreach ($result_array as $r) {
+            $num_results++;
             $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
         }
 
@@ -118,7 +118,7 @@ foreach ($HTTPResponse as $h) {
     echo($h);
     }
     
-if (!$any_results) {
+if ($num_results < 1) {
     echo "<h2>No results</h2>";
 }
 
