@@ -23,7 +23,11 @@ if(isset($_SESSION["access_level"])) {
 
 # Database credentials
 $dbuser = "cs4750mhk4g" . convert_access_level_to_login_suffix($permission_code);
-$dbpass = "aryastark";
+if ($dbuser == "cs4750mhk4g") {
+    $dbpass = "aryastark";
+} else {
+    $dbpass = "spring2016";
+}
 $dbname = "cs4750mhk4g";
 $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V pairs
 $num_results = 0;
