@@ -10,7 +10,7 @@ if (isset($_SESSION["error"])) {
 }
 
 if (isset($_SESSION["admin_results"])) {
-    $results_dusplay = $_SESSION["admin_results"];
+    $results_display = $_SESSION["admin_results"];
     unset($_SESSION["admin_results"]);
 } else {
     $results_display = "";
@@ -54,7 +54,7 @@ if (isset($_SESSION["access_level"])) {
     <div id="resultcontainer">
         <div id="searchresults">
             
-            <?php echo($results_display . "<br>"); ?>
+            <?php echo("Results: " . $results_display . "<br>"); ?>
             
             <?php if($access_level <= 3): ?>
             
