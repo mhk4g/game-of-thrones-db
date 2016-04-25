@@ -2,6 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
+// mysqli_report(MYSQLI_REPORT_OFF);
 
 # If either field omitted, display error
 if(empty($_POST["email"]) || empty($_POST["password"])):
@@ -31,19 +32,21 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["login"])) {
-  $result = $db->query("SELECT * from GOTUsers where email='$user' AND password='$hashedpw'");
+  $loginstatement = $db->prepare("SELECT * from GOTUsers where email=? AND password=?");
+  $loginstatement->bind_param("ss", $user, $hashedpw);
+  mysqli_bind_result
+  $loginstatement->execute();
   
-  if (mysqli_num_rows($result) > 0):
-    
-    # Username exists. Login!
-    $temp = $result->fetch_assoc();
-    $_SESSION["email_address"] = $user;
-    $_SESSION["access_level"] = $temp["access_level"];
-    header("Location: search_page.php");
+  if ($result = mysqli_stmt_fetch($loginstatement)):
+  
+  $_SESSION["email_address"] = $user; 
+  $_SESSION["access_level"] = $result[2];
+  $_SESSION["error"] = $result[2];
+  header("Location: search_page.php");
   
   else:
     
-    $_SESSION["error"] = "Invalid email address or password: $temp \n $user \n $hashedpw";
+    $_SESSION["error"] = "Invalid email address or password.";
     header("Location: login_page.php");
     
   endif;

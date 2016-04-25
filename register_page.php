@@ -49,6 +49,6 @@ if (isset($_SESSION["access_level"])) {
             <p class="login-label">Confirm Password: </p><input class="login-field" id="password2" name="password2" type="password" placeholder="Enter your password again" autofocus="autofocus" autocomplete="off" required width="200px"/><br><br>
             <input type="submit" id="register" name="register" value="Register"><br><br>
         <p id="error"><?php echo($error_display) ?></p>
-        <br><br><p class="proceed">Proceed without registering</p>
+        <br>
         </form>
     </div>

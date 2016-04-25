@@ -40,7 +40,7 @@ if(isset($_POST["register"])) {
   # If the entry is successfully created...
   if($result):
     $_SESSION["email"] = $username;
-    $_SESSION["access_level"] = $temp["access_level"];    # Set the maker ID
+    $_SESSION["access_level"] = 4;
     header("Location: search_page.php");
       
   # Otherwise, the insert fails because 
