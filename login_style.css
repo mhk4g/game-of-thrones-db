@@ -38,7 +38,7 @@ a:hover {
     right: 10px;
     font-weight: 300;
     font-size: 22px;
-    cursor:default;    
+    cursor:pointer;    
 }
 
 #site-label {
@@ -46,7 +46,7 @@ a:hover {
     left: 10px;
     font-weight: 500;
     font-size: 28px;
-    cursor:default;
+    cursor:pointer;
 }
 
 .link-label {
