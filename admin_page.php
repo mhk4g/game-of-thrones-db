@@ -1,6 +1,7 @@
 <?php 
 session_start();
-
+ini_set('display_errors', 1);
+include 'helpers.php';
 
 if (isset($_SESSION["error"])) {
     $error_display = $_SESSION["error"];
@@ -16,7 +17,6 @@ if (isset($_SESSION["admin_results"])) {
     $results_display = "";
 }
 
-
 if (isset($_SESSION["email_address"])) {
     $login_label = $_SESSION["email_address"];
     $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"logout.php\">Logout</a></span></nav>";
@@ -28,7 +28,7 @@ if (isset($_SESSION["email_address"])) {
 if (isset($_SESSION["access_level"])) {
     $access_level = $_SESSION["access_level"];
 } else {
-    $access_level = 4;
+    $access_level = 5;
 }
 ?>
 

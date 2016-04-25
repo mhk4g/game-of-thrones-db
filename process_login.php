@@ -1,5 +1,7 @@
 <?php 
 session_start();
+ini_set('display_errors', 1);
+include 'helpers.php';
 
 # If either field omitted, display error
 if(empty($_POST["email"]) || empty($_POST["password"])):

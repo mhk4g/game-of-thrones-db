@@ -1,5 +1,7 @@
 <?php 
 session_start();
+ini_set('display_errors', 1);
+include 'helpers.php';
 
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";

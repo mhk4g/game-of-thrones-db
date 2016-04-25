@@ -14,9 +14,9 @@ if(isset($_POST["faction_box"])) { $checkboxes["factions"] = $_POST["faction_box
 if(isset($_POST["creature_box"])) { $checkboxes["creatures"] = $_POST["creature_box"]; }
 if(isset($_POST["episode_box"])) { $checkboxes["episodes"] = $_POST["episode_box"]; }
 
-$permission_code = 5;
 
 # Store user type in session variable
+$permission_code = 5;
 if(isset($_SESSION["access_level"])) {
     $permission_code = (string)$_SESSION["access_level"];
 }
