@@ -56,7 +56,7 @@ if ($checkboxes["characters"] == true):
             $temp_name = $r[0];
             $aliases = "";
             $result2 = $db->query("SELECT * FROM CharacterAlias WHERE character_name LIKE '%$temp_name%'");
-            if (mysqli_num_rows($result2) == 0) {
+            if ($result2 === false) {
                 $aliases = "No aliases";
             } else {
                 while ($data2 = $result2->fetch_array())
