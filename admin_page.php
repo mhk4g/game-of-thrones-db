@@ -54,7 +54,7 @@ if (isset($_SESSION["access_level"])) {
     <div id="resultcontainer">
         <div id="searchresults">
             
-            <?php echo($admin_results . "<br>"); ?>
+            <?php echo($results_display . "<br>"); ?>
             
             <?php if($access_level <= 3): ?>
             
