@@ -25,12 +25,22 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["delete"]) && ($confirmdelete == "DELETE") && ($name == $confirmname)) {
-  $result1 = $db->query("DELETE FROM Characters WHERE character_name='$name'");
-  $result2 = $db->query("DELETE FROM CharacterFaction WHERE character_name='$name'");
-  $result3 = $db->query("DELETE FROM CharacterActor WHERE character_name='$name'");
-  $result4 = $db->query("DELETE FROM CharacterAlias WHERE character_name='$name'");
-  $result5 = $db->query("DELETE FROM CharacterDeath WHERE character_name='$name'");
-  
+  $st1 = $db->prepare("DELETE FROM Characters WHERE character_name=?"); 
+  $st2 = $db->prepare("DELETE FROM CharacterFaction WHERE character_name=?");
+  $st3 = $db->prepare("DELETE FROM CharacterActor WHERE character_name=?");
+  $st4 = $db->prepare("DELETE FROM CharacterAlias WHERE character_name=?");
+  $st5 = $db->prepare("DELETE FROM CharacterDeath WHERE character_name=?");
+  $st1->bind_param("s", $name);
+  $st2->bind_param("s", $name);
+  $st3->bind_param("s", $name);
+  $st4->bind_param("s", $name);
+  $st5->bind_param("s", $name);
+  $st1->execute();
+  $st2->execute();
+  $st3->execute();
+  $st4->execute();
+  $st5->execute();
+
   header("Location: admin_page.php");
   $_SESSION["admin_results"] = "Delete succeeded!";
   } else {
