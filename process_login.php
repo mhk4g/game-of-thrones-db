@@ -32,15 +32,14 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["login"])) {
-  $loginstatement = $db->prepare("SELECT * from GOTUsers where email=? AND password=?");
+  $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");
   $loginstatement->bind_param("ss", $user, $hashedpw);
   $loginstatement->execute();
   
   if ($result = mysqli_stmt_fetch($loginstatement)):
   
-  $_SESSION["email_address"] = $user; 
-  $_SESSION["access_level"] = $result[2];
-  $_SESSION["error"] = $result[2];
+  $_SESSION["email_address"] = $result["email"]; 
+  $_SESSION["access_level"] = $result["access_level"];
   header("Location: search_page.php");
   
   else:
