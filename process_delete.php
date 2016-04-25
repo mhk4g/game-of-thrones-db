@@ -44,7 +44,7 @@ if(isset($_POST["delete"]) && ($confirmdelete == "DELETE") && ($name == $confirm
   header("Location: admin_page.php");
   $_SESSION["admin_results"] = "Delete succeeded!";
   } else {
-      $_SESSION["error"] = "Something went wrong with your delete. Check fields and try again.";
+      $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
       header("Location: admin_page.php");
   }
 ?>
