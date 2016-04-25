@@ -65,7 +65,7 @@ if (isset($_SESSION["access_level"])) {
             <?php endif; 
             if($access_level <= 2): ?>
 
-                <form action="process_edit.php" method="post">
+                <form action="process_update.php" method="post">
                     <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
                         <col width=18%><col width=18%><col width=19%><col width=15%><col width=30%>
                         <caption id="tablecaption"><h1>Edit existing character</h1></caption>
@@ -78,7 +78,7 @@ if (isset($_SESSION["access_level"])) {
                                 <td><input type="text" name="status" placeholder="Alive, Deceased, Unknown" autocomplete="off" required style="width:100%"/></td>
                                 <td><input type="text" name="aka" placeholder="Ex: 'Guy who gets [SPOILER]ed'" autocomplete="off" required style="width:100%"/></td>
                             </tr>
-                        </table><br><input type="submit" id="edit" name="edit" value="Update character"><br><br>  
+                        </table><br><input type="submit" id="update" name="update" value="Update character"><br><br>  
                     </form>
 
                     <?php endif; 
