@@ -39,7 +39,7 @@ if (isset($_SESSION["access_level"])) {
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
-    <nav class="link-label" id="about-link"><a href="register_page.php">Register</a></span></nav>
+    <nav class="link-label" id="login-link"><a href="register_page.php">Register</a></span></nav>
     <?php echo($login_or_out); ?>
     <div class="input-box" width=200px>
         <form action="process_login.php" method="post">
