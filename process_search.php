@@ -43,18 +43,31 @@ if ($checkboxes["characters"] == true):
         }
 
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
-        $HTTPResponse[] = "<col width=20%><col width=20%><col width=15%><col width=45%>";
+        $HTTPResponse[] = "<col width=15%><col width=15%><col width=15%><col width=8%><col width=35%>";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";
         $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
+        $HTTPResponse[] = "<th style=\"width:40px\">Alias</th>";
         $HTTPResponse[] = "<th style=\"width:40px\">First appearance</th>";
         $HTTPResponse[] = "<th style=\"width:40px\">Status</th>";
         $HTTPResponse[] = "<th style=\"width:40px\">Also known as...</th></tr>";
 
         foreach ($result_array as $r) {
+            $temp_name = $r[0];
+            $aliases = "";
+            $result2 = $db->query("SELECT * FROM CharacterAlias WHERE character_name ='$temp_name'");
+            if ($result2): 
+                while ($data2 = $result2->fetch_array())
+                {
+                    $aliases .= $data2[1] . "<br>";
+                }
+            else:
+                $aliases = "None";
+            endif;
+            
             $alive = "<td id=\"$r[2]\">$r[2]</td>";
             $bio = str_replace("[SPOILER]", "<span class=\"spoiler\">[SPOILER]</span>", $r[3]);
-            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td>$alive<td>$bio</td></tr>";
+            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$aliases</td><td>$r[1]</td>$alive<td>$bio</td></tr>";
         }
 
         $HTTPResponse[] = "</table><br><br><br>";
