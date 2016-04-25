@@ -91,7 +91,7 @@ if (isset($_SESSION["access_level"])) {
                             <tr align = "center">
                                 <th>Character name</th><th>Confirm character name</th><th>Confirm deletion</th><tr>
                                     <td><input type="text" name="name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
-                                    <td><input type="text" name="confirm_name" placeholder="Ex: 'Aryo Stark'" autocomplete="off" required style="width:100%"/></td>
+                                    <td><input type="text" name="confirm_name" placeholder="Ex: 'Arya Stark'" autocomplete="off" required style="width:100%"/></td>
                                     <td><input type="text" name="confirm_delete" placeholder="Type 'DELETE' to confirm deletion" autocomplete="off" required style="width:100%"/></td>
                                 </tr>
                             </table><br><input type="submit" id="delete" name="delete" value="Delete character"><br><br>  

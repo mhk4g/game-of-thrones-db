@@ -76,7 +76,7 @@ if ($checkboxes["characters"] == true):
             } else {
                 while ($data3 = $result3->fetch_array())
                 {
-                    $factions .= $data3[1] . "\n";
+                    $factions .= $data3[1] . "<br>";
                 }
             }
             if($factions == "") { $factions = "None"; }
