@@ -3,10 +3,19 @@ session_start();
 
 
 if (isset($_SESSION["error"])) {
-    $error_display = "Invalid user name or password.";
+    $error_display = $_SESSION["error"];
+    unset($_SESSION["error"]);
 } else {
     $error_display = "";
 }
+
+if (isset($_SESSION["admin_results"])) {
+    $results_dusplay = $_SESSION["admin_results"];
+    unset($_SESSION["admin_results"]);
+} else {
+    $results_display = "";
+}
+
 
 if (isset($_SESSION["email_address"])) {
     $login_label = $_SESSION["email_address"];
@@ -44,6 +53,8 @@ if (isset($_SESSION["access_level"])) {
     <?php echo($login_or_out); ?>
     <div id="resultcontainer">
         <div id="searchresults">
+            
+            <?php echo($admin_results . "<br>"); ?>
             
             <?php if($access_level <= 3): ?>
             
