@@ -34,7 +34,6 @@ if ($db->connect_error) {
 if(isset($_POST["login"])) {
   $loginstatement = $db->prepare("SELECT * from GOTUsers where email=? AND password=?");
   $loginstatement->bind_param("ss", $user, $hashedpw);
-  mysqli_bind_result
   $loginstatement->execute();
   
   if ($result = mysqli_stmt_fetch($loginstatement)):
