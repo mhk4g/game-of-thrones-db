@@ -17,6 +17,7 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 $confirm = $_POST["password2"];
 $hashedpw = hash("md5", $password);
+$tempaccess = 4;
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
@@ -34,9 +35,8 @@ if($password != $confirm) {
 if(isset($_POST["register"])) {
   
   # Attempt to insert into database
-  
   $registerstatement = $db->prepare("INSERT INTO GOTUsers (email, password, access_level) VALUES (?, ?, ?)");
-  $registerstatement->bind_param("ssi", $username, $hashedpw, 4);
+  $registerstatement->bind_param("ssi", $username, $hashedpw, $tempaccess);
   $registerstatement->execute();
   
   if (!$registerstatement->error):
@@ -48,20 +48,4 @@ if(isset($_POST["register"])) {
     header("Location: register_page.php");
   endif;
   }
-
-  
-  
-  # If the entry is successfully created...
-  if($result):
-    $_SESSION["email"] = $username;
-    $_SESSION["access_level"] = 4;
-    header("Location: search_page.php");
-      
-  # Otherwise, the insert fails because 
-  else:
-    $_SESSION["error"] = "An account with that email address already exists.";
-    header("Location: register_page.php");
-    die;
-  endif;
-}
 ?>
