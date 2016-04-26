@@ -34,5 +34,4 @@ echo("POST: \n");
 echo($user_result . "\n");
 echo($access_level_result . "\n");
 
-
 ?>
