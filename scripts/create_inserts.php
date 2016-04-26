@@ -14,11 +14,11 @@ endforeach;
 echo "Total entries: " . count($dictionaries) . "\n";
 print_r($dictionaries);
 
-$drops = ["TRUNCATE TABLE CharacterActor", "TRUNCATE TABLE Characters", "TRUNCATE TABLE CharacterAlias", "TRUNCATE TABLE CharacterFaction"];
+//$drops = ["TRUNCATE TABLE CharacterActor", "TRUNCATE TABLE Characters", "TRUNCATE TABLE CharacterAlias", "TRUNCATE TABLE CharacterFaction"];
 $cmds = convert_all_characters($dictionaries);
-$cmds = array_merge($drops, $cmds);
+//$cmds = array_merge($drops, $cmds);
 print_r($cmds);
-process_inserts($cmds);
+//process_inserts($cmds);
 
 // Take the wiki parser's output dictionary as a parameter
 function convert_all_characters($parser_output_array) {
@@ -41,6 +41,8 @@ function convert_single_character_to_SQL($ch) {
     # Character table
     $name = $ch['Name'];
     $actor = $ch['Portrayed by'];
+    $death = $ch['Death'];
+    $death_episode = $ch['Death episode'];
     if ($ch['First seen']):
         $appears = $ch['First seen'];
     else: 
@@ -62,6 +64,11 @@ function convert_single_character_to_SQL($ch) {
         foreach ($actor as $a):
             $character_insert[] = "INSERT INTO CharacterActor (character_name, actor_name) VALUES ('$name', '$a')";
         endforeach;
+    endif;
+    
+    # CharacterDeath table
+    if (gettype($death) == "string"):
+        $character_insert[] = "INSERT INTO CharacterDeath (character_name, episode_name, description) VALUES ('$name', '$death_episode', '$death')";
     endif;
         
     # CharacterAlias table
