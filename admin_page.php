@@ -2,6 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
+// mysqli_report(MYSQLI_REPORT_OFF);
 
 if (isset($_SESSION["error"])) {
     $error_display = $_SESSION["error"];
@@ -28,7 +29,7 @@ if (isset($_SESSION["email_address"])) {
 if (isset($_SESSION["access_level"])) {
     $access_level = $_SESSION["access_level"];
 } else {
-    $access_level = 666;
+    $access_level = 5;
 }
 ?>
 
@@ -109,7 +110,7 @@ if (isset($_SESSION["access_level"])) {
                         </form>
 
                     <?php endif; 
-                    if($access_level >= 4): echo "<h2>You do not have any admin permissions. $access_level</h2>"; endif;?>
+                    if($access_level >= 4): echo "<h2>You do not have any admin permissions.</h2>"; endif;?>
 
                 </div>
             </div>

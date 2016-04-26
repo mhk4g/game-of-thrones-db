@@ -30,8 +30,6 @@ if ($db->connect_error) {
     die("Could not connect to database: " . $db->connect_error);
   }
 
-
-
 # If login button was clicked...
 if(isset($_POST["login"])) {
   $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");

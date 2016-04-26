@@ -2,6 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
+// mysqli_report(MYSQLI_REPORT_OFF);
 
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
@@ -23,7 +24,6 @@ if (isset($_SESSION["access_level"])) {
     $access_level = 4;
 }
 ?>
-
 
 <html background-color>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

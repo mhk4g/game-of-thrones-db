@@ -2,6 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
+// mysqli_report(MYSQLI_REPORT_OFF);
 
 $checkboxes = [];
 
@@ -13,7 +14,6 @@ if(isset($_POST["char_box"])) { $checkboxes["characters"] = $_POST["char_box"]; 
 if(isset($_POST["faction_box"])) { $checkboxes["factions"] = $_POST["faction_box"]; }
 if(isset($_POST["creature_box"])) { $checkboxes["creatures"] = $_POST["creature_box"]; }
 if(isset($_POST["episode_box"])) { $checkboxes["episodes"] = $_POST["episode_box"]; }
-
 
 # Store user type in session variable
 $permission_code = 5;
