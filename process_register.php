@@ -34,8 +34,22 @@ if($password != $confirm) {
 if(isset($_POST["register"])) {
   
   # Attempt to insert into database
-  $query = "INSERT INTO GOTUsers (email, password, access_level) VALUES ('$username', '$hashedpw', 4)";
-  $result = $db->query($query);
+  
+  $registerstatement = $db->prepare("INSERT INTO GOTUsers (email, password, access_level) VALUES (?, ?, ?)");
+  $registerstatement->bind_param("ssi", $username, $hashedpw, 4);
+  $registerstatement->execute();
+  
+  if (!$registerstatement->error):
+      $_SESSION["email_address"] = $username; 
+      $_SESSION["access_level"] = "4";
+      header("Location: search_page.php");  
+  else:
+    $_SESSION["error"] = "Something went wrong with your registration.";
+    header("Location: register_page.php");
+  endif;
+  }
+
+  
   
   # If the entry is successfully created...
   if($result):
