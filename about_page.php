@@ -28,7 +28,7 @@ if (isset($_SESSION["access_level"])) {
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
-    <title>Game of Thrones DB: Login</title>
+    <title>Game of Thrones DB: About</title>
 </head>
 <body bgcolor="black">
     <nav class="fixed-nav-bar"></nav>
