@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-mysqli_report(MYSQLI_REPORT_NONE);
+mysqli_report(MYSQLI_REPORT_OFF);
 
 # If either field omitted, display error
 if(empty($_POST["email"]) || empty($_POST["password"])):

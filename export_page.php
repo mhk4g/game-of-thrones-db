@@ -1,7 +1,7 @@
 <?php 
 session_start();
 ini_set('display_errors', 1);
-mysqli_report(MYSQLI_REPORT_NONE);
+mysqli_report(MYSQLI_REPORT_OFF);
 
 $permission_code = 5;
 
@@ -10,7 +10,7 @@ if(isset($_SESSION["access_level"])) {
     $permission_code = (string)$_SESSION["access_level"];
 } 
 
-if ($permission_code > 2) {
+if ($permission_code > 3) {
     $_SESSION["admin_results"] = "Invalid access level entered. Check your spelling.";
     header("Location: admin_page.php");
 }
