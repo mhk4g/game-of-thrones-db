@@ -75,24 +75,23 @@ a:hover {
 }
 
 #edit-link {
-    left: 42%;
+    left: 40%;
 }
 
 #about-link {
-    left: 54%;
+    left: 50%;
 }
 
 #register-link {
-    left: 66%;
+    left: 60%;
 }
 
 #login-link {
-    left: 78%;
+    left: 70%;
 }
 
 #tab {
     background-color: black;
-    x;
 }
 
 body {
