@@ -8,6 +8,7 @@ $checkboxes = [];
 
 if(isset($_POST["userinput"])) {
     $userinput = $_POST["userinput"];
+    $matching_user_input = '%' . $userinput . '%';
 }
 
 if(isset($_POST["char_box"])) { $checkboxes["characters"] = $_POST["char_box"]; }
@@ -38,56 +39,65 @@ if ($db->connect_error) {
   }
 
 $HTTPResponse = [];
+$char_name, $first_app, $char_status, $char_aka;
 
 if ($checkboxes["characters"] == true):
-    $result = $db->query("SELECT * FROM Characters WHERE character_name LIKE'%$userinput%' UNION SELECT * FROM Characters WHERE aka LIKE'%$userinput%'");
-    if (mysqli_num_rows($result) > 0): 
-        $result_array = [];
-        while ($data = $result->fetch_array())
-        {
-            $result_array[] = $data;
-        }
+    $char_search_stmt = $db->prepare("SELECT * from Characters where character_name LIKE ? UNION SELECT * FROM Characters where aka like ?");
+    $char_search_stmt->bind_param("ss", $matching_user_input, $matching_user_input);
+    $char_search_stmt->execute();
+    mysqli_stmt_bind_result($char_search_stmt, $char_name, $first_app, $char_status, $char_aka);
+    
+    if (mysqli_stmt_result_metadata($char_search_stmt)): 
 
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<col width=15%><col width=15%><col width=5%><col width=15%><col width=35%>";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";
-        $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">First appearance</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Status</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Factions</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Also known as...</th></tr>";
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>First appearance</th>";
+        $HTTPResponse[] = "<th>Status</th>";
+        $HTTPResponse[] = "<th>Factions</th>";
+        $HTTPResponse[] = "<th>Also known as...</th></tr>";
 
-        foreach ($result_array as $r) {
+        $while($r = $char_search_stmt->fetch()) {
             $num_results++;
-            $temp_name = $r[0];
+            
+            // ALIASES
+            $temp_name = '%' . $char_name . '%';
             $aliases = "";
-            $result2 = $db->query("SELECT * FROM CharacterAlias WHERE character_name LIKE '%$temp_name%'");
-            if ($result2 === false) {
-                $aliases = "No aliases";
-            } else {
-                while ($data2 = $result2->fetch_array())
-                {
-                    $aliases .= $data2[1] . "\n";
-                }
+            $alias_search_stmt = $db->prepare("SELECT alias_name from CharacterAlias where character_name LIKE ?");
+            $alias_search_stmt->bind_param("s", $temp_name);
+            $alias_search_stmt->execute();
+            mysqli_stmt_bind_result($alias_search_stmt, $alias_result);
+            
+            if(mysqli_stmt_result_metadata($alias_search_stmt)) {
+                while ($alias_search_stmt->fetch())
+                    {
+                        $aliases .= $alias_result . "\n";
+                    }
             }
             if($aliases == "") { $aliases = "No aliases"; }
-            $names_and_aliases = "<span id='alias' title='$aliases'>$r[0]</span>";
+            $names_and_aliases = "<span id='alias' title='$aliases'>$char_name</span>";
             
+            // FACTIONS
             $factions = "";
-            $result3 = $db->query("SELECT * FROM CharacterFaction WHERE character_name LIKE '%$temp_name%'");
-            if ($result3 === false) {
-                $factions = "None";
-            } else {
-                while ($data3 = $result3->fetch_array())
+            $faction_search_stmt = $db->prepare("SELECT faction_name from CharacterFaction where character_name LIKE ?");
+            $faction_search_stmt->bind_param("s", $temp_name);
+            $faction_search_stmt->execute();
+            mysqli_stmt_bind_result($faction_search_stmt, $faction_result);
+            if (mysqli_stmt_result_metadata($faction_search_stmt)) {
+                while ($faction_search_stmt->fetch())
                 {
-                    $factions .= $data3[1] . "<br>";
+                    $factions .= $faction_result . "<br>";
                 }
             }
             if($factions == "") { $factions = "None"; }
-            $alive = "<td id=\"$r[2]\">$r[2]</td>";
-            $bio = str_replace("[SPOILER]", "<span class=\"spoiler\">[SPOILER]</span>", $r[3]);
-            $HTTPResponse[] = "<tr align=\"center\"><td>$names_and_aliases</td><td>$r[1]</td>$alive<td>$factions</td><td>$bio</td></tr>";
+            #TODO: INSERT HOVER DEATH DETAILS
+            $alive = "<td id=\"$char_status\">$char_status</td>"; 
+
+            // BIO
+            $bio = str_replace("[SPOILER]", "<span class=\"spoiler\">[SPOILER]</span>", $char_aka);
+            $HTTPResponse[] = "<tr align=\"center\"><td>$names_and_aliases</td><td>$first_app</td>$alive<td>$factions</td><td>$bio</td></tr>";
         }
 
         $HTTPResponse[] = "</table><br><br><br>";
