@@ -32,7 +32,7 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["login"])) {
-  $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");
+  $loginstatement = $db->prepare("SELECT user_email, access_level from GOTUsers where user_email=? AND password=?");
   $loginstatement->bind_param("ss", $user, $hashedpw);
   $loginstatement->execute();
   mysqli_stmt_bind_result($loginstatement, $user_result, $access_level_result);

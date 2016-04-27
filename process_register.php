@@ -38,7 +38,7 @@ if($password != $confirm) {
 if(isset($_POST["register"])) {
   
   # Attempt to insert into database
-  $registerstatement = $db->prepare("INSERT INTO GOTUsers (email, password, access_level) VALUES (?, ?, ?)");
+  $registerstatement = $db->prepare("INSERT INTO GOTUsers (user_email, password, access_level) VALUES (?, ?, ?)");
   $registerstatement->bind_param("ssi", $username, $hashedpw, $tempaccess);
   $registerstatement->execute();
   

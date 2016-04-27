@@ -61,7 +61,7 @@ echo "Attempting promotion...";
 
 # If login button was clicked...
 if(isset($_POST["promote"]) && ($email == $confirmemail)) {
-  $st1 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE user_email=?");
+  $st1 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE GOTUsers.user_email=?");
   $st1->bind_param("is", $newaccesslevelvalue, $email);
   $st1->execute();
 
