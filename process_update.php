@@ -54,11 +54,17 @@ if(isset($_POST["update"])) {
   $st3->bind_param("ss", $newname, $oldname);
   $st4->bind_param("ss", $newname, $oldname);
   $st5->bind_param("ss", $newname, $oldname);
+  try {
   $success = $st1->execute();
   $st2->execute();
   $st3->execute();
   $st4->execute();
   $st5->execute();
+  } catch (mysqli_sql_exception $exception) {
+     $_SESSION["admin_results"] = 'The episode you entered for "first appearance" does not exist. Please check your spelling and try again.';
+     header("Location: admin_page.php");
+     die();
+  } 
   
   if ($success) {
       header("Location: admin_page.php");
@@ -66,7 +72,7 @@ if(isset($_POST["update"])) {
       die();
   }
 } else {
-      $_SESSION["admin_results"] = "Something went wrong with your update. Check character name maybe?";
+      $_SESSION["admin_results"] = "Something went wrong with your update. Check the character and first episode names.";
       header("Location: admin_page.php");
       die();
   }
