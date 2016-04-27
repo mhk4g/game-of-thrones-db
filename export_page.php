@@ -41,12 +41,12 @@ foreach ($tables as $tablename) {
 }
 
 foreach ($all_results as $result) {
-    $fetched = mysqli_fetch_all($result);
-    foreach ($fetched as $f) {
-        $jsonexport[] = json_encode($f);
-        $csvexport[] = implode(",", $f);
-        $readable[] = $f;
-    }
+
+    while($fetched = mysqli_fetch($result)):
+        $jsonexport[] = json_encode($fetched);
+        $csvexport[] = implode(",", $fetched);
+        $readable[] = $fetched;
+    endwhile;
 }
 
 echo "<pre>JSON<br><br>-------------<br><br>";
