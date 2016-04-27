@@ -93,7 +93,7 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 echo "FACTION CITIES MISSING: $count\n";
 
-# FACTION LEADER
+# CHARACTER FACTION 
 $count = 0;
 $result = $db->query("SELECT * FROM CharacterFaction WHERE NOT EXISTS (SELECT * FROM Faction WHERE CharacterFaction.faction_name = Faction.faction_name)");
 while($row = mysqli_fetch_assoc($result)) {
@@ -102,6 +102,14 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 echo "CHARACTER FACTIONS MISSING: $count\n";
 
+# CITY REGION
+$count = 0;
+$result = $db->query("SELECT * FROM City WHERE NOT EXISTS (SELECT * FROM Region WHERE City.region = Region.name)");
+while($row = mysqli_fetch_assoc($result)) {
+    $count++;
+    print_r($row);
+}
+echo "CITY REGIONS MISSING: $count\n";
 
 
 ?>
