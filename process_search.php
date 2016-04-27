@@ -46,7 +46,6 @@ if ($checkboxes["characters"] == true):
     mysqli_stmt_bind_result($char_search_stmt, $char_name, $first_app, $char_status, $char_aka);
     mysqli_stmt_store_result($char_search_stmt);
 
-    
     if ($char_search_stmt->num_rows):
 
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
@@ -103,7 +102,6 @@ if ($checkboxes["characters"] == true):
 endif;
 
 
-
 if ($checkboxes["factions"] == true):
     
     $faction_search_stmt2 = $db->prepare("SELECT * FROM Faction WHERE faction_name LIKE ?");
@@ -117,9 +115,9 @@ if ($checkboxes["factions"] == true):
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";    
-        $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Based in</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Based in</th>";
+        $HTTPResponse[] = "<th>Leader</th></tr>";
         
         while($faction_search_stmt2->fetch()) {
             $HTTPResponse[] = "<tr align=\"center\"><td>$fact_name</td><td>$fact_capital</td><td>$fact_leader</td></tr>";
@@ -128,6 +126,33 @@ if ($checkboxes["factions"] == true):
         $HTTPResponse[] = "</table><br><br><br>";    
     endif;
 endif;
+
+
+if ($checkboxes["creatures"] == true):
+    
+    $creature_search_stmt = $db->prepare("SELECT * FROM Creature WHERE creature_name LIKE ?");
+    $creature_search_stmt->bind_param("s", $matching_user_input);
+    $creature_search_stmt->execute();
+    mysqli_stmt_bind_result($creature_search_stmt, $creature_name, $creature_species, $creature_affiliation);
+    mysqli_stmt_store_result($creature_search_stmt);
+    
+    if ($creature_search_stmt->num_rows):
+
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Creatures</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";    
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Species</th>";
+        $HTTPResponse[] = "<th>Affiliation</th></tr>";
+        
+        while($creature_search_stmt->fetch()) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$creature_name</td><td>$creature_species</td><td>$creature_affiliation</td></tr>";
+        }
+
+        $HTTPResponse[] = "</table><br><br><br>";    
+    endif;
+endif;
+
 
 foreach ($HTTPResponse as $h) {
     echo($h);
