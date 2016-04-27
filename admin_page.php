@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-// mysqli_report(MYSQLI_REPORT_OFF);
+mysqli_report(MYSQLI_REPORT_NONE);
 
 if (isset($_SESSION["error"])) {
     $error_display = $_SESSION["error"];
@@ -94,7 +94,7 @@ if (isset($_SESSION["access_level"])) {
                     </form>
 
                     <?php endif; 
-                    if($access_level <= 1): ?>
+                    if($access_level == 1): ?>
 
                     <form action="process_delete.php" method="post">
                         <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
@@ -108,6 +108,19 @@ if (isset($_SESSION["access_level"])) {
                                 </tr>
                             </table><br><input type="submit" id="delete" name="delete" value="Delete character"><br><br>  
                         </form>
+                        
+                        <br><form action="process_promote.php" method="post">
+                            <table border = "1" cellpadding = "8" width="100%" align="center" id="admintable">
+                                <col width=30%><col width=30%><col width=30%>
+                                <caption id="tablecaption"><h1>Change access level</h1></caption>
+                                <tr align = "center">
+                                    <th>User's email address</th><th>Confirm user's email</th><th>New access level</th><tr>
+                                        <td><input type="text" name="email" placeholder="Ex: 'coolguy23@virginia.edu'" autocomplete="off" required style="width:100%"/></td>
+                                        <td><input type="text" name="confirm_email" placeholder="Ex: 'coolguy23@virginia.edu'" autocomplete="off" required style="width:100%"/></td>
+                                        <td><input type="text" name="new_access_level" placeholder="Khaleesi > Lord > Ser > Peasant" autocomplete="off" required style="width:100%"/></td>
+                                    </tr>
+                                </table><br><input type="submit" id="promote" name="promote" value="Change access level"><br><br>  
+                            </form>
 
                     <?php endif; 
                     if($access_level >= 4): echo "<h2>You do not have any admin permissions.</h2>"; endif;?>

@@ -11,7 +11,8 @@ if(isset($_SESSION["access_level"])) {
 } 
 
 if ($permission_code > 2) {
-    die("You do not have permission to export.");
+    $_SESSION["admin_results"] = "Invalid access level entered. Check your spelling.";
+    header("Location: admin_page.php");
 }
 
 # Database credentials
