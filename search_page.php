@@ -99,6 +99,12 @@ $(document).keypress(function(e) {
   <input type="checkbox" id="creature_box" checked /> Creatures
   <input type="checkbox" id="episode_box" checked /> Episodes
     </div>
+
+    <audio controls autoplay, loop>
+        <source src="gameofthrones.ogg" type="audio/ogg">
+        <source src="gameofthrones.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
   <div id="resultcontainer">
       <div id="searchresults">
           <!-- This is where the results go -->

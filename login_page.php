@@ -40,7 +40,15 @@ if (isset($_SESSION["access_level"])) {
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
     <nav class="link-label" id="register-link"><a href="register_page.php">Register</a></span></nav>
+    <audio controls>
+        <source src="gameofthrones.ogg" type="audio/ogg">
+        <source src="gameofthrones.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <?php echo($login_or_out); ?>
+
+    
+    
     <div class="input-box" width=200px>
         <form action="process_login.php" method="post">
         <p class="login-label">Email</p><input class="login-field" id="email" name="email" type="text" placeholder="Enter your email address" autofocus="autofocus" autocomplete="off" required width="200px"/><br>
