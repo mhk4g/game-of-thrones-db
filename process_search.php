@@ -185,7 +185,7 @@ foreach ($HTTPResponse as $h) {
     }
     
 if (empty($HTTPResponse)) {
-    echo("No results");
+    echo("<br><br><h3>No results</h3>");
 }
 
 ?>
