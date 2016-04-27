@@ -40,7 +40,6 @@ function play_music() {
     var player = document.getElementsByTagName("audio")[0];
     player.play();
 }
-
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>

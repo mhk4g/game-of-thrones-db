@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-mysqli_report(MYSQLI_REPORT_OFF);
+mysqli_report(MYSQLI_REPORT_ALL);
 
 # Get login info from POST
 
@@ -44,7 +44,13 @@ if(isset($_POST["insert"])) {
 // prepare and bind
   $char_table_statement = $db->prepare("INSERT INTO Characters (character_name, first_appearance, status, aka) VALUES (?, ?, ?, ?)"); 
   $char_table_statement->bind_param("ssss", $name, $firstappearance, $status, $aka);
-  $success = $char_table_statement->execute();
+  try {
+      $success = $char_table_statement->execute();
+  } catch (mysqli_sql_exception $exception) {
+      $_SESSION["admin_results"] = 'The episode you entered for "first appearance" does not exist. Please check your spelling and try again.';
+      header("Location: admin_page.php");
+      die();
+  }
   $char_table_statement->close();
   
   if($success) {
