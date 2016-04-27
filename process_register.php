@@ -1,5 +1,7 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
+mysqli_report(MYSQLI_REPORT_NONE);
 
 # Reload login page if user or pass were left blank
 if(empty($_POST["username"]) || empty($_POST["password"])):

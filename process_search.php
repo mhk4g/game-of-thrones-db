@@ -2,13 +2,13 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-// mysqli_report(MYSQLI_REPORT_OFF);
+mysqli_report(MYSQLI_REPORT_NONE);
 
 $checkboxes = [];
 
 if(isset($_POST["userinput"])) {
     $userinput = $_POST["userinput"];
-    $matching_user_input = '%' . $userinput . '%';
+    $matching_user_input = "%" . $userinput . "%";
 }
 
 if(isset($_POST["char_box"])) { $checkboxes["characters"] = $_POST["char_box"]; }
@@ -31,7 +31,6 @@ if ($dbuser == "cs4750mhk4g") {
 }
 $dbname = "cs4750mhk4g";
 $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V pairs
-$num_results = 0;
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
@@ -39,15 +38,15 @@ if ($db->connect_error) {
   }
 
 $HTTPResponse = [];
-$char_name, $first_app, $char_status, $char_aka;
 
 if ($checkboxes["characters"] == true):
-    $char_search_stmt = $db->prepare("SELECT * from Characters where character_name LIKE ? UNION SELECT * FROM Characters where aka like ?");
+    $char_search_stmt = $db->prepare("SELECT * FROM Characters WHERE character_name LIKE ? UNION SELECT * FROM Characters WHERE character_name LIKE ?");
     $char_search_stmt->bind_param("ss", $matching_user_input, $matching_user_input);
     $char_search_stmt->execute();
     mysqli_stmt_bind_result($char_search_stmt, $char_name, $first_app, $char_status, $char_aka);
-    
-    if (mysqli_stmt_result_metadata($char_search_stmt)): 
+    mysqli_stmt_store_result($char_search_stmt);
+
+    if ($char_search_stmt->num_rows):
 
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<col width=15%><col width=15%><col width=5%><col width=15%><col width=35%>";
@@ -58,18 +57,16 @@ if ($checkboxes["characters"] == true):
         $HTTPResponse[] = "<th>Status</th>";
         $HTTPResponse[] = "<th>Factions</th>";
         $HTTPResponse[] = "<th>Also known as...</th></tr>";
-
-        $while($r = $char_search_stmt->fetch()) {
-            $num_results++;
+        
+        while($char_search_stmt->fetch()) {
             
             // ALIASES
-            $temp_name = '%' . $char_name . '%';
             $aliases = "";
-            $alias_search_stmt = $db->prepare("SELECT alias_name from CharacterAlias where character_name LIKE ?");
-            $alias_search_stmt->bind_param("s", $temp_name);
+            $alias_search_stmt = $db->prepare("SELECT * from CharacterAlias where character_name =?");
+            $alias_search_stmt->bind_param("s", $char_name);
             $alias_search_stmt->execute();
-            mysqli_stmt_bind_result($alias_search_stmt, $alias_result);
-            
+            mysqli_stmt_bind_result($alias_search_stmt, $charname_result, $alias_result);
+
             if(mysqli_stmt_result_metadata($alias_search_stmt)) {
                 while ($alias_search_stmt->fetch())
                     {
@@ -81,8 +78,8 @@ if ($checkboxes["characters"] == true):
             
             // FACTIONS
             $factions = "";
-            $faction_search_stmt = $db->prepare("SELECT faction_name from CharacterFaction where character_name LIKE ?");
-            $faction_search_stmt->bind_param("s", $temp_name);
+            $faction_search_stmt = $db->prepare("SELECT faction_name from CharacterFaction where character_name =?");
+            $faction_search_stmt->bind_param("s", $char_name);
             $faction_search_stmt->execute();
             mysqli_stmt_bind_result($faction_search_stmt, $faction_result);
             if (mysqli_stmt_result_metadata($faction_search_stmt)) {
@@ -101,40 +98,91 @@ if ($checkboxes["characters"] == true):
         }
 
         $HTTPResponse[] = "</table><br><br><br>";
-    endif;    
+    endif;
 endif;
 
+
 if ($checkboxes["factions"] == true):
-    $result = $db->query("SELECT * FROM Faction WHERE faction_name LIKE'%$userinput%'");
-    if (mysqli_num_rows($result) > 0):
-        $result_array = [];
-        while ($data = $result->fetch_array())
-        {
-            $result_array[] = $data;
-        }
+    
+    $faction_search_stmt2 = $db->prepare("SELECT * FROM Faction WHERE faction_name LIKE ?");
+    $faction_search_stmt2->bind_param("s", $matching_user_input);
+    $faction_search_stmt2->execute();
+    mysqli_stmt_bind_result($faction_search_stmt2, $fact_name, $fact_capital, $fact_leader);
+    mysqli_stmt_store_result($faction_search_stmt2);
+    
+    if ($faction_search_stmt2->num_rows):
 
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";    
-        $HTTPResponse[] = "<th style=\"width:40px\">Name</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Based in</th>";
-        $HTTPResponse[] = "<th style=\"width:40px\">Leader</th></tr>";
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Based in</th>";
+        $HTTPResponse[] = "<th>Leader</th></tr>";
+        
+        while($faction_search_stmt2->fetch()) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$fact_name</td><td>$fact_capital</td><td>$fact_leader</td></tr>";
+        }
+    
+        $HTTPResponse[] = "</table><br><br><br>";    
+    endif;
+endif;
 
-        foreach ($result_array as $r) {
-            $num_results++;
-            $HTTPResponse[] = "<tr align=\"center\"><td>$r[0]</td><td>$r[1]</td><td>$r[2]</td></tr>";
+
+if ($checkboxes["creatures"] == true):
+    
+    $creature_search_stmt = $db->prepare("SELECT * FROM Creature WHERE creature_name LIKE ?");
+    $creature_search_stmt->bind_param("s", $matching_user_input);
+    $creature_search_stmt->execute();
+    mysqli_stmt_bind_result($creature_search_stmt, $creature_name, $creature_species, $creature_affiliation);
+    mysqli_stmt_store_result($creature_search_stmt);
+    
+    if ($creature_search_stmt->num_rows):
+
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Creatures</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";    
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Species</th>";
+        $HTTPResponse[] = "<th>Affiliation</th></tr>";
+        
+        while($creature_search_stmt->fetch()) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$creature_name</td><td>$creature_species</td><td>$creature_affiliation</td></tr>";
         }
 
         $HTTPResponse[] = "</table><br><br><br>";    
     endif;
 endif;
 
+
+if ($checkboxes["episodes"] == true):
+    
+    $episode_search_stmt = $db->prepare("SELECT * FROM Episode WHERE episode_name LIKE ? ORDER BY season ASC");
+    $episode_search_stmt->bind_param("s", $matching_user_input);
+    $episode_search_stmt->execute();
+    mysqli_stmt_bind_result($episode_search_stmt, $episode_name, $episode_season, $episode_number);
+    mysqli_stmt_store_result($episode_search_stmt);
+    
+    if ($episode_search_stmt->num_rows):
+
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Episodes</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";    
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Season</th>";
+        $HTTPResponse[] = "<th>Number</th></tr>";
+        
+        while($episode_search_stmt->fetch()) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$episode_name</td><td>$episode_season</td><td>$episode_number</td></tr>";
+        }
+
+        $HTTPResponse[] = "</table><br><br><br>";    
+    endif;
+endif;
+
+
+
 foreach ($HTTPResponse as $h) {
     echo($h);
     }
-    
-if ($num_results < 1) {
-    echo "<h2>No results</h2>";
-}
 
 ?>
