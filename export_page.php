@@ -12,7 +12,7 @@ if(isset($_SESSION["access_level"])) {
 } 
 
 if ($permission_code > 3) {
-    $_SESSION["admin_results"] = "Invalid access level entered. Check your spelling.";
+    $_SESSION["admin_results"] = "Exporting by Peasants is forbidden. Shoo!";
     header("Location: admin_page.php");
 }
 
