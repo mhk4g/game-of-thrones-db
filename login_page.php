@@ -48,7 +48,7 @@ if (isset($_SESSION["access_level"])) {
         <input type="submit" id="login" name="login" value="Login"><br><br>
         <p id="error"><?php echo($error_display) ?></p>
         </form>
-        <audio controls>
+        <audio controls autoplay>
             <source src="gameofthrones.ogg" type="audio/ogg">
             <source src="gameofthrones.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
