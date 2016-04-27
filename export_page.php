@@ -41,7 +41,7 @@ foreach ($tables as $tablename) {
 }
 
 foreach ($all_results as $result) {
-    $fetched = $result->fetch_all();
+    $fetched = mysqli_fetch_all($result);
     foreach ($fetched as $f) {
         $jsonexport[] = json_encode($f);
         $csvexport[] = implode(",", $f);
