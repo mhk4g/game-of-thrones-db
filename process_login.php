@@ -47,5 +47,9 @@ if(isset($_POST["login"])) {
     header("Location: login_page.php");
     die();
   endif;
+ } else {
+      $_SESSION["error"] = "Something went horribly wrong. How did you do that?";
+      header("Location: login_page.php");
+      die();
   }
 ?>

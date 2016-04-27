@@ -65,10 +65,11 @@ if(isset($_POST["promote"]) && ($email == $confirmemail)) {
       header("Location: admin_page.php");
       $_SESSION["admin_results"] = "Permissions updated!";
       die();
-  } else {
+   }
+} else {
       $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
       header("Location: admin_page.php");
       die();
   }
-}
+   
 ?>

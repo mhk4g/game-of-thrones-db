@@ -47,9 +47,9 @@ if(isset($_POST["register"])) {
       $_SESSION["access_level"] = "4";
       header("Location: search_page.php");  
       die();
-  else:
+  endif;
+} else {
     $_SESSION["error"] = "Something went wrong with your registration.";
     header("Location: register_page.php");
-  endif;
-  }
+}
 ?>

@@ -180,9 +180,12 @@ if ($checkboxes["episodes"] == true):
 endif;
 
 
-
 foreach ($HTTPResponse as $h) {
     echo($h);
     }
+    
+if (empty($HTTPResponse)) {
+    echo("No results");
+}
 
 ?>

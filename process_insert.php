@@ -51,10 +51,10 @@ if(isset($_POST["insert"])) {
       header("Location: admin_page.php");
       $_SESSION["admin_results"] = "New character inserted!";
       die();
-  } else {
+  } 
+} else {
       $_SESSION["admin_results"] = "Something went wrong with your insert. Please try again.";
       header("Location: admin_page.php");
       die();
-   }
 }
 ?>
