@@ -154,6 +154,33 @@ if ($checkboxes["creatures"] == true):
 endif;
 
 
+if ($checkboxes["episodes"] == true):
+    
+    $episode_search_stmt = $db->prepare("SELECT * FROM Episode WHERE episode_name LIKE ? ORDER BY season ASC");
+    $episode_search_stmt->bind_param("s", $matching_user_input);
+    $episode_search_stmt->execute();
+    mysqli_stmt_bind_result($episode_search_stmt, $episode_name, $episode_season, $episode_number);
+    mysqli_stmt_store_result($episode_search_stmt);
+    
+    if ($episode_search_stmt->num_rows):
+
+        $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
+        $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Episodes</h1></caption>";
+        $HTTPResponse[] = "<tr align = \"center\">";    
+        $HTTPResponse[] = "<th>Name</th>";
+        $HTTPResponse[] = "<th>Season</th>";
+        $HTTPResponse[] = "<th>Number</th></tr>";
+        
+        while($episode_search_stmt->fetch()) {
+            $HTTPResponse[] = "<tr align=\"center\"><td>$episode_name</td><td>$episode_season</td><td>$episode_number</td></tr>";
+        }
+
+        $HTTPResponse[] = "</table><br><br><br>";    
+    endif;
+endif;
+
+
+
 foreach ($HTTPResponse as $h) {
     echo($h);
     }
