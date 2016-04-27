@@ -274,3 +274,9 @@ tr:hover {
 .spoiler {
     color: red;
 }
+
+#music-player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

@@ -56,10 +56,12 @@ if (isset($_SESSION["email_address"])) {
         <input type="submit" id="login" name="login" value="Login"><br><br>
         <p id="error"><?php echo($error_display) ?></p>
         </form>
-        <audio controls autoplay loop="true">
-            <source src="got_theme.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    </div>
+    <div id="music-player">
+    <audio controls autoplay loop="true">
+        <source src="got_theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     </div>
 </form>
 </body>

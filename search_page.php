@@ -115,6 +115,11 @@ $(document).keypress(function(e) {
           <!-- This is where the results go -->
       </div>
   </div>
+  <div id="music-player">
+  <audio controls autoplay loop="true">
+      <source src="got_theme.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+  </div>
 
-</div>
 </body>
