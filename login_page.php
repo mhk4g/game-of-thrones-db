@@ -48,7 +48,7 @@ if (isset($_SESSION["access_level"])) {
         <p id="error"><?php echo($error_display) ?></p>
         </form>
         <audio controls autoplay loop="true">
-            <source src="gameofthrones.mp3" type="audio/mpeg">
+            <source src="got_theme.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
