@@ -67,15 +67,15 @@ function displayResults(httpRequest) {
 function prepareUserInput() {
     temp_string = "userinput=" + document.getElementById("specialinput").value;
     if (document.getElementById("char_box").checked == true) { temp_string += "&char_box=true"; }    
-    if (document.getElementById("faction_box").checked = true) { temp_string += "&faction_box=true"; }    
+    if (document.getElementById("faction_box").checked == true) { temp_string += "&faction_box=true"; }    
     if (document.getElementById("creature_box").checked == true) { temp_string += "&creature_box=true"; }    
-    if (document.getElementById("episode_box").checked == true) { temp_string += "&episode_box=true"; }    
+    if (document.getElementById("episode_box").checked == true) { temp_string += "&episode_box=true"; }   
     return temp_string;
 }
 
 $(document).keypress(function(e) {
         if(e.which == 13) {
-                sendRequest();
+            sendRequest();
         }
         });
 
@@ -100,16 +100,10 @@ $(document).keypress(function(e) {
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>
   <input type="checkbox" id="char_box" checked /> Characters
-  <input type="checkbox" id="faction_box" checked /> Factions
-  <input type="checkbox" id="creature_box" checked /> Creatures
-  <input type="checkbox" id="episode_box" checked /> Episodes
+  <input type="checkbox" id="faction_box" /> Factions
+  <input type="checkbox" id="creature_box" /> Creatures
+  <input type="checkbox" id="episode_box" /> Episodes
     </div>
-
-    <audio controls autoplay, loop>
-        <source src="gameofthrones.ogg" type="audio/ogg">
-        <source src="gameofthrones.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
   <div id="resultcontainer">
       <div id="searchresults">
           <!-- This is where the results go -->

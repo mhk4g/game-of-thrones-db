@@ -39,8 +39,8 @@ if ($db->connect_error) {
 
 $HTTPResponse = [];
 
-if ($checkboxes["characters"] == true):
-    $char_search_stmt = $db->prepare("SELECT * FROM Characters WHERE character_name LIKE ? UNION SELECT * FROM Characters WHERE character_name LIKE ?");
+if (isset($checkboxes["characters"])):
+    $char_search_stmt = $db->prepare("SELECT * FROM Characters WHERE character_name LIKE ? UNION SELECT * FROM Characters WHERE aka LIKE ?");
     $char_search_stmt->bind_param("ss", $matching_user_input, $matching_user_input);
     $char_search_stmt->execute();
     mysqli_stmt_bind_result($char_search_stmt, $char_name, $first_app, $char_status, $char_aka);
@@ -102,7 +102,7 @@ if ($checkboxes["characters"] == true):
 endif;
 
 
-if ($checkboxes["factions"] == true):
+if (isset($checkboxes["factions"])):
     
     $faction_search_stmt2 = $db->prepare("SELECT * FROM Faction WHERE faction_name LIKE ?");
     $faction_search_stmt2->bind_param("s", $matching_user_input);
@@ -128,7 +128,7 @@ if ($checkboxes["factions"] == true):
 endif;
 
 
-if ($checkboxes["creatures"] == true):
+if (isset($checkboxes["creatures"])):
     
     $creature_search_stmt = $db->prepare("SELECT * FROM Creature WHERE creature_name LIKE ?");
     $creature_search_stmt->bind_param("s", $matching_user_input);
@@ -154,7 +154,7 @@ if ($checkboxes["creatures"] == true):
 endif;
 
 
-if ($checkboxes["episodes"] == true):
+if (isset($checkboxes["episodes"])):
     
     $episode_search_stmt = $db->prepare("SELECT * FROM Episode WHERE episode_name LIKE ? ORDER BY season ASC");
     $episode_search_stmt->bind_param("s", $matching_user_input);
