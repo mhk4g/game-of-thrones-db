@@ -43,8 +43,7 @@ if (isset($_SESSION["access_level"])) {
     <?php echo($login_or_out); ?>
     <div id="resultcontainer">
         <div id="searchresults">
-            <h1>About</h1>
-            <p> This page is our final project for CS4750. Winter is coming.
+            <img src="JoinTheRealm_sigil.png">
             </div>
         </div>
     </body>
