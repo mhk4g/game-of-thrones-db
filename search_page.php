@@ -69,7 +69,9 @@ function prepareUserInput() {
     if (document.getElementById("char_box").checked == true) { temp_string += "&char_box=true"; }    
     if (document.getElementById("faction_box").checked == true) { temp_string += "&faction_box=true"; }    
     if (document.getElementById("creature_box").checked == true) { temp_string += "&creature_box=true"; }    
-    if (document.getElementById("episode_box").checked == true) { temp_string += "&episode_box=true"; }   
+    if (document.getElementById("episode_box").checked == true) { temp_string += "&episode_box=true"; }
+    if (document.getElementById("alias_box").checked == true) { temp_string += "&alias_box=true"; }
+    if (document.getElementById("death_box").checked == true) { temp_string += "&death_box=true"; }   
     return temp_string;
 }
 
@@ -100,9 +102,12 @@ $(document).keypress(function(e) {
   <input id="specialinput" name="userinput" type='text' placeholder="Enter your search here" autofocus="autofocus" autocomplete="off" required />
   <span class="unit" style="color:black;">&#9819;</span><p>
   <input type="checkbox" id="char_box" checked /> Characters
-  <input type="checkbox" id="faction_box" /> Factions
-  <input type="checkbox" id="creature_box" /> Creatures
-  <input type="checkbox" id="episode_box" /> Episodes
+  <input type="checkbox" id="alias_box" checked /> Aliases
+  <input type="checkbox" id="death_box" checked /> Deaths
+  <input type="checkbox" id="faction_box" checked /> Factions
+  <input type="checkbox" id="creature_box" checked /> Creatures
+  <input type="checkbox" id="episode_box" checked /> Episodes
+  
     </div>
   <div id="resultcontainer">
       <div id="searchresults">

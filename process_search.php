@@ -15,6 +15,8 @@ if(isset($_POST["char_box"])) { $checkboxes["characters"] = $_POST["char_box"]; 
 if(isset($_POST["faction_box"])) { $checkboxes["factions"] = $_POST["faction_box"]; }
 if(isset($_POST["creature_box"])) { $checkboxes["creatures"] = $_POST["creature_box"]; }
 if(isset($_POST["episode_box"])) { $checkboxes["episodes"] = $_POST["episode_box"]; }
+if(isset($_POST["alias_box"])) { $checkboxes["aliases"] = $_POST["alias_box"]; }
+if(isset($_POST["death_box"])) { $checkboxes["deaths"] = $_POST["death_box"]; }
 
 # Store user type in session variable
 $permission_code = 5;
@@ -35,7 +37,7 @@ $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V p
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
     die("Could not connect to database. Check your wifi connection.");
-  }
+}
 
 $HTTPResponse = [];
 
@@ -45,9 +47,9 @@ if (isset($checkboxes["characters"])):
     $char_search_stmt->execute();
     mysqli_stmt_bind_result($char_search_stmt, $char_name, $first_app, $char_status, $char_aka);
     mysqli_stmt_store_result($char_search_stmt);
-
+    
     if ($char_search_stmt->num_rows):
-
+        
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<col width=15%><col width=15%><col width=5%><col width=15%><col width=35%>";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Characters</h1></caption>";
@@ -62,18 +64,20 @@ if (isset($checkboxes["characters"])):
             
             // ALIASES
             $aliases = "";
-            $alias_search_stmt = $db->prepare("SELECT * from CharacterAlias where character_name =?");
-            $alias_search_stmt->bind_param("s", $char_name);
-            $alias_search_stmt->execute();
-            mysqli_stmt_bind_result($alias_search_stmt, $charname_result, $alias_result);
-
-            if(mysqli_stmt_result_metadata($alias_search_stmt)) {
-                while ($alias_search_stmt->fetch())
+            if (isset($checkboxes["aliases"])):
+                $alias_search_stmt = $db->prepare("SELECT * from CharacterAlias where character_name =?");
+                $alias_search_stmt->bind_param("s", $char_name);
+                $alias_search_stmt->execute();
+                mysqli_stmt_bind_result($alias_search_stmt, $charname_result, $alias_result);
+                
+                if(mysqli_stmt_result_metadata($alias_search_stmt)) {
+                    while ($alias_search_stmt->fetch())
                     {
                         $aliases .= $alias_result . "\n";
                     }
-            }
-            if($aliases == "") { $aliases = "No aliases"; }
+                }
+                if($aliases == "") { $aliases = "No aliases"; }
+            endif;
             $names_and_aliases = "<span id='alias' title='$aliases'>$char_name</span>";
             
             // FACTIONS
@@ -89,14 +93,28 @@ if (isset($checkboxes["characters"])):
                 }
             }
             if($factions == "") { $factions = "None"; }
-            #TODO: INSERT HOVER DEATH DETAILS
-            $alive = "<td id=\"$char_status\">$char_status</td>"; 
-
+            
+            // DEATHS
+            $deathlabel = "";
+            if(isset($checkboxes["deaths"])):
+                $death_search_stmt = $db->prepare("SELECT episode_name, description from CharacterDeath where character_name =?");
+                $death_search_stmt->bind_param("s", $char_name);
+                $death_search_stmt->execute();
+                mysqli_stmt_bind_result($death_search_stmt, $death_ep, $death_desc);
+                if (mysqli_stmt_result_metadata($death_search_stmt)) {
+                    while ($death_search_stmt->fetch())
+                    {
+                        $deathlabel .= 'Dies in: ' . $death_ep . "\n" . $death_desc;
+                    }
+                }
+            endif;
+            $alive = "<span id=\"$char_status\" title=\"$deathlabel\">$char_status</span>";
+            
             // BIO
             $bio = str_replace("[SPOILER]", "<span class=\"spoiler\">[SPOILER]</span>", $char_aka);
-            $HTTPResponse[] = "<tr align=\"center\"><td>$names_and_aliases</td><td>$first_app</td>$alive<td>$factions</td><td>$bio</td></tr>";
+            $HTTPResponse[] = "<tr align=\"center\"><td>$names_and_aliases</td><td>$first_app</td><td>$alive</td><td>$factions</td><td>$bio</td></tr>";
         }
-
+        
         $HTTPResponse[] = "</table><br><br><br>";
     endif;
 endif;
@@ -111,7 +129,7 @@ if (isset($checkboxes["factions"])):
     mysqli_stmt_store_result($faction_search_stmt2);
     
     if ($faction_search_stmt2->num_rows):
-
+        
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Factions</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";    
@@ -122,7 +140,7 @@ if (isset($checkboxes["factions"])):
         while($faction_search_stmt2->fetch()) {
             $HTTPResponse[] = "<tr align=\"center\"><td>$fact_name</td><td>$fact_capital</td><td>$fact_leader</td></tr>";
         }
-    
+        
         $HTTPResponse[] = "</table><br><br><br>";    
     endif;
 endif;
@@ -137,7 +155,7 @@ if (isset($checkboxes["creatures"])):
     mysqli_stmt_store_result($creature_search_stmt);
     
     if ($creature_search_stmt->num_rows):
-
+        
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Creatures</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";    
@@ -148,7 +166,7 @@ if (isset($checkboxes["creatures"])):
         while($creature_search_stmt->fetch()) {
             $HTTPResponse[] = "<tr align=\"center\"><td>$creature_name</td><td>$creature_species</td><td>$creature_affiliation</td></tr>";
         }
-
+        
         $HTTPResponse[] = "</table><br><br><br>";    
     endif;
 endif;
@@ -163,7 +181,7 @@ if (isset($checkboxes["episodes"])):
     mysqli_stmt_store_result($episode_search_stmt);
     
     if ($episode_search_stmt->num_rows):
-
+        
         $HTTPResponse[] = "<table border = \"1\" cellpadding = \"8\" width=\"100%\" align=\"center\" id=\"searchresulttext\">";
         $HTTPResponse[] = "<caption id=\"tablecaption\"><h1>Episodes</h1></caption>";
         $HTTPResponse[] = "<tr align = \"center\">";    
@@ -174,7 +192,7 @@ if (isset($checkboxes["episodes"])):
         while($episode_search_stmt->fetch()) {
             $HTTPResponse[] = "<tr align=\"center\"><td>$episode_name</td><td>$episode_season</td><td>$episode_number</td></tr>";
         }
-
+        
         $HTTPResponse[] = "</table><br><br><br>";    
     endif;
 endif;
@@ -182,8 +200,8 @@ endif;
 
 foreach ($HTTPResponse as $h) {
     echo($h);
-    }
-    
+}
+
 if (empty($HTTPResponse)) {
     echo("<br><br><h3>No results</h3>");
 }
