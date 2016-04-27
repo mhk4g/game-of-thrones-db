@@ -1,11 +1,17 @@
 <?php 
 session_start();
 ini_set('display_errors', 1);
-// mysqli_report(MYSQLI_REPORT_ALL);
+mysqli_report(MYSQLI_REPORT_NONE);
+
+$permission_code = 5;
 
 # Store user type in session variable
 if(isset($_SESSION["access_level"])) {
     $permission_code = (string)$_SESSION["access_level"];
+} 
+
+if ($permission_code > 2) {
+    die("You do not have permission to export.");
 }
 
 # Database credentials
@@ -22,8 +28,6 @@ $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
     die("Could not connect to database: " . $db->connect_error);
   }
-
-
 
 $jsonexport = [];
 $csvexport = [];
