@@ -4,9 +4,6 @@ ini_set('display_errors', 1);
 include 'helpers.php';
 mysqli_report(MYSQLI_REPORT_ALL);
 
-echo "wtf";
-echo "wtf";
-
 if (isset($_SESSION["email_address"])) {
     $promoter_email = $_SESSION["email_address"];
 }
@@ -36,19 +33,19 @@ elseif ($newaccesslevel == "Peasant"):
 else:
     $_SESSION["admin_results"] = "Invalid access level entered. Check your spelling.";
     header("Location: admin_page.php");
+    die();
 endif;
 
-echo "is going";
-
-if (($promoter_email == $email) && ($promoter_email == $confirm_email)) {
+if ($promoter_email == $email) {
     $_SESSION["admin_results"] = "Can't promote yourself, bro. Nice try.";
     header("Location: admin_page.php");
+    die();
 } elseif ($promoter_access_level > 1) {
     $_SESSION["admin_results"] = "You must be a Khaleesi to promote other users. You, sir, are no Khaleesi.";
     header("Location: admin_page.php");
+    die();
 }
 
-echo "wrong?";
 # Database credentials
 $dbuser = "cs4750mhk4g";
 $dbpass = "aryastark";
@@ -59,30 +56,19 @@ if ($db->connect_error) {
     die("Could not connect to database. Check your wifi connection.");
 }
 
-echo "Attempting promotion...";
-
-# If login button was clicked...
-// $newaccesslevelvalue = 4;
-// $confirmemail = "newguy@gmail.com";
-// $email = "newguy@gmail.com";
-
-mysqli_refresh($db, MYSQLI_REFRESH_LOG);
-
 if(isset($_POST["promote"]) && ($email == $confirmemail)) {
-    $st2 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE user_email_address=?");
+    $st2 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE email=? LIMIT 1");
     $st2->bind_param("is", $newaccesslevelvalue, $email);
-    $st2->execute();
-    mysqli_stmt_reset($st2);
-    mysqli_stmt_free_result($st2);
-    mysqli_stmt_close($st2);
+    $result = $st2->execute();
  
-  if (false) {
+  if ($result) {
       header("Location: admin_page.php");
       $_SESSION["admin_results"] = "Permissions updated!";
+      die();
   } else {
-    //   $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
-    //   header("Location: admin_page.php");
-    echo "problem";
+      $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
+      header("Location: admin_page.php");
+      die();
   }
 }
 ?>

@@ -54,16 +54,19 @@ if(isset($_POST["update"])) {
   $st3->bind_param("ss", $newname, $oldname);
   $st4->bind_param("ss", $newname, $oldname);
   $st5->bind_param("ss", $newname, $oldname);
-  $st1->execute();
+  $success = $st1->execute();
   $st2->execute();
   $st3->execute();
   $st4->execute();
   $st5->execute();
   
-  header("Location: admin_page.php");
-  $_SESSION["admin_results"] = "Update succeeded!";
+  if ($success) {
+      header("Location: admin_page.php");
+      $_SESSION["admin_results"] = "Update succeeded!";
+      die();
   } else {
       $_SESSION["admin_results"] = "Something went wrong with your update. Check character name.";
       header("Location: admin_page.php");
+      die();
   }
 ?>

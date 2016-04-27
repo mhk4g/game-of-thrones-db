@@ -31,14 +31,14 @@ if ($db->connect_error) {
 if($password != $confirm) {
     $_SESSION["error"] = "The passwords you provided do not match. Please try again.";
     header("Location: register_page.php");
-    die;
+    die();
 }
 
 # If register was clicked...
 if(isset($_POST["register"])) {
   
   # Attempt to insert into database
-  $registerstatement = $db->prepare("INSERT INTO GOTUsers (user_email_address, password, access_level) VALUES (?, ?, ?)");
+  $registerstatement = $db->prepare("INSERT INTO GOTUsers (email, password, access_level) VALUES (?, ?, ?)");
   $registerstatement->bind_param("ssi", $username, $hashedpw, $tempaccess);
   $registerstatement->execute();
   
@@ -46,6 +46,7 @@ if(isset($_POST["register"])) {
       $_SESSION["email_address"] = $username; 
       $_SESSION["access_level"] = "4";
       header("Location: search_page.php");  
+      die();
   else:
     $_SESSION["error"] = "Something went wrong with your registration.";
     header("Location: register_page.php");

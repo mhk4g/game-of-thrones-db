@@ -48,16 +48,20 @@ if(isset($_POST["delete"]) && ($confirmdelete == "DELETE") && ($name == $confirm
   $st3->bind_param("s", $name);
   $st4->bind_param("s", $name);
   $st5->bind_param("s", $name);
-  $st1->execute();
-  $st2->execute();
-  $st3->execute();
-  $st4->execute();
-  $st5->execute();
+  $res1 = $st1->execute();
+  $res2 = $st2->execute();
+  $res3 = $st3->execute();
+  $res4 = $st4->execute();
+  $res5 = $st5->execute();
 
-  header("Location: admin_page.php");
-  $_SESSION["admin_results"] = "Delete succeeded!";
-  } else {
-      $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
-      header("Location: admin_page.php");
+    if ($res1) {
+        header("Location: admin_page.php");
+        $_SESSION["admin_results"] = "Delete succeeded!";
+        die();
+    } else {
+        $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
+        header("Location: admin_page.php");
+        die();
+      }
   }
 ?>

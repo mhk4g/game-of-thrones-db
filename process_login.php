@@ -8,7 +8,7 @@ mysqli_report(MYSQLI_REPORT_OFF);
 if(empty($_POST["email"]) || empty($_POST["password"])):
   $_SESSION["error"] = "Please enter an email address and password.";
   header("Location: login_page.php");
-  die;
+  die();
 endif;
 
 # Get login info from POST
@@ -32,7 +32,7 @@ if ($db->connect_error) {
 
 # If login button was clicked...
 if(isset($_POST["login"])) {
-  $loginstatement = $db->prepare("SELECT user_email_address, access_level from GOTUsers where user_email_address=? AND password=?");
+  $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");
   $loginstatement->bind_param("ss", $user, $hashedpw);
   $loginstatement->execute();
   mysqli_stmt_bind_result($loginstatement, $user_result, $access_level_result);
@@ -41,9 +41,11 @@ if(isset($_POST["login"])) {
       $_SESSION["email_address"] = $user_result; 
       $_SESSION["access_level"] = $access_level_result;
       header("Location: search_page.php");  
+      die();
   else:
     $_SESSION["error"] = "Invalid email address or password.";
     header("Location: login_page.php");
+    die();
   endif;
   }
 ?>

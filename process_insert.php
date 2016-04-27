@@ -44,13 +44,17 @@ if(isset($_POST["insert"])) {
 // prepare and bind
   $char_table_statement = $db->prepare("INSERT INTO Characters (character_name, first_appearance, status, aka) VALUES (?, ?, ?, ?)"); 
   $char_table_statement->bind_param("ssss", $name, $firstappearance, $status, $aka);
-  $char_table_statement->execute();
+  $success = $char_table_statement->execute();
   $char_table_statement->close();
   
-  header("Location: admin_page.php");
-  $_SESSION["admin_results"] = "New character inserted!";
+  if($success) {
+      header("Location: admin_page.php");
+      $_SESSION["admin_results"] = "New character inserted!";
+      die();
   } else {
       $_SESSION["admin_results"] = "Something went wrong with your insert. Please try again.";
       header("Location: admin_page.php");
-  }
+      die();
+   }
+}
 ?>
