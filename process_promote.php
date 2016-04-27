@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-mysqli_report(MYSQLI_REPORT_OFF);
+//mysqli_report(MYSQLI_REPORT_ALL);
 
 if (isset($_SESSION["email_address"])) {
     $promoter_email = $_SESSION["email_address"];
@@ -38,7 +38,7 @@ else:
     }
 endif;
 
-if ($promoter_email == $email && $promoter_email == $confirm_email) {
+if (($promoter_email == $email) && ($promoter_email == $confirm_email)) {
     $_SESSION["admin_results"] = "Can't promote yourself, bro. Nice try.";
     header("Location: admin_page.php");
 } elseif ($promoter_access_level > 1) {
@@ -46,14 +46,8 @@ if ($promoter_email == $email && $promoter_email == $confirm_email) {
     header("Location: admin_page.php");
 }
 
-# Store user type in session variable
-$permission_code = 5;
-if(isset($_SESSION["access_level"])) {
-    $permission_code = (string)$_SESSION["access_level"];
-}
-
 # Database credentials
-$dbuser = "cs4750mhk4g" . convert_access_level_to_login_suffix($permission_code);
+$dbuser = "cs4750mhk4g" . convert_access_level_to_login_suffix($promoter_access_level);
 if ($dbuser == "cs4750mhk4g") {
     $dbpass = "aryastark";
 } else {
@@ -70,11 +64,13 @@ if ($db->connect_error) {
 if(isset($_POST["promote"]) && ($email == $confirmemail)) {
   $st1 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE email=?"); 
   $st1->bind_param("ss", $newaccesslevelvalue, $email);
+  mysqli_stmt_bind_result($st1, $stmtresult);
   $st1->execute();
+  mysqli_stmt_store_result($st1);
 
-  if (mysqli_stmt_get_result)
-  header("Location: admin_page.php");
-  $_SESSION["admin_results"] = "Permissions for !";
+  if ($stmtresult) {
+      header("Location: admin_page.php");
+      $_SESSION["admin_results"] = "Permissions updated!";
   } else {
       $_SESSION["admin_results"] = "Something went wrong with your delete. Check fields and try again.";
       header("Location: admin_page.php");
