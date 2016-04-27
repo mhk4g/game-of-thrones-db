@@ -66,11 +66,16 @@ echo "Attempting promotion...";
 // $confirmemail = "newguy@gmail.com";
 // $email = "newguy@gmail.com";
 
-if(isset($_POST["promote"]) && ($email == $confirmemail)) {
-  $st1 = $db->prepare("UPDATE GOTUsers SET user_email_address=?, access_level=? WHERE user_email_address=?");
-  $st1->bind_param("sis", $confirmemail, $newaccesslevelvalue, $confirmemail);
-  $st1->execute();
+mysqli_refresh($db, MYSQLI_REFRESH_LOG);
 
+if(isset($_POST["promote"]) && ($email == $confirmemail)) {
+    $st2 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE user_email_address=?");
+    $st2->bind_param("is", $newaccesslevelvalue, $email);
+    $st2->execute();
+    mysqli_stmt_reset($st2);
+    mysqli_stmt_free_result($st2);
+    mysqli_stmt_close($st2);
+ 
   if (false) {
       header("Location: admin_page.php");
       $_SESSION["admin_results"] = "Permissions updated!";
