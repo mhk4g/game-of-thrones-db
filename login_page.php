@@ -32,6 +32,15 @@ if (isset($_SESSION["email_address"])) {
 ?>
 
 <html background-color>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+
+function play_music() {
+    var player = document.getElementsByTagName("audio")[0];
+    player.play();
+}
+
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
@@ -43,7 +52,7 @@ if (isset($_SESSION["email_address"])) {
     <nav class="fixed-nav-bar-shadow-top"></nav>
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
     <nav class="nav-label" id="login-label"><?php echo($login_label . "<span title=$access_level_label id=\"rank\">" . " $access_level_icon " . '</span>'); ?></nav>
-    <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
+    <nav class="nav-label" id="site-label" onclick="play_music()">&#9819; game-of-thrones-db</nav>
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
@@ -58,7 +67,7 @@ if (isset($_SESSION["email_address"])) {
         </form>
     </div>
     <div id="music-player">
-    <audio controls autoplay loop="true">
+    <audio controls loop="true" hidden="true">
         <source src="got_theme.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>

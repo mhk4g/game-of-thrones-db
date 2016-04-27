@@ -32,6 +32,13 @@ if (isset($_SESSION["email_address"])) {
 ?>
 
 <html background-color>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+
+function play_music() {
+    var player = document.getElementsByTagName("audio")[0];
+    player.play();
+}
 </script>
 <head>
     <link type="text/css" rel="stylesheet" href="style.css"/>
@@ -58,4 +65,10 @@ if (isset($_SESSION["email_address"])) {
         <p id="error"><?php echo($error_display) ?></p>
         <br>
         </form>
+        <div id="music-player">
+        <audio controls loop="true" hidden="true">
+            <source src="got_theme.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        </div>
     </div>

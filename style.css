@@ -48,7 +48,7 @@ a:hover {
     left: 10px;
     font-weight: 500;
     font-size: 28px;
-    cursor:initial;
+    cursor:help;
 }
 
 .link-label {
