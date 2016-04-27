@@ -42,7 +42,7 @@ foreach ($tables as $tablename) {
 
 foreach ($all_results as $result) {
 
-    while($fetched = mysqli_fetch($result)):
+    while($fetched = $result->fetch_row()):
         $jsonexport[] = json_encode($fetched);
         $csvexport[] = implode(",", $fetched);
         $readable[] = $fetched;
