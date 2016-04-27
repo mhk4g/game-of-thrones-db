@@ -2,11 +2,20 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
+mysqli_report(MYSQLI_REPORT_OFF);
 
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
 } else {
     $error_display = "";
+}
+
+if (isset($_SESSION["access_level"])) {
+    $access_level = $_SESSION["access_level"];
+    $access_level_label = convert_access_level_to_label($access_level);
+} else {
+    $access_level = 4;
+    $access_level_label = "";
 }
 
 if (isset($_SESSION["email_address"])) {
@@ -17,11 +26,6 @@ if (isset($_SESSION["email_address"])) {
     $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"login_page.php\">Login</a></span></nav>";
 }
 
-if (isset($_SESSION["access_level"])) {
-    $access_level = $_SESSION["access_level"];
-} else {
-    $access_level = 4;
-}
 ?>
 
 <html background-color>
