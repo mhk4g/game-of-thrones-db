@@ -12,69 +12,86 @@ if ($db->connect_error) {
   }
 
 # FACTION 
-$faction_count = 0;
+$count = 0;
 $result = $db->query("SELECT character_name FROM CharacterFaction WHERE NOT EXISTS (SELECT * FROM Characters WHERE CharacterFaction.character_name = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $faction_count++;
+    $count++;
     print_r($row["character_name"]);
 }
-echo "FACTIONS MISSING: $faction_count\n";
+echo "FACTIONS MISSING: $count\n";
 
 # DEATHS
-$death_count = 0;
+$count = 0;
 $result = $db->query("SELECT character_name FROM CharacterDeath WHERE NOT EXISTS (SELECT * FROM Characters WHERE CharacterDeath.character_name = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $death_count++;
+    $count++;
     print_r($row["character_name"]);
 }
-echo "DEATHS MISSING: $death_count\n";
+echo "DEATHS MISSING: $count\n";
 
 # ALIASES
-$alias_count = 0;
+$count = 0;
 $result = $db->query("SELECT character_name FROM CharacterAlias WHERE NOT EXISTS (SELECT * FROM Characters WHERE CharacterAlias.character_name = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $alias_count++;
+    $count++;
     print_r($row["character_name"]);
 }
-echo "ALIASES MISSING: $alias_count\n";
+echo "ALIASES MISSING: $count\n";
 
 # ALIASES
-$alias_count = 0;
+$count = 0;
 $result = $db->query("SELECT character_name FROM CharacterAlias WHERE NOT EXISTS (SELECT * FROM Characters WHERE CharacterAlias.character_name = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $alias_count++;
+    $count++;
     print_r($row["character_name"]);
 }
-echo "ALIASES MISSING: $alias_count\n";
+echo "ALIASES MISSING: $count\n";
 
 # ACTORS
-$actor_count = 0;
+$count = 0;
 $result = $db->query("SELECT character_name FROM CharacterActor WHERE NOT EXISTS (SELECT * FROM Characters WHERE CharacterActor.character_name = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $actor_count++;
+    $count++;
     print_r($row["character_name"]);
 }
-echo "ACTORS MISSING: $actor_count\n";
+echo "ACTORS MISSING: $count\n";
 
-# first_appearances
-$appearance_count = 0;
+# FIRST APPEARANCES
+$count = 0;
 $result = $db->query("SELECT * FROM Characters WHERE NOT EXISTS (SELECT * FROM Episode WHERE Characters.first_appearance = Episode.episode_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $appearance_count++;
+    $count++;
     print_r($row);
 }
-echo "FIRST APPEARANCES MISSING: $appearance_count\n";
+echo "FIRST APPEARANCES MISSING: $count\n";
 
 
-# first_appearances
-$appearance_count = 0;
-$result = $db->query("SELECT * FROM Characters WHERE NOT EXISTS (SELECT * FROM Episode WHERE Characters.first_appearance = Episode.episode_name)");
+# CREATURE AFFILIATION
+$count = 0;
+$result = $db->query("SELECT * FROM Creature WHERE NOT EXISTS (SELECT * FROM Characters WHERE Creature.affiliation = Characters.character_name)");
 while($row = mysqli_fetch_assoc($result)) {
-    $appearance_count++;
+    $count++;
     print_r($row);
 }
-echo "FIRST APPEARANCES MISSING: $appearance_count\n";
+echo "CREATURE AFFILIATIONS MISSING: $count\n";
 
+# FACTION LEADER
+$count = 0;
+$result = $db->query("SELECT * FROM Faction WHERE NOT EXISTS (SELECT * FROM Characters WHERE Faction.leader_name = Characters.character_name)");
+while($row = mysqli_fetch_assoc($result)) {
+    $count++;
+    print_r($row);
+}
+echo "FACTION LEADERS MISSING: $count\n";
+
+# FACTION LEADER
+$count = 0;
+$result = $db->query("SELECT * FROM Faction WHERE NOT EXISTS (SELECT * FROM City WHERE Faction.capital = City.city_name)");
+while($row = mysqli_fetch_assoc($result)) {
+    $count++;
+    print_r($row);
+}
+echo "FACTION CITIES MISSING: $count\n";
 
 
 ?>

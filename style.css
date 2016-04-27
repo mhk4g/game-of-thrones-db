@@ -1,11 +1,3 @@
-html { 
-  /*background: url(got21.jpg) no-repeat center top scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: black;*/
-}
 
 a:visited {
     text-decoration: none;
@@ -44,7 +36,7 @@ a:hover {
 }
 
 #login-label {
-    top: 7;
+    top: 5;
     right: 10px;
     font-weight: 300;
     font-size: 22px;
@@ -68,6 +60,10 @@ a:hover {
     top: 12;
     font-weight: 500;
     font-size: 14px;
+}
+
+#rank {
+    cursor: help;
 }
 
 #search-link {
@@ -105,6 +101,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-weight:normal;
+}
+
+#error {
+    color: red;
+    font-size: 14;
+    font-style: normal;
 }
 
 #searchbar {
@@ -188,6 +190,25 @@ tr:hover {
     top: 70%;
     width: 40%;
     text-align: center;
+}
+
+.login-input-box {
+    position: absolute;
+    left: 40%;
+    top: 65%;
+    width: 20%;
+    text-align: center;
+}
+
+.login-label {
+    text-align: left;
+    color: white;
+    font-size: 12px;
+}
+
+.login-field {
+    width: 100%;
+    text-align: left;
 }
 
 #specialinput { 

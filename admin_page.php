@@ -20,11 +20,12 @@ if (isset($_SESSION["admin_results"])) {
 
 if (isset($_SESSION["access_level"])) {
     $access_level = $_SESSION["access_level"];
-    $access_level_label = convert_access_level_to_label($access_level);
 } else {
-    $access_level = 4;
-    $access_level_label = "";
+    $access_level = 5;
 }
+
+$access_level_label = convert_access_level_to_label($access_level);
+$access_level_icon = convert_access_label_to_icon($access_level_label);
 
 if (isset($_SESSION["email_address"])) {
     $login_label = $_SESSION["email_address"];
@@ -50,7 +51,7 @@ if (isset($_SESSION["email_address"])) {
     <nav class="fixed-nav-bar"></nav>
     <nav class="fixed-nav-bar-shadow-top"></nav>
     <nav class="fixed-nav-bar-shadow-bottom"></nav>
-    <nav class="nav-label" id="login-label"><?php echo($access_level_label . " " . $login_label); ?></nav>
+    <nav class="nav-label" id="login-label"><?php echo($login_label . "<span title=$access_level_label id=\"rank\">" . " $access_level_icon " . '</span>'); ?></nav>
     <nav class="nav-label" id="site-label">&#9819; game-of-thrones-db</nav>
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
