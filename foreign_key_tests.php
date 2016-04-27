@@ -93,5 +93,15 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 echo "FACTION CITIES MISSING: $count\n";
 
+# FACTION LEADER
+$count = 0;
+$result = $db->query("SELECT * FROM CharacterFaction WHERE NOT EXISTS (SELECT * FROM Faction WHERE CharacterFaction.faction_name = Faction.faction_name)");
+while($row = mysqli_fetch_assoc($result)) {
+    $count++;
+    print_r($row);
+}
+echo "CHARACTER FACTIONS MISSING: $count\n";
+
+
 
 ?>
