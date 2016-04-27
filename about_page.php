@@ -13,15 +13,19 @@ if (isset($_SESSION["error"])) {
 if (isset($_SESSION["email_address"])) {
     $login_label = $_SESSION["email_address"];
     $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"logout.php\">Logout</a></span></nav>";
+    $register_or_export = "<nav class=\"link-label\" id=\"register-link\"><a href=\"export_page.php\">Export</a></span></nav>";
 } else {
-    $login_label = "Guest  ";
+    $login_label = "Guest";
     $login_or_out = "<nav class=\"link-label\" id=\"login-link\"><a href=\"login_page.php\">Login</a></span></nav>";
+    $register_or_export = "<nav class=\"link-label\" id=\"register-link\"><a href=\"register_page.php\">Register</a></span></nav>";
 }
 
 if (isset($_SESSION["access_level"])) {
     $access_level = $_SESSION["access_level"];
+    $access_level_label = convert_access_level_to_label($access_level);
 } else {
     $access_level = 4;
+    $access_level_label = "";
 }
 ?>
 
@@ -42,7 +46,7 @@ if (isset($_SESSION["access_level"])) {
     <nav class="link-label" id="search-link"><a href="search_page.php">Search</a></span></nav>
     <nav class="link-label" id="edit-link"><a href="admin_page.php">Admin</a></span></nav>
     <nav class="link-label" id="about-link"><a href="about_page.php">About</a></span></nav>
-    <nav class="link-label" id="register-link"><a href="register_page.php">Register</a></span></nav>
+    <?php echo($register_or_export); ?>
     <?php echo($login_or_out); ?>
     <div id="resultcontainer">
         <div id="searchresults">
