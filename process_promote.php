@@ -44,12 +44,8 @@ if (($promoter_email == $email) && ($promoter_email == $confirm_email)) {
 }
 
 # Database credentials
-$dbuser = "cs4750mhk4g" . convert_access_level_to_login_suffix($promoter_access_level);
-if ($dbuser == "cs4750mhk4g") {
-    $dbpass = "aryastark";
-} else {
-    $dbpass = "spring2016";
-}
+$dbuser = "cs4750mhk4g"
+$dbpass = "aryastark";
 $dbname = "cs4750mhk4g";
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
