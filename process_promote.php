@@ -4,7 +4,13 @@ ini_set('display_errors', 1);
 include 'helpers.php';
 mysqli_report(MYSQLI_REPORT_OFF);
 
-# Get login info from POST
+if (isset($_SESSION["email_address"])) {
+    $promoter_email = $_SESSION["email_address"];
+}
+
+if (isset($_SESSION["access_level"])) {
+    $promoter_access_level = $_SESSION["access_level"];
+}
 
 if(isset($_POST["email"])) {
     $email = (string)$_POST["email"];
@@ -30,7 +36,15 @@ else:
     $_SESSION["admin_results"] = "Invalid access level entered. Check your spelling.";
     header("Location: admin_page.php");
     }
-endif;    
+endif;
+
+if ($promoter_email == $email && $promoter_email == $confirm_email) {
+    $_SESSION["admin_results"] = "Can't promote yourself, bro. Nice try.";
+    header("Location: admin_page.php");
+} elseif ($promoter_access_level > 1) {
+    $_SESSION["admin_results"] = "You must be a Khaleesi to promote other users. You, sir, are no Khaleesi.";
+    header("Location: admin_page.php");
+}
 
 # Store user type in session variable
 $permission_code = 5;

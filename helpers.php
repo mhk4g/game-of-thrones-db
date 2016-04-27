@@ -20,4 +20,24 @@ function convert_access_level_to_login_suffix($access_level) {
         return $access_suffix;
 }
 
+function convert_access_level_to_label($access_level) {
+    $label = "d";
+    switch ($access_level) {
+        case "1":
+            $label = "Khaleesi";
+            break;
+        case "2":
+            $label = "Lord";
+            break;
+        case "3": 
+           $label = "Ser";
+            break;
+        case "4":
+            $label = "Peasant";
+            break;
+        }
+        
+        return $label;
+}
+
 ?>

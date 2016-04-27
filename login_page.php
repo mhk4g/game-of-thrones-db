@@ -1,5 +1,8 @@
 <?php 
 session_start();
+ini_set('display_errors', 1);
+include 'helpers.php';
+mysqli_report(MYSQLI_REPORT_OFF);
 
 if (isset($_SESSION["error"])) {
     $error_display = "Invalid user name or password.";
