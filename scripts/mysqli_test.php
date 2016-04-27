@@ -15,7 +15,7 @@ $hashedpw = hash("md5", $password);
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
-    die("Could not connect to database: " . $db->connect_error);
+    die("Could not connect to database. Check your wifi connection.");
   }
 
 $loginstatement = $db->prepare("SELECT email, access_level from GOTUsers where email=? AND password=?");

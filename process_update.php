@@ -39,7 +39,7 @@ $dbname = "cs4750mhk4g";
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
-    die("Could not connect to database: " . $db->connect_error);
+    die("Could not connect to database. Check your wifi connection.");
   }
 
 # If login button was clicked...

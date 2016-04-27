@@ -34,7 +34,7 @@ $HTTPresponse = array();    # <- This is where AJAX response data goes, as K/V p
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
-    die("Could not connect to database: " . $db->connect_error);
+    die("Could not connect to database. Check your wifi connection.");
   }
 
 $HTTPResponse = [];

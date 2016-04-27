@@ -24,7 +24,7 @@ $tempaccess = 4;
 
 $db = new mysqli('stardock.cs.virginia.edu', $dbuser, $dbpass, $dbname);
 if ($db->connect_error) {
-    die("Could not connect to database: " . $db->connect_error);
+    die("Could not connect to database. Check your wifi connection.");
   }
 
 # If the passwords don't match, go back.  
