@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 include 'helpers.php';
-mysqli_report(MYSQLI_REPORT_ALL);
+mysqli_report(MYSQLI_REPORT_OFF);
 
 if (isset($_SESSION["email_address"])) {
     $promoter_email = $_SESSION["email_address"];
@@ -57,7 +57,7 @@ echo "Attempting promotion...";
 
 # If login button was clicked...
 if(isset($_POST["promote"]) && ($email == $confirmemail)) {
-  $st1 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE GOTUsers.user_email=?");
+  $st1 = $db->prepare("UPDATE GOTUsers SET access_level=? WHERE user_email=?");
   $st1->bind_param("is", $newaccesslevelvalue, $email);
   $st1->execute();
 
